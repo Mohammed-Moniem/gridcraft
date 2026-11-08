@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "kind": "CURRENT_GRID_PLATFORM_PREPARATION_FREEZE",
   "scope": "PREPARATION_CODE_ONLY_NOT_SELECTED",
   "excludes": [
@@ -8,8 +8,8 @@
   "files": [
     {
       "path": "CODE-CLOSURE.json",
-      "bytes": 18223,
-      "sha256": "7a44a4975dcfd2b78b7db47fdcf022cf49247a70d84182115c37e77ed2465ae6",
+      "bytes": 17806,
+      "sha256": "a5a86b7ede70913bd459276e308f2aed206e573340ce0033d77eab7849c6bcae",
       "mode": 420
     },
     {
@@ -28,6 +28,12 @@
       "path": "CORRECTIONS-5.json",
       "bytes": 1021,
       "sha256": "2b7e4ffbb9c53320fa5665a525a3742468908d6b5d27cb905f27608bc790e105",
+      "mode": 420
+    },
+    {
+      "path": "CORRECTIONS-6.json",
+      "bytes": 2142,
+      "sha256": "edde237e5f6dc2b3757fbc5493959adaed3a830dc64f6a452f417de8e1657436",
       "mode": 420
     },
     {
@@ -50,8 +56,8 @@
     },
     {
       "path": "ORACLE.json",
-      "bytes": 5601,
-      "sha256": "cda804a1b8e51afb1bd959a4de6903970656153cacdebce187912e4c07e4a1d3",
+      "bytes": 5805,
+      "sha256": "2a616739b70bc590f50d1c7f935794188bd0497794ab911da46c38de7aa4a82d",
       "mode": 420
     },
     {
@@ -73,6 +79,12 @@
       "mode": 420
     },
     {
+      "path": "PASSES-6.md",
+      "bytes": 1986,
+      "sha256": "6ba98f32eebc9f4688d1a14b71801819f23a16f9e5fb39d26b5375f14a9d6768",
+      "mode": 420
+    },
+    {
       "path": "PRESERVATION.json",
       "bytes": 1117029,
       "sha256": "88a03a476ac12d137f3a8f344493b30a010abb916f0fe04b50003401893669da",
@@ -80,14 +92,14 @@
     },
     {
       "path": "READINESS.json",
-      "bytes": 4808,
-      "sha256": "3504e679cd4f38bce6d5e3ac97307b320976937089e4b0fa6403ec3b064704a8",
+      "bytes": 5078,
+      "sha256": "2f72a0623183aeffaea6f16eaf62cace385d5e84484cc9630e25c32a0c144111",
       "mode": 420
     },
     {
       "path": "README.md",
-      "bytes": 3478,
-      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "bytes": 4332,
+      "sha256": "54bea5dfaaca5027f628bb0955f68da3efa2486e704036c98b91582887fc14d7",
       "mode": 420
     },
     {
@@ -109,6 +121,12 @@
       "mode": 420
     },
     {
+      "path": "REPAIR-6.md",
+      "bytes": 4332,
+      "sha256": "54bea5dfaaca5027f628bb0955f68da3efa2486e704036c98b91582887fc14d7",
+      "mode": 420
+    },
+    {
       "path": "REPAIR-PASSES.md",
       "bytes": 2110,
       "sha256": "16e4a08a59a2389f7790b84926ff25c9601f2317e53452ca5270da532d79af02",
@@ -116,14 +134,14 @@
     },
     {
       "path": "REVIEW.md",
-      "bytes": 1363,
-      "sha256": "ebba29de2c6ab58c140deb77458d3d8771cd36ee6038b99f43f1abbafc5f9bc6",
+      "bytes": 1986,
+      "sha256": "6ba98f32eebc9f4688d1a14b71801819f23a16f9e5fb39d26b5375f14a9d6768",
       "mode": 420
     },
     {
       "path": "SUCCESSOR.md",
-      "bytes": 3478,
-      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "bytes": 4332,
+      "sha256": "54bea5dfaaca5027f628bb0955f68da3efa2486e704036c98b91582887fc14d7",
       "mode": 420
     },
     {
@@ -164,8 +182,8 @@
     },
     {
       "path": "control-fixtures.mjs",
-      "bytes": 11100,
-      "sha256": "b787be2d32e633bfdeb8f5dfb34e56e30f0791408cf9f54082b991900c18f0e7",
+      "bytes": 11873,
+      "sha256": "17de2602903b673656ddca955e27128599c27132b5b67a8f46402698da695c13",
       "mode": 420
     },
     {
@@ -176,8 +194,8 @@
     },
     {
       "path": "correction-controls.mjs",
-      "bytes": 9321,
-      "sha256": "03da7872e3099a6d40d6e413bfd26c44fade9587e6c32d080fc5f79ac005bbca",
+      "bytes": 9365,
+      "sha256": "be0d70895c94590b6cdef8316528ddcf2a1e002fa301e2d6d19e1079670cd4eb",
       "mode": 420
     },
     {
@@ -224,8 +242,8 @@
     },
     {
       "path": "host-contract.mjs",
-      "bytes": 7339,
-      "sha256": "944f2966d3d84449f6a8cefcf09de11a10ec1b1238ba6c548c951afa530c6fa2",
+      "bytes": 8037,
+      "sha256": "52424a8e63679e5b9ec83f3724037dc9f3a2e482a947574e97dcd967ecfaac84",
       "mode": 420
     },
     {
@@ -236,8 +254,8 @@
     },
     {
       "path": "host-reader.mjs",
-      "bytes": 3738,
-      "sha256": "407e0c0b8f5c07f8e4408d460550a27246818420e0e1d628b61ff6e21d445b35",
+      "bytes": 3787,
+      "sha256": "91a7a1da1051a4ff889339a27ae5967b8d40a42c1410b54f0cca9d50ff357838",
       "mode": 420
     },
     {
@@ -446,8 +464,8 @@
     },
     {
       "path": "prepare-metadata.mjs",
-      "bytes": 17952,
-      "sha256": "18b0f9abc6d4f78ddbff3f615ddd66d53b82ee65dc2f460339854c03a4444a9c",
+      "bytes": 18117,
+      "sha256": "912a3bb90b0a2f6bfbf91c7dbd68ea4a3d4628195921a1544410941a727d3f82",
       "mode": 420
     },
     {
@@ -458,14 +476,14 @@
     },
     {
       "path": "python-acquisition.mjs",
-      "bytes": 5890,
-      "sha256": "c9b4811f753b20122296fc9c483494b1ad51a8d63ced9b85de7a85460280fff9",
+      "bytes": 9979,
+      "sha256": "50435a263aa2116dd2981f5e523bf6bc0a2ad58ded8549f85115f29511dee2d0",
       "mode": 420
     },
     {
       "path": "python-namespace-contract.mjs",
-      "bytes": 6131,
-      "sha256": "4523b9823f80c1a880a0cdde875dde1f585b814f6c109e3c28bc8d19c94a439e",
+      "bytes": 11343,
+      "sha256": "f869b8ee73df631e2966f3155f533b3cf360cfc581a3a91b9e5009d65850513c",
       "mode": 420
     },
     {
@@ -494,8 +512,8 @@
     },
     {
       "path": "verify.mjs",
-      "bytes": 17582,
-      "sha256": "6c611fd21bdf779343d62ae418b13464a59f6169f5f222f7461ca7d2f674d5f3",
+      "bytes": 17722,
+      "sha256": "1eb52912f4a1c7fce720535588efe4f2f229076f3c0bb9093eacfe34a1756eda",
       "mode": 420
     },
     {

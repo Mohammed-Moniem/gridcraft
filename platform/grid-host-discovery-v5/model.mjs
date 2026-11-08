@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {assertPythonEnvironment} from '../grid-current-v5/python-plan.mjs';
 import {PYTHON_MODULES} from './query-plan.mjs';
 import {assertPythonExecutionClosure} from '../grid-current-v5/host-contract.mjs';
-export const KIT_SHA='c1b7ffc41e97b3be6fba897a372829c85f7fa05631da112c3df2cd40186a3eb3';
+export const KIT_SHA='d943cd714d711cc3fadcc2862ebee266186eab9143e2c6d1c795e3eb2a096a5b';
 export const SOURCE_TREE='c4544e89868075cca2570ede803540bdbf0afae9';
 export const SOURCE_SHA='01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27';
 export const SOURCE_COMMIT='17c5aba04c33b107ec3a9264b0fa6f28966faf2c';

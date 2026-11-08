@@ -13,6 +13,7 @@ export const PYTHON_QUERY=[
  ' loader_name=getattr(loader,"__name__",None) if isinstance(loader,type) else type(loader).__name__',
  ' file=getattr(module,"__file__",None); archive=getattr(loader,"archive",None)',
  ' loader_module=sys.modules.get(getattr(loader,"__module__",type(loader).__module__)); loader_file=getattr(loader_module,"__file__",None)',
+ // Both fields are retained; module.__cached__ may be absent in Python3.15.
  ' cached=getattr(module,"__cached__",None); spec_cached=getattr(spec,"cached",None)',
  ' if loader_name=="zipimporter": cached=spec_cached=None',
  ' for candidate in [file,loader_file,archive]:',

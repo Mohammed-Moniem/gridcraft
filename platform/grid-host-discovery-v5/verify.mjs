@@ -1,4 +1,4 @@
-// Pure read-only preparation oracle. No discovery, subprocess, SDK or network module imports.
+// ORIGINAL-WORKSPACE-ONLY read-only preparation oracle. Never a consuming-host entrypoint.
 import assert from 'node:assert/strict';
 import {readFile,lstat,readdir} from 'node:fs/promises';
 import {join} from 'node:path';
@@ -11,6 +11,7 @@ import {PYTHON_MODULES} from './query-plan.mjs';
 import {decodeDelivery,validateDelivery} from './delivery-contract.mjs';
 import {syntheticDelivery} from '../grid-current-v5/delivery-controls.mjs';
 const here=fileURLToPath(new URL('.',import.meta.url)),kit=join(here,'..','grid-current-v5'),json=async path=>JSON.parse(await readFile(path,'utf8')),mode=process.argv[2];assert(['preparation','integrity'].includes(mode));
+assert.equal(here,'/Users/mohammedosman/Desktop/ideas/artcraft-upstream-review/platform/grid-pipeline-repair-6/grid-host-discovery-v5/','Preparation oracle is original-workspace-only');
 const freezeRaw=await readFile(join(here,'FREEZE.json')),freeze=JSON.parse(freezeRaw),oracle=await json(join(here,'ORACLE.json'));
 for(const row of freeze.files){const path=join(here,relativeName(row.path)),s=await lstat(path);assert(s.isFile()&&!s.isSymbolicLink());assert.equal(s.size,row.bytes);assert.equal(sha(await readFile(path)),row.sha256);assert.equal(s.mode&0o777,row.mode);}
 async function names(dir,prefix=''){const rows=[];for(const entry of await readdir(join(dir,prefix),{withFileTypes:true})){assert(!entry.isSymbolicLink());if(entry.isDirectory())rows.push(...await names(dir,prefix+entry.name+'/'));else{assert(entry.isFile());rows.push(prefix+entry.name);}}return rows.sort();}
@@ -41,7 +42,7 @@ addPythonExecutionFixture(fixture);
 }
 const expected={kitSha256:KIT_SHA,packetSha256:sha(freezeRaw),sourceTree:SOURCE_TREE};
 for(const target of Object.keys(TARGETS)){const output=discoveryFixture(target,expected);validateHost(output.capture);validateCapturedFileClosure(output.capture);validateOutputBundle(output.seal(),expected);output.remove('queries/01-python-isolated-stdlib.json');reject(()=>validateOutputBundle(output.seal(),expected));}
-const root=fileURLToPath(new URL('../../../',import.meta.url));for(const row of [...oracle.externalPureModules,...(await json(join(here,'PRESERVATION.json'))).files]){const path=join(root,row.path),s=await lstat(path);assert(s.isFile()&&!s.isSymbolicLink());assert.equal(s.size,row.bytes);assert.equal(sha(await readFile(path)),row.sha256);assert.equal(s.mode&0o777,row.mode);}
+const root='/Users/mohammedosman/Desktop/ideas';for(const row of [...oracle.externalPureModules,...(await json(join(here,'PRESERVATION.json'))).files]){const path=join(root,row.path),s=await lstat(path);assert(s.isFile()&&!s.isSymbolicLink());assert.equal(s.size,row.bytes);assert.equal(sha(await readFile(path)),row.sha256);assert.equal(s.mode&0o777,row.mode);}
 for(const packet of (await json(join(here,'PRESERVATION.json'))).frozenPackets){const path=join(root,packet.root);assert.equal(sha(await readFile(join(path,'FREEZE.json'))),packet.freezeSha256);assert.deepEqual(await names(path),packet.files,'Rejected packet namespace changed');}
 for(const namespace of (await json(join(here,'PRESERVATION.json'))).frozenNamespaces??[])assert.deepEqual(await names(join(root,namespace.root)),namespace.files,'Preserved parser/review namespace changed');
 assert.equal(sha(await readFile(join(kit,'archive.py'))),'dec87673167221bfec2da2c23a5ab07be6b3865b1e8e8796a5771b429f76c8cc');assert.equal(sha(await readFile(join(kit,'archive-budget.json'))),'424b05fd365607d199adf9cf126a8f58e3971857fbf37732a59e2b3c9c9809ac');const inheritedParser=await json(join(root,'artcraft-upstream-review/platform/grid-archive-tests-v4/runs/actual-parser-4/output/RESULT.json'));assert.equal(inheritedParser.passed,true);assert.equal(inheritedParser.report.cases.length,34);assert.equal(inheritedParser.fullGoalComplete,false);
