@@ -1,0 +1,15 @@
+{
+  "supersededFreeze": "e1bddddc7ecde74851e294e3460701b414c980ebba44a1c9b152b414f6dae99e",
+  "checksExecuted": 0,
+  "buildsExecuted": 0,
+  "nativeExecutions": 0,
+  "browserExecutions": 0,
+  "downloads": 0,
+  "changes": [
+    "Bind and include outer input MANIFEST.json in exact extraction comparison",
+    "Require selected Windows module/API-set contract or exact shipped DLL for every normal/delay import",
+    "Require distinct archive+manifest+target-bound artifact critic and exact root replay before public effects",
+    "Declare cloudReady:false and next host-discovery/admission leaf",
+    "Emit success marker only after final assertion; retain failed command identity in receipts"
+  ]
+}

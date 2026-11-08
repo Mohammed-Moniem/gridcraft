@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "scope": "PREPARATION_CODE_ONLY",
+  "independentReview": "PENDING_FRESH_ENTIRE_PACKET_REVIEW",
+  "rejectedReviewManifestSha256": "4864ee237b7a642b4250e592b8d8c37c1d272aed0de35358ea57fef1b03412eb",
+  "sourceCommit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "findings": [
+    {
+      "id": "GCP3-001",
+      "sharedContract": "delivery-contract.mjs:decodeDelivery/validateDelivery",
+      "consumers": [
+        "workflow-entry.mjs",
+        "probe.mjs",
+        "workflow/grid-host-discovery.yml"
+      ],
+      "mechanism": "Bounded externally supplied selected payload binds exact code/head, paired freezes, all target launch digests and independent review/root replay before materialization or child launch"
+    },
+    {
+      "id": "GCP3-002",
+      "sharedContract": "archive.py:preflight_tar/preflight_zip/PinnedReader",
+      "consumers": [
+        "archive.py:extract/install_tools",
+        "pipeline.mjs",
+        "qualification.mjs"
+      ],
+      "policy": "Frozen shared archive-budget.json validated before Node effects and consumed by Python; bounded compressed/decoded/member/metadata/name inputs before standard member construction",
+      "actualTests": "Separate grid-archive-tests-v4 controller and frozen interpreter/source/cache/sandbox closure; not executed by producer"
+    }
+  ],
+  "allEarlierCorrectionsPreserved": true,
+  "actualExecution": false,
+  "fullGoalComplete": false
+}

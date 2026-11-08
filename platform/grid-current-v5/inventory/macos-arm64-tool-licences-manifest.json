@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "inputs": [
+    {
+      "name": "trunk-LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/trunk-rs/trunk/v0.22.1/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "name": "trunk-LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/trunk-rs/trunk/v0.22.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "name": "binaryen-LICENSE",
+      "url": "https://raw.githubusercontent.com/WebAssembly/binaryen/version_131/LICENSE",
+      "sha256": "64c0d02491e16eced74826440ecd2bcf7722d37fa586faf457b2494293afbffe"
+    }
+  ],
+  "wasmBindgen": "Original LICENSE-MIT and LICENSE-APACHE are included in its verified release archive",
+  "rust": "Original Rust component archives include their distribution legal notices"
+}

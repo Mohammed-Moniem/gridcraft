@@ -1,0 +1,7 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny system-socket (socket-domain AF_INET6))
+(allow network-bind (local ip "localhost:*"))
+(allow network-inbound (local ip "localhost:*"))
+(allow network-outbound (remote ip "localhost:*"))

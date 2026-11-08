@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "apps": {
+    "wordcraft": {
+      "fonts": {
+        "repository": "storytold/craft-fonts",
+        "commit": "b076417b5880bd4154bd22f00695b1d28c6bea83",
+        "directory": "build/engines/support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83"
+      },
+      "i18n": {
+        "repository": "storytold/craft-i18n",
+        "commit": "1e515422afdda2f317af430c1f9d68a5f83935b4",
+        "directory": "build/engines/support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4",
+        "requiredDirectories": [
+          "language-data",
+          "locales"
+        ],
+        "requiredLocaleInventory": "office-required-locales.json",
+        "localePolicy": "Every locales/<locale>/wordcraft.tsv and its common.tsv if present; exclude other app catalogs and artwork"
+      }
+    },
+    "pdfcraft": {
+      "fonts": {
+        "repository": "storytold/craft-fonts",
+        "commit": "b076417b5880bd4154bd22f00695b1d28c6bea83",
+        "directory": "build/engines/support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83"
+      }
+    },
+    "deckcraft": {
+      "fonts": {
+        "repository": "storytold/craft-fonts",
+        "commit": "37827adc41fd165f9a9234ac40f94dbad353aa69",
+        "directory": "build/engines/support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69"
+      }
+    },
+    "gridcraft": {
+      "fonts": {
+        "repository": "storytold/craft-fonts",
+        "commit": "b076417b5880bd4154bd22f00695b1d28c6bea83",
+        "directory": "build/engines/support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83"
+      }
+    }
+  },
+  "ocr": {
+    "directory": "build/engines/support/pdfcraft-models",
+    "builtin": "Platform-independent ONNX pair and licences from pinned PDF Windows archive, copied beside all native CLIs by extract.mjs",
+    "languages": "upstream Latin alphabet set",
+    "multilingualTesseract": "not bundled or qualified"
+  },
+  "status": "pin manifest; actual acquisition must be established by support-acquisition.json"
+}

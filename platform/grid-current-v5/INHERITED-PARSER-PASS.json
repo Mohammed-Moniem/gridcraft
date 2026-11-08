@@ -1,0 +1,44 @@
+{
+  "kind": "INHERITED_BYTE_IDENTICAL_BOUNDED_LOCAL_PARSER_EVIDENCE",
+  "archive": {
+    "path": "artcraft-upstream-review/platform/grid-current-v5/archive.py",
+    "bytes": 25529,
+    "sha256": "dec87673167221bfec2da2c23a5ab07be6b3865b1e8e8796a5771b429f76c8cc",
+    "mode": 420
+  },
+  "budget": {
+    "path": "artcraft-upstream-review/platform/grid-current-v5/archive-budget.json",
+    "bytes": 261,
+    "sha256": "424b05fd365607d199adf9cf126a8f58e3971857fbf37732a59e2b3c9c9809ac",
+    "mode": 420
+  },
+  "originalInputFreeze": {
+    "path": "artcraft-upstream-review/platform/grid-archive-tests-v4/runs/actual-parser-4/input/FREEZE.json",
+    "bytes": 1844,
+    "sha256": "a71273bc07bd064925efe46aa2441ea261bbbc3c05055c208103c25ff6472d42",
+    "mode": 420
+  },
+  "originalExecutionClosure": {
+    "path": "artcraft-upstream-review/platform/grid-archive-tests-v4/runs/actual-parser-4/input/EXECUTION-CLOSURE.json",
+    "bytes": 8160,
+    "sha256": "86bea19945f8de98de8e3277650443bc87fc40da822075efa124eeb8b67de484",
+    "mode": 420
+  },
+  "originalResult": {
+    "path": "artcraft-upstream-review/platform/grid-archive-tests-v4/runs/actual-parser-4/output/RESULT.json",
+    "bytes": 37167,
+    "sha256": "3eaf29c71916178a434b98bf22ecb8ade17e167dc84cb5880b8c858183b486e1",
+    "mode": 420
+  },
+  "rootRecord": {
+    "path": "artcraft-upstream-review/continuation-5/GRID-V4-ACTUAL-PARSER-ROOT-PASS-4.json",
+    "bytes": 1922,
+    "sha256": "d28161d59463080a3ba8c7108ead1cf658b58850e1f3dd3f0d609d2d91d84993",
+    "mode": 420
+  },
+  "cases": 34,
+  "parserRerun": false,
+  "selectionMade": false,
+  "platformQualified": false,
+  "fullGoalComplete": false
+}

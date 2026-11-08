@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "kind": "captured-tools-build-inputs",
+  "status": "IN_PROGRESS",
+  "qualification": "Not a complete offline rebuild kit",
+  "platform": "macos-arm64",
+  "rust": "1.95.0",
+  "trunk": "0.22.1",
+  "wasmBindgen": "0.2.129",
+  "binaryen": "131",
+  "officialInputs": 10,
+  "files": [
+    {
+      "path": ".toolchains/binaryen-LICENSE",
+      "bytes": 11535,
+      "mode": 420,
+      "sha256": "64c0d02491e16eced74826440ecd2bcf7722d37fa586faf457b2494293afbffe"
+    },
+    {
+      "path": ".toolchains/binaryen-version_131-arm64-macos.tar.gz",
+      "bytes": 7440144,
+      "mode": 420,
+      "sha256": "e441b48dc22163d209b4f05e44dc7210909b01237642b6c9ae48fd710a3ef83e"
+    },
+    {
+      "path": ".toolchains/build-tools-macos-arm64-manifest.json",
+      "bytes": 747,
+      "mode": 420,
+      "sha256": "47ab7cdfa21a3a2e4793e7b4e49b33a7a75c8e4ed2d6039c0a3eee1f37d9853b"
+    },
+    {
+      "path": ".toolchains/cargo-1.95.0-aarch64-apple-darwin.tar.xz",
+      "bytes": 8731256,
+      "mode": 420,
+      "sha256": "6c2ffed8e1ac9cf4dc9e80f282a869a6b237a153e7c55cca039d33de29d80aaf"
+    },
+    {
+      "path": ".toolchains/rust-std-1.95.0-aarch64-apple-darwin.tar.xz",
+      "bytes": 27317176,
+      "mode": 420,
+      "sha256": "9b30089b0f767cb91b2190ffec55a9beeb2a21a1405d8da0f664d7e09d08e6d8"
+    },
+    {
+      "path": ".toolchains/rust-std-1.95.0-wasm32-unknown-unknown.tar.xz",
+      "bytes": 21450508,
+      "mode": 420,
+      "sha256": "5587b89ff69623d09e476439d44a24453b4e4ea3d5e0b53a5c0a935151ff3fd1"
+    },
+    {
+      "path": ".toolchains/rustc-1.95.0-aarch64-apple-darwin.tar.xz",
+      "bytes": 67652240,
+      "mode": 420,
+      "sha256": "149e85a285b6eba58eb6c8bdf7deb1b93763890598e62cb635a712e3a8454f04"
+    },
+    {
+      "path": ".toolchains/tool-licences-manifest.json",
+      "bytes": 894,
+      "mode": 420,
+      "sha256": "843adae254a54338602d4c22270145fbffa214cadec0ba7b9b9c926237cb2b70"
+    },
+    {
+      "path": ".toolchains/toolchain-macos-arm64-manifest.json",
+      "bytes": 1430,
+      "mode": 420,
+      "sha256": "0ddb6e85645e32d749f78dd64c14884f5dadb32230f2ef863af8d927590dd7e5"
+    },
+    {
+      "path": ".toolchains/trunk-aarch64-apple-darwin.tar.gz",
+      "bytes": 8146622,
+      "mode": 420,
+      "sha256": "18e381936c848700fefb9ee3f64f362419fab700200eefee323ebc0d00a8e9db"
+    },
+    {
+      "path": ".toolchains/trunk-LICENSE-APACHE",
+      "bytes": 10847,
+      "mode": 420,
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": ".toolchains/trunk-LICENSE-MIT",
+      "bytes": 1023,
+      "mode": 420,
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": ".toolchains/wasm-bindgen-0.2.129-aarch64-apple-darwin.tar.gz",
+      "bytes": 7925587,
+      "mode": 420,
+      "sha256": "81d4a23d56b3c3eb8187658329116d50e0b228a93b343825fb71f70179051cd1"
+    },
+    {
+      "path": ".toolchains/wasm-opt-macos-arm64-manifest.json",
+      "bytes": 435,
+      "mode": 420,
+      "sha256": "ee86160e7c087cca2e74d9e071ac0df0ff67ca00040a601dfd27e1cdcc93ef62"
+    },
+    {
+      "path": "README.md",
+      "bytes": 502,
+      "mode": 420,
+      "sha256": "3086d7d2b4ad804b24dae0bde5bca430bd74ceed558cdb1197fa336a585e91e0"
+    }
+  ]
+}

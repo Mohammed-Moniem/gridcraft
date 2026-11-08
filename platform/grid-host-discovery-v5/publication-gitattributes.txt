@@ -1,0 +1,13 @@
+# Staged only; no active attributes are modified.
+platform/grid-current/** -text
+platform/grid-host-discovery/** -text
+platform/grid-current-v2/** -text
+platform/grid-host-discovery-v2/** -text
+platform/grid-current-v3/** -text
+platform/grid-host-discovery-v3/** -text
+platform/grid-current-v4/** -text
+platform/grid-host-discovery-v4/** -text
+platform/grid-archive-tests-v4/** -text
+platform/grid-current-v5/** -text
+platform/grid-host-discovery-v5/** -text
+platform/grid-policy-tests-v5/** -text

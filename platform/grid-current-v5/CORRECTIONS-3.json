@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scope": "PREPARATION_CODE_ONLY",
+  "independentReview": "PENDING_FRESH_ENTIRE_PACKET_REVIEW",
+  "rejectedReviewManifestSha256": "64083a826e98330e4f03b897fbbd8e3aef909e5e92cdd223e383959de4053cf2",
+  "sourceCommit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "findings": [
+    {
+      "id": "GCP2-001",
+      "sharedContracts": [
+        "effect-preflight.mjs:effectPreflight",
+        "host-contract.mjs:assertSelectedHost/assertHostObservation",
+        "host-reader.mjs:observeCapturedHost"
+      ],
+      "consumers": [
+        "workflow-entry.mjs",
+        "ci.mjs",
+        "pipeline.mjs",
+        "qualification.mjs",
+        "selection-preflight.mjs",
+        "restrict-windows.ps1"
+      ],
+      "beforeFirstJournalDownloadChild": true,
+      "archiveLaunchRevalidation": true
+    },
+    {
+      "id": "GCP2-002",
+      "sharedContract": "core.mjs:assertArtifactSelection",
+      "decision": "selected must be exactly true",
+      "consumers": [
+        "download-runtime.mjs",
+        "qualification.mjs:extractRuntime"
+      ]
+    },
+    {
+      "id": "GCP2-003",
+      "sharedContract": "host-contract.mjs:assertPythonExecutionClosure",
+      "captured": "Loader metadata, actual source/cache/support files, absent cache/config paths and import/cache namespaces; Windows support PE seeds",
+      "consumingRevalidation": "Mandatory host reader before effects and every archive interpreter launch",
+      "semantics": "-B prevents writes only; existing .pyc reads are captured and checked",
+      "control": "Bytecode-only hash mutation with every other file unchanged is rejected"
+    }
+  ],
+  "earlierFiveFindingControlsPreserved": true,
+  "actualExecution": false,
+  "fullGoalComplete": false
+}

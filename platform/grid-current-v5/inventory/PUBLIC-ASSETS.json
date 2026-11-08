@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "repository": "Mohammed-Moniem/gridcraft",
+  "tag": "v0.1.0-grid-current-progress.1",
+  "commit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "tree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "releaseUrl": "https://github.com/Mohammed-Moniem/gridcraft/releases/tag/v0.1.0-grid-current-progress.1",
+  "anonymous": true,
+  "downloads": [
+    {
+      "name": "gridcraft-current-progress-source.tar.gz",
+      "bytes": 5616695,
+      "sha256": "01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27",
+      "url": "https://github.com/Mohammed-Moniem/gridcraft/releases/download/v0.1.0-grid-current-progress.1/gridcraft-current-progress-source.tar.gz",
+      "anonymous": true,
+      "status": 200
+    },
+    {
+      "name": "gridcraft-current-progress-source.tar.gz.sha256",
+      "bytes": 107,
+      "sha256": "4e3bdefcb784c10dde122192fb4694279cc3b48e55ab75ab2211c36e9bb135da",
+      "url": "https://github.com/Mohammed-Moniem/gridcraft/releases/download/v0.1.0-grid-current-progress.1/gridcraft-current-progress-source.tar.gz.sha256",
+      "anonymous": true,
+      "status": 200
+    },
+    {
+      "name": "gridcraft-current-progress-macos-arm64-cli.tar.gz",
+      "bytes": 8298827,
+      "sha256": "1c620fb915e052aa53980a3479ea286f732acaf60b760986fa9eb29d1f59395f",
+      "url": "https://github.com/Mohammed-Moniem/gridcraft/releases/download/v0.1.0-grid-current-progress.1/gridcraft-current-progress-macos-arm64-cli.tar.gz",
+      "anonymous": true,
+      "status": 200
+    },
+    {
+      "name": "gridcraft-current-progress-macos-arm64-cli.tar.gz.sha256",
+      "bytes": 116,
+      "sha256": "235ceae7bc447c92486fb0c40f94cdde36646fb2ac00a0b2453580ac89e58550",
+      "url": "https://github.com/Mohammed-Moniem/gridcraft/releases/download/v0.1.0-grid-current-progress.1/gridcraft-current-progress-macos-arm64-cli.tar.gz.sha256",
+      "anonymous": true,
+      "status": 200
+    }
+  ],
+  "allPreviousReleasesAndAssetsPreserved": true,
+  "baselinePreserved": true,
+  "exactTagVerifiedBeforePublish": true,
+  "concurrentTagWriterAtomicityQualified": false,
+  "publicNativeRuntimeVerified": false,
+  "fullGoalComplete": false
+}

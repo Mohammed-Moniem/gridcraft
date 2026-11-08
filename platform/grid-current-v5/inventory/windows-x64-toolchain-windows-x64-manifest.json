@@ -1,0 +1,35 @@
+{
+  "version": "1.95.0",
+  "platform": "windows-x64",
+  "host": "x86_64-pc-windows-msvc",
+  "components": [
+    {
+      "name": "rustc-1.95.0-x86_64-pc-windows-msvc",
+      "filename": "rustc-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "url": "https://static.rust-lang.org/dist/rustc-1.95.0-x86_64-pc-windows-msvc.tar.xz",
+      "sha256": "02fe492508ca01f624ee6855bd3293c26bfad2bfc1a210deaf7b788ea813c64e",
+      "size": 131579296
+    },
+    {
+      "name": "cargo-1.95.0-x86_64-pc-windows-msvc",
+      "filename": "cargo-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "url": "https://static.rust-lang.org/dist/cargo-1.95.0-x86_64-pc-windows-msvc.tar.xz",
+      "sha256": "a037b306089497748996c4f5bf554d248c1f82e639ff55aa7f5367e91ae07949",
+      "size": 14273892
+    },
+    {
+      "name": "rust-std-1.95.0-x86_64-pc-windows-msvc",
+      "filename": "rust-std-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "url": "https://static.rust-lang.org/dist/rust-std-1.95.0-x86_64-pc-windows-msvc.tar.xz",
+      "sha256": "9484429dfdfcffaeabe518b6fb2d09d60816b497c867f3f29c94f21e66a17e4a",
+      "size": 34838216
+    },
+    {
+      "name": "rust-std-1.95.0-wasm32-unknown-unknown",
+      "filename": "rust-std-1.95.0-wasm32-unknown-unknown.tar.gz",
+      "url": "https://static.rust-lang.org/dist/rust-std-1.95.0-wasm32-unknown-unknown.tar.xz",
+      "sha256": "0c39936601f0dc2c0585bfda2729cc1ad0be708348e7c111085e85fb9d276afd",
+      "size": 32237507
+    }
+  ]
+}

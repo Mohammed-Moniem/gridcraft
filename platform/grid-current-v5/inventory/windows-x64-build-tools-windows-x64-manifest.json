@@ -1,0 +1,21 @@
+{
+  "host": "windows-x64",
+  "tools": [
+    {
+      "tool": "trunk",
+      "tag": "v0.22.1",
+      "name": "trunk-x86_64-pc-windows-msvc.zip",
+      "url": "https://github.com/trunk-rs/trunk/releases/download/v0.22.1/trunk-x86_64-pc-windows-msvc.zip",
+      "sha256": "1cc65012a9df60b02db948f5a3f0601e594ce952efb1cfd23147c9021c9f7d75",
+      "size": 8724925
+    },
+    {
+      "tool": "wasm-bindgen",
+      "tag": "0.2.129",
+      "name": "wasm-bindgen-0.2.129-x86_64-pc-windows-msvc.tar.gz",
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-x86_64-pc-windows-msvc.tar.gz",
+      "sha256": "79e348c169d0c10c0b287647f1e753d0985353ca96800bc29be8f4261baf13e6",
+      "size": 7845552
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 5,
+  "kind": "CURRENT_GRID_HOST_DISCOVERY_PREPARATION_FREEZE",
+  "scope": "PREPARATION_CODE_ONLY_NOT_SELECTED",
+  "excludes": [
+    "FREEZE.json"
+  ],
+  "files": [
+    {
+      "path": "CODE-CLOSURE.json",
+      "bytes": 10283,
+      "sha256": "c4afdf1fa4cac48c372cca8f8c1faeaf1cee5fda426a895f592222a5c0bfc9f0",
+      "mode": 420
+    },
+    {
+      "path": "ORACLE.json",
+      "bytes": 4660,
+      "sha256": "dae032a00f543a8542b8a747c003a3427ca74b9950dacfb9101a88910e40101b",
+      "mode": 420
+    },
+    {
+      "path": "PRESERVATION.json",
+      "bytes": 1117029,
+      "sha256": "88a03a476ac12d137f3a8f344493b30a010abb916f0fe04b50003401893669da",
+      "mode": 420
+    },
+    {
+      "path": "READINESS.json",
+      "bytes": 1649,
+      "sha256": "6eab092e127b11df43353bdc7fec8d5a7136f95c37bbb2bc361a371b7010f55a",
+      "mode": 420
+    },
+    {
+      "path": "README.md",
+      "bytes": 3478,
+      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "mode": 420
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1363,
+      "sha256": "ebba29de2c6ab58c140deb77458d3d8771cd36ee6038b99f43f1abbafc5f9bc6",
+      "mode": 420
+    },
+    {
+      "path": "SOURCES.json",
+      "bytes": 1168,
+      "sha256": "8c01e2e38e3d85a0c510cd5845c7397a09e1842e6fd355e38354f625d56ce912",
+      "mode": 420
+    },
+    {
+      "path": "SUCCESSOR.md",
+      "bytes": 3478,
+      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "mode": 420
+    },
+    {
+      "path": "delivery-contract.mjs",
+      "bytes": 3827,
+      "sha256": "b2df6666882fbc4782fd74ea8671f8f7352840ed4483fb175fa69c2cf2896388",
+      "mode": 420
+    },
+    {
+      "path": "evidence-reader.mjs",
+      "bytes": 2519,
+      "sha256": "a83df4f9c1a373273f72f30c60e366398ec1bab2b87d389e22a021986c1edada",
+      "mode": 420
+    },
+    {
+      "path": "launch-admission-template.json",
+      "bytes": 710,
+      "sha256": "2a9b69905ab6b57f9e39f5b4f585ef733f2d5cf7c76f7a98c88f8725fc4c7d54",
+      "mode": 420
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 8158,
+      "sha256": "0ecbeaa6bcb2473fbba944a97dd83cb263353be4f40b55bf119b0eb5e068c57e",
+      "mode": 420
+    },
+    {
+      "path": "output-contract.mjs",
+      "bytes": 14574,
+      "sha256": "412c67a8340934daa7cf51195d5f9559139c949eb177bff5e704457cf875d0fb",
+      "mode": 420
+    },
+    {
+      "path": "pe.mjs",
+      "bytes": 6735,
+      "sha256": "fd44f5f607d32f242b26b4759989538a7b7ea524eb4274eaefccce06b62c5893",
+      "mode": 420
+    },
+    {
+      "path": "platforms.mjs",
+      "bytes": 11479,
+      "sha256": "053345028e82d22666db99acb484b350f98f114468ed7dd6536f345a25b4d2c1",
+      "mode": 420
+    },
+    {
+      "path": "probe-support.mjs",
+      "bytes": 6898,
+      "sha256": "9c70452294c3c24c1503a41511e486f71de333f43531d6cff8b09225c984ba6d",
+      "mode": 420
+    },
+    {
+      "path": "probe.mjs",
+      "bytes": 7370,
+      "sha256": "64c327bf80b327c96ec2d1f5542a4fd29e44dd1734ad1aeb77da79c6df1ec8a1",
+      "mode": 420
+    },
+    {
+      "path": "publication-gitattributes.txt",
+      "bytes": 498,
+      "sha256": "3824443fc73110597f34c1405e5e117b98450e4cd7bcba2a3d4c0a60d0b69b60",
+      "mode": 420
+    },
+    {
+      "path": "query-plan.mjs",
+      "bytes": 4558,
+      "sha256": "05381a50e3cc13faaf0f95f591259525c75fa3987565f0aeab158bdeef559718",
+      "mode": 420
+    },
+    {
+      "path": "reverify-host.mjs",
+      "bytes": 1036,
+      "sha256": "8d6fd60af145b5723a55148de476d524bd9603240bb9ef476a0b161a847eee36",
+      "mode": 420
+    },
+    {
+      "path": "validate-evidence.mjs",
+      "bytes": 1160,
+      "sha256": "62b8488d95e1e583025e71d58e9c2fb3340aeb34a9a8188f2b8d76b1fb0434f5",
+      "mode": 420
+    },
+    {
+      "path": "verify.mjs",
+      "bytes": 12760,
+      "sha256": "ecf8b09b93b01d41200da72938d428be50aa30fec7df6a14092638099c92d143",
+      "mode": 420
+    },
+    {
+      "path": "windows-dependencies.mjs",
+      "bytes": 5646,
+      "sha256": "4b6fa2b8ca00fd383769bbd19ad18a2275ae97265da85c29880fb913cce32ea5",
+      "mode": 420
+    },
+    {
+      "path": "windows-host.ps1",
+      "bytes": 1073,
+      "sha256": "878876ffc15ab7f83dcda97df8decf76f0cd0a2c59639aa8d5c038a8cdb3ecb5",
+      "mode": 420
+    },
+    {
+      "path": "workflow-entry.mjs",
+      "bytes": 3628,
+      "sha256": "76a751c056050c2442e98398d19128639f98e161a34dbab15d44c115cbda2851",
+      "mode": 420
+    },
+    {
+      "path": "workflow/grid-host-discovery.yml",
+      "bytes": 2117,
+      "sha256": "48c6c29e9f049dc9ddede570f91445c62c0bba24543652367363025f47117a52",
+      "mode": 420
+    }
+  ]
+}

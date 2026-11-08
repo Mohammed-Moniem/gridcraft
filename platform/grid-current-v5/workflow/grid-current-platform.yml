@@ -1,0 +1,56 @@
+# STAGED: root reviews/publishes separately. This file is not an active workflow here.
+name: Selected current Grid native app CLI and browser distributions
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: Build packages or qualify selected local or released archives
+        required: true
+        type: choice
+        options: [build, local-runtime, public-download, public-runtime]
+      admission_index:
+        description: Reviewed immutable admission index relative to platform/grid-current-v5
+        required: true
+        default: admissions/INDEX.json
+        type: string
+permissions:
+  contents: read
+jobs:
+  platform:
+    if: github.repository == 'Mohammed-Moniem/gridcraft'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: macos-arm64
+            runner: macos-15
+          - target: macos-x64
+            runner: macos-15-intel
+          - target: windows-x64
+            runner: windows-2022
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Run independently admitted current Grid profile
+        env:
+          GRID_TARGET: ${{ matrix.target }}
+          GRID_PROFILE: ${{ inputs.profile }}
+          GRID_ADMISSION_INDEX: ${{ inputs.admission_index }}
+        run: node platform/grid-current-v5/workflow-entry.mjs
+      - name: Retain receipts failures packages and screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: current-grid-${{ matrix.target }}-${{ inputs.profile }}
+          path: |
+            platform/grid-current-v5/runs/**/evidence
+            platform/grid-current-v5/runs/**/ci
+            platform/grid-current-v5/runs/**/qualification
+            platform/grid-current-v5/runs/**/ARCHIVE.json
+            platform/grid-current-v5/runs/**/gridcraft-current-*.tar.gz
+          if-no-files-found: error
+          retention-days: 14
