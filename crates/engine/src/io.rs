@@ -917,10 +917,11 @@ pub(crate) fn system_dictionary() -> Option<String> {
             continue;
         }
         let mut data = Vec::new();
-        if file.take(MAX_DICTIONARY_BYTES + 1).read_to_end(&mut data).is_ok() && data.len() as u64 <= MAX_DICTIONARY_BYTES {
-            if let Ok(text) = String::from_utf8(data) {
-                return Some(text);
-            }
+        if file.take(MAX_DICTIONARY_BYTES + 1).read_to_end(&mut data).is_ok()
+            && data.len() as u64 <= MAX_DICTIONARY_BYTES
+            && let Ok(text) = String::from_utf8(data)
+        {
+            return Some(text);
         }
     }
     None
@@ -976,10 +977,9 @@ pub fn write_file(path: &str, bytes: &[u8]) -> Result<()> {
         use std::os::unix::fs::{OpenOptionsExt, PermissionsExt};
         opts.mode(p.mode());
     }
-    let mut f = opts.open(&tmp).map_err(|e| {
-        let _ = std::fs::remove_file(&tmp);
-        EngineError::Other(format!("{path}: {e}"))
-    })?;
+    // Failed exclusive creation owns no temporary entry. Leave an existing file or
+    // symlink alone; cleanup is permitted only after this save successfully creates it.
+    let mut f = opts.open(&tmp).map_err(|e| EngineError::Other(format!("{path}: {e}")))?;
     #[cfg(not(unix))]
     if let Some(p) = &prior {
         let _ = f.set_permissions(p.clone());

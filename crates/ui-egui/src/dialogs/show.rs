@@ -127,17 +127,7 @@ pub fn show(app: &mut SheetApp, ctx: &egui::Context) {
     let home = app.ui_window();
     // The macro step editor is a large resizable window of its own.
     if d.name == "macroEditor" {
-        let mut open = true;
-        crate::macro_editor::window(app, ctx, &mut d, &mut open);
-        if !open {
-            app.macros.editor = None;
-            app.grid.macro_overlay = None;
-        } else if app.ui_window() != home {
-            // Something run from the editor switched windows: the editor stays in its own.
-            app.return_dialog(home, d);
-        } else {
-            app.dialog = Some(d);
-        }
+        show_macro_editor(app, ctx, d, home);
         return;
     }
     if d.name == "pasteSpecial" {
@@ -499,6 +489,20 @@ pub fn show(app: &mut SheetApp, ctx: &egui::Context) {
         app.dialog = Some(d);
     } else if let Some(back) = d.back.take() {
         app.dialog = Some(*back);
+    }
+}
+
+fn show_macro_editor(app: &mut SheetApp, ctx: &egui::Context, mut d: Dialog, home: Option<u64>) {
+    let mut open = true;
+    crate::macro_editor::window(app, ctx, &mut d, &mut open);
+    if !open {
+        app.macros.editor = None;
+        app.grid.macro_overlay = None;
+    } else if app.ui_window() != home {
+        // Something run from the editor switched windows: the editor stays in its own.
+        app.return_dialog(home, d);
+    } else {
+        app.dialog = Some(d);
     }
 }
 
