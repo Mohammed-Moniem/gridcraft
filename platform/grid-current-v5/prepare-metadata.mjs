@@ -1,5 +1,7 @@
 // FILESYSTEM-ONLY v5 METADATA PRODUCER. Complete root inspection and one-shot admission required.
 // Reads code as data only. No local imports/evaluation, query, child, interpreter, network or Git.
+// ARCHIVED V5 ORIGINAL-WORKSPACE PRODUCER. Retained for provenance; never admitted
+// or invoked by repair6. Use the separately inspected repair6 outer seal offer.
 import assert from 'node:assert/strict';
 import {readFile,writeFile,lstat,readdir,open} from 'node:fs/promises';
 import {constants} from 'node:fs';

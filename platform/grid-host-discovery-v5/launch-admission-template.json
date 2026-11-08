@@ -3,7 +3,7 @@
   "selected": false,
   "purpose": "READ_ONLY_HOST_DISCOVERY",
   "packetSha256": null,
-  "kitSha256": "c1b7ffc41e97b3be6fba897a372829c85f7fa05631da112c3df2cd40186a3eb3",
+  "kitSha256": "d943cd714d711cc3fadcc2862ebee266186eab9143e2c6d1c795e3eb2a096a5b",
   "target": null,
   "repository": "Mohammed-Moniem/gridcraft",
   "workflowHead": null,

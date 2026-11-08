@@ -12,6 +12,8 @@ export function assertPythonExecutionClosure(python,inventory) {
  assert.deepEqual(q.namespaceCapture.description,{runtimeRoots:q.runtimeRootCandidates,searchPaths:q.importSearchCandidates,requiredFiles:[...new Set([python.path,...q.loadedFiles.map(row=>row.locator??row.path)])],optionalFiles:[...new Set([...q.cacheCandidates,...q.supportCandidates])]},'Complete namespace acquisition differs from actual isolated query');
  assert(Array.isArray(q.moduleLoaders)&&q.moduleLoaders.length>0&&q.moduleLoaders.length<=256);
  assert(Array.isArray(q.cacheFiles)&&Array.isArray(q.supportFiles)&&Array.isArray(q.absentFiles));
+ for(const key of ['cacheCandidates','supportCandidates']){assert(Array.isArray(q[key])&&q[key].length<=512);assert.equal(new Set(q[key]).size,q[key].length);}
+ assert.deepEqual([...q.absentFiles].sort(),q.namespaceCapture.lookups.filter(row=>row.role==='optionalFiles'&&row.kind==='absent').map(row=>row.locator).sort(),'Cache/config absences differ from resolved namespace evidence');
  assert(Array.isArray(q.searchDirectories)&&q.searchDirectories.length>0&&q.searchDirectories.length<=64);
  const present=[...q.loadedFiles,...q.cacheFiles,...q.supportFiles],absent=new Set(q.absentFiles);assert.equal(absent.size,q.absentFiles.length);
  for(const path of [...q.cacheCandidates,...q.supportCandidates])assert(lookup(present,path)||absent.has(path),'Python cache/support candidate omitted');
@@ -19,8 +21,9 @@ export function assertPythonExecutionClosure(python,inventory) {
  for(const row of present){const found=lookup(inventory,row.path);assert(found,'Python executable input absent from inventory');assert.deepEqual(id(found),id(row));}
  let caches=0;for(const module of q.moduleLoaders){assert.equal(typeof module.name,'string');assert(['BuiltinImporter','FrozenImporter','SourceFileLoader','SourcelessFileLoader','ExtensionFileLoader','zipimporter'].includes(module.loader),'Unsupported Python loader');
   for(const path of [module.file,module.loaderFile,module.archive].filter(Boolean))assert(lookup(present,path),'Python loader/support input omitted');
-  if(module.loader==='SourceFileLoader')assert(module.cached,'Source-backed loader cache candidate omitted');
-  for(const path of [module.cached,module.specCached].filter(Boolean)){caches++;assert(lookup(present,path)||absent.has(path),'Python bytecode cache neither captured nor proven absent');}
+  for(const field of ['cached','specCached'])assert(module[field]==null||typeof module[field]==='string'&&module[field].length>0,'Invalid Python loader cache path');
+  if(module.loader==='SourceFileLoader')assert(module.cached||module.specCached,'Source-backed loader module/spec cache candidates both omitted');
+  for(const path of [module.cached,module.specCached].filter(Boolean)){caches++;assert(q.cacheCandidates.includes(path),'Loader module/spec cache candidate omitted from query candidates');assert(lookup(present,path)||absent.has(path),'Python bytecode cache neither captured nor proven absent');}
  }
  assert(caches>0,'No bytecode cache candidates recorded');
  for(const path of absent){assert.equal(typeof path,'string');assert(path&&!lookup(present,path),'Contradictory Python absence');}

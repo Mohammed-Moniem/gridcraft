@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 6,
   "status": "PREPARED_NOT_EXECUTED",
   "sourcePublication": "VERIFIED_BY_PINNED_ACTUAL_PERSONAL_REPOSITORY_RECEIPTS",
   "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
@@ -109,10 +109,16 @@
     "state": "PENDING_ROOT_EXECUTION_ADMISSION",
     "scope": "Actual policy tests then exact pure replay and a fresh entire-packet critic; no platform acceptance"
   },
-  "independentPreparationReview": "PENDING_FRESH_ENTIRE_V5_REVIEW",
+  "independentPreparationReview": "PENDING_FRESH_ENTIRE_V6_REVIEW",
   "rootPreparationSelected": false,
-  "actualConsumingHostEvidence": "NONE",
+  "actualConsumingHostEvidence": "NONE_SELECTED",
   "actualParserTests": "INHERITED_BYTE_IDENTICAL_BOUNDED_LOCAL_34_CASE_PASS",
-  "pythonExecutableClosure": "PREPARED_COMPLETE_RECURSIVE_RUNTIME_SEARCH_POLICY_NOT_HOST_EXECUTED",
-  "actualPolicyTests": "PENDING_SEPARATE_ROOT_ADMISSION"
+  "pythonExecutableClosure": "COMPLETE_RECURSIVE_BODIES_AND_BOUNDED_ALIAS_ABSENCE_V3_PREPARED_NOT_HOST_EXECUTED",
+  "actualPolicyTests": "PENDING_SEPARATE_ROOT_ADMISSION_55_CASES",
+  "actualFailedRun": {
+    "id": "42477423213",
+    "state": "ALL_THREE_PROBE_STEPS_FAILED",
+    "inspectionResultSha256": "870809e6235c1cc9794625652344eaef3b6be66d196c1384f0fd3ed589f0b2c9"
+  },
+  "newCandidateDiscovery": "NOT_EXECUTED"
 }

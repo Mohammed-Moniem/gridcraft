@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 6,
+  "scope": "PREPARATION_CODE_ONLY_NOT_SELECTED",
+  "sourcePackets": {"platformFreezeSha256": "c1b7ffc41e97b3be6fba897a372829c85f7fa05631da112c3df2cd40186a3eb3", "discoveryFreezeSha256": "64c3712def500d62860c08f6372cbe6b65c8b12935bbc9ea161c334c256265a5", "members": 113},
+  "actualFailedRun": {"id": "42477423213", "head": "fc21ba16c53163a39b45913aeaeece7e06113c19", "state": "ALL_THREE_PROBE_STEPS_FAILED_NO_HOST_SELECTED", "inspectionResultSha256": "870809e6235c1cc9794625652344eaef3b6be66d196c1384f0fd3ed589f0b2c9"},
+  "fixes": [
+    {"finding": "MACOS_TK_DANGLING_ALIAS_ABORT", "mechanism": "Replayable bounded no-follow ancestor and exact raw-link resolution; terminal missing component and unconsumed raw components are explicit evidence; all resolved regular bodies remain captured; full metadata is stable before/after acquisition"},
+    {"finding": "PYTHON315_SOURCE_LOADER_SPEC_CACHE", "mechanism": "Accept module cached or specCached for a source loader; retain and require actual captured/absent query evidence for both when present; both absent remains unsupported"}
+  ],
+  "sharedActualFunctions": ["python-acquisition.mjs:acquirePythonInputs", "python-acquisition.mjs:revalidatePythonInputs", "host-contract.mjs:assertPythonExecutionClosure", "python-namespace-contract.mjs:assertPythonNamespaceCapture"],
+  "coupledConsumers": ["../grid-host-discovery-v5/platforms.mjs:pythonCapture", "host-reader.mjs:observeCapturedHost", "effect-preflight.mjs:effectPreflight", "workflow-entry.mjs", "ci.mjs", "pipeline.mjs", "selection-preflight.mjs"],
+  "fixtureCases": 55,
+  "originalActualFunctionCasesPreserved": 19,
+  "fixtureExecution": "REQUIRES_SEPARATE_COMPLETE_ROOT_ADMISSION",
+  "archivePySha256Unchanged": "dec87673167221bfec2da2c23a5ab07be6b3865b1e8e8796a5771b429f76c8cc",
+  "archiveBudgetSha256Unchanged": "424b05fd365607d199adf9cf126a8f58e3971857fbf37732a59e2b3c9c9809ac",
+  "inheritedActualParserCases": 34,
+  "parserRerun": false,
+  "allPriorCorrectionsPreserved": true,
+  "newHostDiscoveryExecuted": false,
+  "hostSelected": false,
+  "buildOrRuntimeAuthority": false,
+  "fullGoalComplete": false
+}

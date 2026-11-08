@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 5,
-  "scope": "Complete current authored executable/import closure, no prior module execution",
+  "schemaVersion": 6,
+  "scope": "Complete paired authored executable/import inventory; external hash chain excludes future discovery model from platform freeze",
   "files": [
     {
       "path": "archive-policy.mjs",
@@ -10,10 +10,10 @@
       "imports": [
         "node:assert/strict"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "archive.py",
@@ -21,6 +21,7 @@
       "sha256": "dec87673167221bfec2da2c23a5ab07be6b3865b1e8e8796a5771b429f76c8cc",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [
         "import gzip",
         "import hashlib",
@@ -38,9 +39,8 @@
         "import struct",
         "import zlib"
       ],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "browser-smoke.mjs",
@@ -57,10 +57,10 @@
         "./launch.mjs",
         "./qualification.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "ci.mjs",
@@ -78,15 +78,15 @@
         "./effect-preflight.mjs",
         "./host-reader.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "control-fixtures.mjs",
-      "bytes": 11100,
-      "sha256": "b787be2d32e633bfdeb8f5dfb34e56e30f0791408cf9f54082b991900c18f0e7",
+      "bytes": 11873,
+      "sha256": "17de2602903b673656ddca955e27128599c27132b5b67a8f46402698da695c13",
       "mode": 420,
       "imports": [
         "node:path",
@@ -96,10 +96,10 @@
         "./host-contract.mjs",
         "./python-namespace-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "core.mjs",
@@ -112,27 +112,28 @@
         "./python-plan.mjs",
         "./python-namespace-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "correction-controls.mjs",
-      "bytes": 9321,
-      "sha256": "03da7872e3099a6d40d6e413bfd26c44fade9587e6c32d080fc5f79ac005bbca",
+      "bytes": 9365,
+      "sha256": "be0d70895c94590b6cdef8316528ddcf2a1e002fa301e2d6d19e1079670cd4eb",
       "mode": 420,
       "imports": [
         "node:assert/strict",
         "./core.mjs",
         "./python-plan.mjs",
         "../grid-host-discovery-v5/output-contract.mjs",
-        "./control-fixtures.mjs"
+        "./control-fixtures.mjs",
+        "./python-namespace-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "delivery-controls.mjs",
@@ -145,10 +146,10 @@
         "./archive-policy.mjs",
         "../grid-host-discovery-v5/delivery-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "deny-external.sb",
@@ -156,10 +157,10 @@
       "sha256": "d297a0b69b2c00a275b19c9f8c043fe446b230d4335fcc721afa840f0dd6e2ac",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "download-runtime.mjs",
@@ -172,10 +173,10 @@
         "./io.mjs",
         "./qualification.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "effect-preflight.mjs",
@@ -194,10 +195,10 @@
         "../grid-host-discovery-v5/output-contract.mjs",
         "../grid-host-discovery-v5/model.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "gui-smoke.mjs",
@@ -215,25 +216,25 @@
         "./io.mjs",
         "./qualification.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "host-contract.mjs",
-      "bytes": 7339,
-      "sha256": "944f2966d3d84449f6a8cefcf09de11a10ec1b1238ba6c548c951afa530c6fa2",
+      "bytes": 8037,
+      "sha256": "52424a8e63679e5b9ec83f3724037dc9f3a2e482a947574e97dcd967ecfaac84",
       "mode": 420,
       "imports": [
         "node:assert/strict",
         "./core.mjs",
         "./python-namespace-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "host-controls.mjs",
@@ -246,15 +247,15 @@
         "./host-contract.mjs",
         "./control-fixtures.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "host-reader.mjs",
-      "bytes": 3738,
-      "sha256": "407e0c0b8f5c07f8e4408d460550a27246818420e0e1d628b61ff6e21d445b35",
+      "bytes": 3787,
+      "sha256": "91a7a1da1051a4ff889339a27ae5967b8d40a42c1410b54f0cca9d50ff357838",
       "mode": 420,
       "imports": [
         "node:assert/strict",
@@ -265,10 +266,10 @@
         "node:os",
         "./python-acquisition.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "host.html",
@@ -276,10 +277,10 @@
       "sha256": "036a45179fed2835ec09ea2e6feda26d61d17e4d22ddbb7c6a11ebc8309f1fec",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "host.mjs",
@@ -287,10 +288,10 @@
       "sha256": "fb7775d50046698908916f2cec2426f03348b61f6ff92330a473259d1e4ac3de",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "inventory/Grid-FONT-POLICY.rs",
@@ -298,10 +299,10 @@
       "sha256": "5ea2e06856ccfd65ccf54322a59bc2403e0cdd9a4993612232d89f997d5fec9f",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "io.mjs",
@@ -318,12 +319,12 @@
         "node:net",
         "./core.mjs"
       ],
-      "pythonImports": [],
-      "dynamicBuiltinImports": [
+      "dynamicImports": [
         "node:fs/promises"
       ],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "pythonImports": [],
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "launch.mjs",
@@ -336,10 +337,10 @@
         "node:path",
         "node:url"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "native-smoke.mjs",
@@ -356,10 +357,10 @@
         "./pe.mjs",
         "./qualification.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "pe.mjs",
@@ -370,10 +371,10 @@
         "node:crypto",
         "node:assert/strict"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "pipeline.mjs",
@@ -392,15 +393,15 @@
         "./effect-preflight.mjs",
         "./host-reader.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "prepare-metadata.mjs",
-      "bytes": 17952,
-      "sha256": "18b0f9abc6d4f78ddbff3f615ddd66d53b82ee65dc2f460339854c03a4444a9c",
+      "bytes": 18117,
+      "sha256": "912a3bb90b0a2f6bfbf91c7dbd68ea4a3d4628195921a1544410941a727d3f82",
       "mode": 420,
       "imports": [
         "node:assert/strict",
@@ -410,10 +411,10 @@
         "node:url",
         "node:crypto"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": true
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": true
     },
     {
       "path": "public-smoke.mjs",
@@ -426,15 +427,15 @@
         "./gui-smoke.mjs",
         "./browser-smoke.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "python-acquisition.mjs",
-      "bytes": 5890,
-      "sha256": "c9b4811f753b20122296fc9c483494b1ad51a8d63ced9b85de7a85460280fff9",
+      "bytes": 9979,
+      "sha256": "50435a263aa2116dd2981f5e523bf6bc0a2ad58ded8549f85115f29511dee2d0",
       "mode": 420,
       "imports": [
         "node:assert/strict",
@@ -444,24 +445,24 @@
         "node:crypto",
         "./python-namespace-contract.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "python-namespace-contract.mjs",
-      "bytes": 6131,
-      "sha256": "4523b9823f80c1a880a0cdde875dde1f585b814f6c109e3c28bc8d19c94a439e",
+      "bytes": 11343,
+      "sha256": "f869b8ee73df631e2966f3155f533b3cf360cfc581a3a91b9e5009d65850513c",
       "mode": 420,
       "imports": [
         "node:assert/strict",
         "node:path"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "python-plan.mjs",
@@ -471,10 +472,10 @@
       "imports": [
         "node:assert/strict"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "qualification.mjs",
@@ -494,10 +495,10 @@
         "./effect-preflight.mjs",
         "./host-reader.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "restrict-windows.ps1",
@@ -505,10 +506,10 @@
       "sha256": "7126d2ccce1583fed4fb9a37f27fce51bb416fdafab6ed50b9a261da4a6d138d",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "selection-preflight.mjs",
@@ -524,15 +525,15 @@
         "./core.mjs",
         "./effect-preflight.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "verify.mjs",
-      "bytes": 17582,
-      "sha256": "6c611fd21bdf779343d62ae418b13464a59f6169f5f222f7461ca7d2f674d5f3",
+      "bytes": 17722,
+      "sha256": "1eb52912f4a1c7fce720535588efe4f2f229076f3c0bb9093eacfe34a1756eda",
       "mode": 420,
       "imports": [
         "node:assert/strict",
@@ -547,10 +548,10 @@
         "./host-controls.mjs",
         "./delivery-controls.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "workflow-entry.mjs",
@@ -566,10 +567,10 @@
         "./effect-preflight.mjs",
         "./host-reader.mjs"
       ],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     },
     {
       "path": "workflow/grid-current-platform.yml",
@@ -577,27 +578,27 @@
       "sha256": "37a80ca6e182194fbb7d94f45fbaf43555e8dc3e8cd9734a21ad864e75a54f17",
       "mode": 420,
       "imports": [],
+      "dynamicImports": [],
       "pythonImports": [],
-      "dynamicBuiltinImports": [],
-      "executedDuringPreparation": false,
-      "filesystemOnlyProducer": false
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false
     }
   ],
   "externalPureModules": [
     {
-      "path": "artcraft-upstream-review/platform/grid-host-discovery-v5/output-contract.mjs",
+      "path": "artcraft-upstream-review/platform/grid-pipeline-repair-6/grid-host-discovery-v5/output-contract.mjs",
       "bytes": 14574,
       "sha256": "412c67a8340934daa7cf51195d5f9559139c949eb177bff5e704457cf875d0fb",
       "mode": 420
     },
     {
-      "path": "artcraft-upstream-review/platform/grid-host-discovery-v5/query-plan.mjs",
-      "bytes": 4558,
-      "sha256": "05381a50e3cc13faaf0f95f591259525c75fa3987565f0aeab158bdeef559718",
+      "path": "artcraft-upstream-review/platform/grid-pipeline-repair-6/grid-host-discovery-v5/query-plan.mjs",
+      "bytes": 4635,
+      "sha256": "633d32234f8c6907cf9708c95532309ffa09488a96045fe7ee2bef819b708129",
       "mode": 420
     },
     {
-      "path": "artcraft-upstream-review/platform/grid-host-discovery-v5/delivery-contract.mjs",
+      "path": "artcraft-upstream-review/platform/grid-pipeline-repair-6/grid-host-discovery-v5/delivery-contract.mjs",
       "bytes": 3827,
       "sha256": "b2df6666882fbc4782fd74ea8671f8f7352840ed4483fb175fa69c2cf2896388",
       "mode": 420
@@ -630,20 +631,12 @@
     "archive.py": [
       "archive-budget.json"
     ],
-    "effect-preflight.mjs": [
-      "../grid-host-discovery-v5/FREEZE.json",
-      "../grid-host-discovery-v5/evidence-reader.mjs",
-      "../grid-host-discovery-v5/output-contract.mjs",
-      "../grid-host-discovery-v5/model.mjs"
-    ],
-    "host-reader.mjs": [
-      "python-acquisition.mjs:revalidatePythonInputs"
-    ],
     "host.html": [
       "host.mjs",
       "web/index.html"
     ]
   },
-  "producerRequiresSeparateRootInspection": true,
-  "actualSharedPolicyTestsSeparate": true
+  "preparationOracleOriginalWorkspaceOnly": true,
+  "actualPolicyExecutionSeparate": true,
+  "oldSourceLegalFontsAssetsAndToolsUnchanged": true
 }

@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 6,
   "status": "PREPARED_NOT_EXECUTED",
   "actualDiscovery": "NOT_EXECUTED",
   "cloudReady": false,
-  "kitFreezeSha256": "c1b7ffc41e97b3be6fba897a372829c85f7fa05631da112c3df2cd40186a3eb3",
+  "kitFreezeSha256": "d943cd714d711cc3fadcc2862ebee266186eab9143e2c6d1c795e3eb2a096a5b",
   "targets": {
     "macos-arm64": "NOT_RUN",
     "macos-x64": "NOT_RUN",
@@ -23,11 +23,17 @@
     "Separate build/runtime/source/artifact/restriction/public qualification admissions"
   ],
   "fullGoalComplete": false,
-  "independentPreparationReview": "PENDING_FRESH_ENTIRE_V5_REVIEW",
+  "independentPreparationReview": "PENDING_FRESH_ENTIRE_V6_REVIEW",
   "rootPreparationSelected": false,
-  "pythonExecutableClosure": "PREPARED_COMPLETE_RECURSIVE_RUNTIME_SEARCH_POLICY_NOT_HOST_EXECUTED",
+  "pythonExecutableClosure": "COMPLETE_RECURSIVE_BODIES_AND_BOUNDED_ALIAS_ABSENCE_V3_PREPARED_NOT_HOST_EXECUTED",
   "receiptDelivery": "EXTERNAL_PINNED_PAYLOAD_PREPARED_NOT_EXECUTED",
-  "actualPolicyTests": "PENDING_SEPARATE_ROOT_ADMISSION",
+  "actualPolicyTests": "PENDING_SEPARATE_ROOT_ADMISSION_55_CASES",
   "actualParserTests": "INHERITED_BYTE_IDENTICAL_BOUNDED_LOCAL_34_CASE_PASS",
-  "actualConsumingHostEvidence": "NONE"
+  "actualConsumingHostEvidence": "NONE_SELECTED",
+  "actualFailedRun": {
+    "id": "42477423213",
+    "state": "ALL_THREE_PROBE_STEPS_FAILED",
+    "inspectionResultSha256": "870809e6235c1cc9794625652344eaef3b6be66d196c1384f0fd3ed589f0b2c9"
+  },
+  "newCandidateDiscovery": "NOT_EXECUTED"
 }

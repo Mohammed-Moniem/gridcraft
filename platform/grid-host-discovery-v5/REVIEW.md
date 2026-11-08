@@ -1,8 +1,11 @@
-# Four-pass repair record
+# Repair6 four-pass preparation record
 
-1. Complete implementation: replace the loaded-module projection as closure boundary with shared bounded recursive runtime/search acquisition, actual current-host revalidation and exact inventory/receipt binding.
-2. Domain reread: inspect discovery query and capture, every mandatory effect preflight and revalidation edge, Python flags/loaders/caches/configuration/search roots, Windows PE/SDK limits and acyclic external receipt delivery. Preserve the parser code and budget exactly.
-3. Defect hunt: exercise actual shared functions with owned filesystem fixtures under a separately admitted controller; same-name lazy CP437 source and cache body controls, recursive membership, loader/support/config, alias and absence controls. Keep synthetic pure controls distinct from actual fixture results and preserve failures.
-4. Inexpensive consistency review: exact successor import closure, independent metadata/test/pure admissions, all predecessor and test-result identities, self-excluding freezes and truthful readiness. The final review does not mint critic/root selection or full-goal acceptance.
+Pass1: repaired the actual shared filesystem acquisition and pure namespace/loader contracts together with discovery optional-file projection, consuming-host absence observation and synthetic fixtures. All recursive body hashing and fixed isolated query/environment rules remain. Version6 preparation retains the original consumer basenames and the exact original packet seed.
 
-The authored four-pass mechanisms are complete. Actual fixture and CHECK outcomes remain pending until their separately admitted native executions and exact root verification; a failed or unexecuted step cannot be described as a pass.
+Pass2: reread the complete coupled query, discovery, evidence/output validation, mandatory preflight, CI/workflow, archive, native/browser/public consumer and preservation graph. The future effectful entrypoints remain outside preparation execution; they still revalidate the selected actual host before effects. Original-workspace preparation paths are explicit. No archive parser or budget byte was changed.
+
+Pass3: authored55 finite controls using the actual shared functions, including all original19. Added explicit relative/absolute Tk ancestor resolution, dangling target creation/retargeting/escape/cycles, unchanged-body ancestor replacement, drift during acquisition, missing component before `..`, cache-field unions and omitted/changed spec-cache evidence. This is authored coverage until the separately admitted controller returns actual execution evidence. Reading fixed failed diagnostics is identified as data inspection.
+
+Pass4: checked consistency of policy identity, consumer folder contracts, member/mode/code closure, acyclic platform/discovery freeze ordering, external execution envelope and conservative readiness wording. Existing34-case parser evidence remains scoped to unchanged parser/budget identities. Fresh independent entire-packet judgment and exact parent replay remain separate gates. Final claim counts are measured from sealed files and actual controller output.
+
+These passes describe the reviewed preparation changes. They do not claim a hosted re-probe, selected host, successful platform build/runtime or fullgoal completion.

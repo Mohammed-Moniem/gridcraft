@@ -1,4 +1,4 @@
-// Read-only preparation oracle. Never import the effectful pipeline or smoke modules.
+// ORIGINAL-WORKSPACE-ONLY read-only preparation oracle. Never a consuming-host entrypoint.
 import assert from 'node:assert/strict';
 import {readFile,readdir,lstat} from 'node:fs/promises';
 import {createReadStream} from 'node:fs';
@@ -11,7 +11,8 @@ import {runCorrectionControls} from './correction-controls.mjs';
 import {runHostControls} from './host-controls.mjs';
 import {runDeliveryControls} from './delivery-controls.mjs';
 
-const here=fileURLToPath(new URL('.',import.meta.url)),root=fileURLToPath(new URL('../../../',import.meta.url));
+const here=fileURLToPath(new URL('.',import.meta.url)),root='/Users/mohammedosman/Desktop/ideas';
+assert.equal(here,root+'/artcraft-upstream-review/platform/grid-pipeline-repair-6/grid-current-v5/','Preparation oracle is original-workspace-only');
 const json=async path=>JSON.parse(await readFile(path,'utf8'));
 const pins=await json(join(here,'inputs.json')),source=await json(join(here,'inventory/source.json')),vendor=await json(join(here,'inventory/vendor.json'));
 const readiness=await json(join(here,'READINESS.json')),oracle=await json(join(here,'ORACLE.json'));
@@ -59,7 +60,7 @@ const cloned=value=>structuredClone(value);
  rejects(()=>assertRuntimeManifest({...runtime,sourceTree:'0'.repeat(40)},pins,'windows-x64'));
  rejects(()=>assertRuntimeManifest({...runtime,guiQualified:true},pins,'windows-x64'),/cannot qualify/);
  const admission={...template,selected:true,target:'macos-arm64',kitSha256:sha(freezeRaw),sourceTree:pins.source.tree,sourceArchiveSha256:pins.source.sha256,sourceCommit:pins.source.commit,stages:pins.stages,independentSelection:{path:'selection.json',sha256:'a'.repeat(64),bytes:1},publicSourceProof:{path:'public.json',sha256:'b'.repeat(64),bytes:1},environment:{LANG:'en_US.UTF-8'},systemPath:'/usr/bin',tools:{node:{path:'/node',bytes:1,sha256:'c'.repeat(64)},python:{path:'/python',bytes:1,sha256:'d'.repeat(64)}}};
- admission.discoveryEvidence={path:'/synthetic/DISCOVERY.json',bytes:1,sha256:'a'.repeat(64)};admission.discoveryBundle={directory:'/synthetic/output',manifest:{bytes:1,sha256:'b'.repeat(64)}};admission.hostSelection={path:'synthetic-host.json',bytes:1,sha256:'c'.repeat(64)};admission.discoveryBinding={scope:'ACTUAL_GRID_CONSUMING_HOST',pythonPolicy:'COMPLETE_ISOLATED_RUNTIME_AND_SEARCH_NAMESPACES_V2',packetFreezeSha256:'d'.repeat(64),manifestSha256:'b'.repeat(64),discoverySha256:'a'.repeat(64)};admission.sdkProof={platform:'macos-arm64',files:Array.from({length:6},(_,index)=>item('synthetic-sdk-'+index))};assertAdmission(admission,pins,'macos-arm64','restore',sha(freezeRaw));
+ admission.discoveryEvidence={path:'/synthetic/DISCOVERY.json',bytes:1,sha256:'a'.repeat(64)};admission.discoveryBundle={directory:'/synthetic/output',manifest:{bytes:1,sha256:'b'.repeat(64)}};admission.hostSelection={path:'synthetic-host.json',bytes:1,sha256:'c'.repeat(64)};admission.discoveryBinding={scope:'ACTUAL_GRID_CONSUMING_HOST',pythonPolicy:'COMPLETE_ISOLATED_RUNTIME_AND_SEARCH_NAMESPACES_V3',packetFreezeSha256:'d'.repeat(64),manifestSha256:'b'.repeat(64),discoverySha256:'a'.repeat(64)};admission.sdkProof={platform:'macos-arm64',files:Array.from({length:6},(_,index)=>item('synthetic-sdk-'+index))};assertAdmission(admission,pins,'macos-arm64','restore',sha(freezeRaw));
  rejects(()=>assertAdmission({...admission,selected:false},pins,'macos-arm64','restore',sha(freezeRaw)),/Independent selection/);
  rejects(()=>assertAdmission({...admission,kitSha256:'0'.repeat(64)},pins,'macos-arm64','restore',sha(freezeRaw)),/Reviewed kit changed/);
  rejects(()=>assertAdmission({...admission,publicSourceProof:null},pins,'macos-arm64','restore',sha(freezeRaw)),/Missing publicSourceProof/);

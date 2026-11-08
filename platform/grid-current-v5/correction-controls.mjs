@@ -4,6 +4,7 @@ import {sha,assertPreparationSelection,assertArtifactSelection,assertRuntimeMani
 import {archiveArgs,assertArchivePlan,assertArchiveInvocation,assertPythonEnvironment} from './python-plan.mjs';
 import {validateOutputBundle} from '../grid-host-discovery-v5/output-contract.mjs';
 import {discoveryFixture} from './control-fixtures.mjs';
+import {PYTHON_NAMESPACE_POLICY} from './python-namespace-contract.mjs';
 export function runCorrectionControls(pins,kitDigest,packetDigest,integrationBytes) {
  let rejected=0,positive=0;const no=fn=>{assert.throws(fn);rejected++;},yes=fn=>{fn();positive++;};
  const script='/reviewed/archive.py',python='/reviewed/python',args=archiveArgs(script,'extract','/archive','/destination','a'.repeat(64),'1');
@@ -12,7 +13,7 @@ export function runCorrectionControls(pins,kitDigest,packetDigest,integrationByt
  for(const key of ['PYTHONPATH','PYTHONHOME','PYTHONSTARTUP','PYTHONUSERBASE','PYTHONINSPECT','__PYVENV_LAUNCHER__','VIRTUAL_ENV','pythonpath'])no(()=>assertPythonEnvironment({[key]:'/unreviewed/sitecustomize.py'}));
  no(()=>assertArchiveInvocation('/unreviewed/python',args,{},python,script));
  const ref=name=>({path:name,bytes:Buffer.byteLength(name),sha256:sha(Buffer.from(name))}),stages=['restore','compile-native','compile-wasm','package'];
- const discoveryBinding={scope:'ACTUAL_GRID_CONSUMING_HOST',pythonPolicy:'COMPLETE_ISOLATED_RUNTIME_AND_SEARCH_NAMESPACES_V2',packetFreezeSha256:packetDigest,manifestSha256:sha(Buffer.from('synthetic manifest')),discoverySha256:sha(Buffer.from('synthetic discovery'))};const binding={scope:'PREPARATION_CODE_ONLY',kitSha256:kitDigest,target:'macos-arm64',stages,repository:pins.repository,sourceTree:pins.source.tree,sourceCommit:pins.source.commit,sourceArchiveSha256:pins.source.sha256,discoveryBinding};
+ const discoveryBinding={scope:'ACTUAL_GRID_CONSUMING_HOST',pythonPolicy:PYTHON_NAMESPACE_POLICY,packetFreezeSha256:packetDigest,manifestSha256:sha(Buffer.from('synthetic manifest')),discoverySha256:sha(Buffer.from('synthetic discovery'))};const binding={scope:'PREPARATION_CODE_ONLY',kitSha256:kitDigest,target:'macos-arm64',stages,repository:pins.repository,sourceTree:pins.source.tree,sourceCommit:pins.source.commit,sourceArchiveSha256:pins.source.sha256,discoveryBinding};
  const selected={...binding,schemaVersion:1,kind:'CURRENT_GRID_PLATFORM_PREPARATION_SELECTION',selected:true,independent:true,critic:ref('synthetic-critic.json'),rootReplay:ref('synthetic-replay.json'),blockingHandoffs:[]},critic={...binding,kind:'INDEPENDENT_GRID_PLATFORM_PREPARATION_REVIEW',independent:true,evidenceAdequate:'YES',objectiveGates:'PASS',thresholdResult:'PASS',materialFindings:[],blockingHandoffs:[],reviewer:{identity:'synthetic-independent-reviewer',implementationAuthor:false}},replay={...binding,kind:'EXACT_GRID_PREPARATION_REPLAY',passed:true,exactKitVerified:true,criticReceiptSha256:selected.critic.sha256,reviewerIdentity:critic.reviewer.identity};
  const check=(a=selected,b=critic,c=replay)=>assertPreparationSelection(a,b,c,pins,'macos-arm64',stages,kitDigest,discoveryBinding);yes(()=>check());
  for(const field of [{kitSha256:'0'.repeat(64)},{target:'windows-x64'},{scope:'CURRENT_GRID_RUNTIME_ARCHIVE'},{stages:['package']},{independent:false},{selected:false},{blockingHandoffs:['MISSING']}])no(()=>check({...selected,...field}));
