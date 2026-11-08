@@ -1,0 +1,10 @@
+{
+  "tool": "wasm-opt",
+  "version": "version_131",
+  "platform": "macos-x64",
+  "name": "binaryen-version_131-x86_64-macos.tar.gz",
+  "url": "https://github.com/WebAssembly/binaryen/releases/download/version_131/binaryen-version_131-x86_64-macos.tar.gz",
+  "size": 8837575,
+  "sha256": "d209fadd8a894bdaf3bd3612a23c32a0af184d2f4a979b8c789e6e4f6a4de883",
+  "source": "Trunk v0.22.1 src/tools.rs Application::WasmOpt default_version"
+}

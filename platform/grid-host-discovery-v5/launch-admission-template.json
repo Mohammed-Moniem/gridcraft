@@ -1,0 +1,29 @@
+{
+  "kind": "GRID_READ_ONLY_HOST_DISCOVERY_LAUNCH",
+  "selected": false,
+  "purpose": "READ_ONLY_HOST_DISCOVERY",
+  "packetSha256": null,
+  "kitSha256": "c1b7ffc41e97b3be6fba897a372829c85f7fa05631da112c3df2cd40186a3eb3",
+  "target": null,
+  "repository": "Mohammed-Moniem/gridcraft",
+  "workflowHead": null,
+  "allowedQueries": [
+    "python-isolated-stdlib",
+    "mac-developer-path",
+    "mac-os-version",
+    "windows-host-registry",
+    "vswhere-supported-installations"
+  ],
+  "nativeInput": null,
+  "forbiddenEffects": [
+    "downloads",
+    "installs",
+    "builds",
+    "browser-launch",
+    "native-app-launch",
+    "firewall-changes",
+    "SDK-changes",
+    "publication",
+    "root-admission"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "repository": "Mohammed-Moniem/gridcraft",
+  "commit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "tree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "baseCommit": "b6be12a33bdcaedc328c8518d62a939f332ebebc",
+  "branchHead": "dcbc25f16574d5cad80a2993f7343935fcadece7",
+  "branch": "progress/grid-current-quality-1",
+  "pullRequest": "https://github.com/Mohammed-Moniem/gridcraft/pull/1",
+  "pullNumber": 1,
+  "mainChangedThroughPullRequest": true,
+  "directMainPush": false,
+  "forceUpdate": false,
+  "filesVerified": 790,
+  "changedFiles": 7,
+  "upstreamUntouched": true,
+  "sourceArchiveSha256": "01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27",
+  "artifactReviewReceiptSha256": "f7bd9b97474611566b99c5eefa9d5b90369f9ba3374f83222640740efb1d7c44",
+  "publishedSource": true,
+  "fullGoalComplete": false
+}

@@ -1,0 +1,13 @@
+{
+  "compressed": 2147483648,
+  "decoded": 6710886400,
+  "members": 100000,
+  "records": 400000,
+  "metadata": 134217728,
+  "member_metadata": 262144,
+  "name": 8192,
+  "member": 1073741824,
+  "expanded": 6442450944,
+  "pax_keys": 32,
+  "extension_chain": 64
+}

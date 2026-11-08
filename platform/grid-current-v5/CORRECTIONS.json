@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "scope": "PREPARATION_CODE_ONLY",
+  "independentReview": "PENDING_FRESH_ENTIRE_SUCCESSOR_REVIEW",
+  "rootSelection": false,
+  "sourceCommit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "sourceArchiveSha256": "01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27",
+  "rejectedReview": {
+    "manifestSha256": "82e651836c86656deeb4cbad40a0a51b89c7307293340a706082cb80fce0f6d5",
+    "verdictSha256": "4661bc19ed5a953ca7ca263e36987e1a910266a830bb88fc66892457dafc9284"
+  },
+  "findings": [
+    {
+      "id": "GCP-001",
+      "sharedValidator": "python-plan.mjs:assertArchivePlan/assertArchiveInvocation/assertPythonEnvironment",
+      "consumers": [
+        "pipeline.mjs",
+        "qualification.mjs"
+      ],
+      "controls": "Actual isolated argument vectors for extract/install-tools/pack, old startup, missing/no-site flags, wrong script/interpreter, injected startup/environment overrides; no Python executed"
+    },
+    {
+      "id": "GCP-002",
+      "sharedValidator": "core.mjs:assertPreparationSelection",
+      "consumers": [
+        "io.mjs:preparationProof",
+        "pipeline.mjs",
+        "ci.mjs",
+        "workflow-entry.mjs",
+        "qualification.mjs",
+        "selection-preflight.mjs",
+        "restrict-windows.ps1"
+      ],
+      "controls": "Positive exact binding and wrong kit/target/stages/scope/independence/decision/blocker/reviewer/replay; no real selection emitted"
+    },
+    {
+      "id": "GCP-003",
+      "sharedValidator": "core.mjs:assertArtifactSelection",
+      "consumers": [
+        "qualification.mjs:checkArtifactSelection",
+        "download-runtime.mjs"
+      ],
+      "controls": "Explicit and missing independence, stale and missing kit, reviewer/replay mismatch, existing archive/embedded-manifest controls"
+    },
+    {
+      "id": "GCP-004",
+      "sharedValidator": "core.mjs:assertRuntimeManifest",
+      "consumers": [
+        "pipeline.mjs:package",
+        "qualification.mjs:extractRuntime"
+      ],
+      "controls": "Complete captured notice bytes/hash, all three target positives, omitted notice and metadata, changed-byte identity"
+    },
+    {
+      "id": "GCP-005",
+      "sharedValidator": "../grid-host-discovery-v2/output-contract.mjs:validateOutputBundle",
+      "consumers": [
+        "../grid-host-discovery-v2/validate-evidence.mjs",
+        "../grid-host-discovery-v2/evidence-reader.mjs"
+      ],
+      "controls": "Three target complete-output positives, truncated and deleted query inventories, missing Windows candidate/mapping, extra/failure/timeout/changed files, query arguments/failure/timeout/overflow/error/signal, aliases/unsafe paths/nonregular/hardlink/mode violations"
+    }
+  ],
+  "fullGoalComplete": false
+}

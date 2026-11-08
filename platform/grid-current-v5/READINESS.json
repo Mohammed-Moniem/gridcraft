@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_NOT_EXECUTED",
+  "sourcePublication": "VERIFIED_BY_PINNED_ACTUAL_PERSONAL_REPOSITORY_RECEIPTS",
+  "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "sourceArchiveSha256": "01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27",
+  "runtimeSelected": false,
+  "stages": {
+    "restore": "NOT_RUN",
+    "compile-native": "NOT_RUN",
+    "compile-wasm": "NOT_RUN",
+    "package": "NOT_RUN",
+    "native": "NOT_RUN",
+    "gui": "NOT_RUN",
+    "browser": "NOT_RUN",
+    "public-download": "NOT_RUN",
+    "public": "NOT_RUN"
+  },
+  "targets": {
+    "macos-arm64": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "triple": "aarch64-apple-darwin",
+      "runner": "macos-15",
+      "nativeCli": "NOT_RUN",
+      "nativeApplication": "NOT_RUN",
+      "wasmBrowser": "NOT_RUN",
+      "publicArchive": "NOT_RUN"
+    },
+    "macos-x64": {
+      "platform": "darwin",
+      "arch": "x64",
+      "triple": "x86_64-apple-darwin",
+      "runner": "macos-15-intel",
+      "nativeCli": "NOT_RUN",
+      "nativeApplication": "NOT_RUN",
+      "wasmBrowser": "NOT_RUN",
+      "publicArchive": "NOT_RUN"
+    },
+    "windows-x64": {
+      "platform": "win32",
+      "arch": "x64",
+      "triple": "x86_64-pc-windows-msvc",
+      "runner": "windows-2022",
+      "nativeCli": "NOT_RUN",
+      "nativeApplication": "NOT_RUN",
+      "wasmBrowser": "NOT_RUN",
+      "publicArchive": "NOT_RUN"
+    }
+  },
+  "missingPrerequisites": [
+    {
+      "id": "ROOT_SELECTION",
+      "state": "MISSING",
+      "input": "Independent selection of this exact FREEZE.json and effectful runner closure; selected:false template is not admission"
+    },
+    {
+      "id": "HOST_EXECUTABLES",
+      "state": "MISSING_PER_TARGET",
+      "input": "Exact preexisting Node/Python/browser and macOS otool/sandbox-exec or Windows PowerShell identities"
+    },
+    {
+      "id": "SUPPORTED_PLATFORM_SDK",
+      "state": "MISSING_PER_TARGET",
+      "input": "Actual installed macOS CLT/SDK or supported Windows MSVC/Windows SDK tool/header/library identities; not included in public Rust/tool archives"
+    },
+    {
+      "id": "QUALITY_COMPONENTS",
+      "state": "ABSENT_FROM_PUBLIC_TOOL_ARCHIVES",
+      "input": "Matching Rust 1.95.0 Rustfmt and Clippy for all3 targets; cargo xtask ci is not performed by this build pipeline"
+    },
+    {
+      "id": "OS_RUNTIME_RESTRICTION",
+      "state": "NOT_VALIDATED_FOR_THIS_KIT",
+      "input": "Reviewed macOS sandbox or admitted Windows per-executable temporary firewall rules with cleanup; loopback and external permission-denial controls must run"
+    },
+    {
+      "id": "GUI_AND_BROWSER_ENVIRONMENT",
+      "state": "NOT_VALIDATED",
+      "input": "Interactive native GUI session/GPU, installed Chrome/Edge CDP/WebGL support, Windows symlink creation authority; independent screenshot review"
+    },
+    {
+      "id": "SELECTED_PUBLIC_RUNTIME",
+      "state": "NO_CURRENT_FULL_PLATFORM_ARCHIVES",
+      "input": "Independently reviewed per-target CLI+application+complete-WASM archive URL/length/hash before exact-public runtime qualification"
+    },
+    {
+      "id": "WINDOWS_DEPENDENCY_CONTRACT",
+      "state": "NOT_CAPTURED",
+      "input": "Separately selected actual OS release module/API-set/schema/mapping/host identities for all normal and delay imports; no assumed blanket system DLL allowlist"
+    },
+    {
+      "id": "ARTIFACT_CRITIC_AND_ROOT_REPLAY",
+      "state": "NOT_AVAILABLE",
+      "input": "Exact per-target full runtime archive+manifest bound to fresh adequate PASS/no-blocker critic and exact root-replay receipt before public acquisition/extraction"
+    }
+  ],
+  "limits": [
+    "The already published current macOS ARM64 CLI is a separate scoped component and is not this full CLI/application/browser artifact",
+    "Windows Server CI does not prove Windows 11 client acceptance",
+    "A real Intel host and x64 Mach-O execution are required for macOS Intel",
+    "Private Node desktop-host integration is not available or claimed",
+    "No signing notarization complete offline compiler kit feature parity or full-goal claim"
+  ],
+  "fullGoalComplete": false,
+  "cloudReady": false,
+  "nextLeaf": {
+    "id": "ACTUAL_SHARED_POLICY_FILESYSTEM_FIXTURES",
+    "state": "PENDING_ROOT_EXECUTION_ADMISSION",
+    "scope": "Actual policy tests then exact pure replay and a fresh entire-packet critic; no platform acceptance"
+  },
+  "independentPreparationReview": "PENDING_FRESH_ENTIRE_V5_REVIEW",
+  "rootPreparationSelected": false,
+  "actualConsumingHostEvidence": "NONE",
+  "actualParserTests": "INHERITED_BYTE_IDENTICAL_BOUNDED_LOCAL_34_CASE_PASS",
+  "pythonExecutableClosure": "PREPARED_COMPLETE_RECURSIVE_RUNTIME_SEARCH_POLICY_NOT_HOST_EXECUTED",
+  "actualPolicyTests": "PENDING_SEPARATE_ROOT_ADMISSION"
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "selected": false,
+  "kitSha256": null,
+  "target": null,
+  "stages": [],
+  "sourceTree": "c4544e89868075cca2570ede803540bdbf0afae9",
+  "sourceCommit": "17c5aba04c33b107ec3a9264b0fa6f28966faf2c",
+  "sourceArchiveSha256": "01b4d9d365d7265a26e0446a81f256e0c56094769a6f641a03ce7867bd47de27",
+  "independentSelection": null,
+  "publicSourceProof": {
+    "path": "inventory/PUBLIC-ASSETS.json",
+    "readOnlyOrigin": "artcraft-upstream-review/publication/grid-current-delivery-v2/PUBLIC-ASSETS.json",
+    "bytes": 2167,
+    "sha256": "59870c595539295390dfb762bf9a6de153e8b7e671a7af1aeeac9b30ad0c7004"
+  },
+  "environment": {},
+  "systemPath": "",
+  "tools": {
+    "node": null,
+    "python": null,
+    "browser": null,
+    "otool": null,
+    "sandboxExec": null,
+    "powershell": null
+  },
+  "sdkProof": null,
+  "network": {
+    "buildIsolationClaim": false,
+    "runtimeOsRestrictionRequired": true,
+    "profile": null,
+    "programs": []
+  },
+  "publicRuntime": null,
+  "windowsDependencies": null,
+  "artifactSelection": null,
+  "discoveryEvidence": null,
+  "discoveryBundle": null,
+  "discoveryBinding": null,
+  "hostSelection": null
+}

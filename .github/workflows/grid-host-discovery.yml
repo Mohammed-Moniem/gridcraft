@@ -1,0 +1,58 @@
+# STAGED ONLY: separate personal-repository review/publication/dispatch is required.
+name: Capture current Grid host inputs without builds
+on:
+  workflow_dispatch:
+    inputs:
+      launch_payload:
+        description: Canonical base64 external selected receipt envelope for this exact code commit
+        type: string
+        required: true
+      launch_payload_sha256:
+        description: Independently reviewed external payload SHA256
+        type: string
+        required: true
+      launch_payload_bytes:
+        description: Exact decoded payload byte count, at most 32768
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  discover:
+    if: github.repository == 'Mohammed-Moniem/gridcraft'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: macos-arm64
+            runner: macos-15
+          - target: macos-x64
+            runner: macos-15-intel
+          - target: windows-x64
+            runner: windows-2022
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        env:
+          GIT_CONFIG_COUNT: '1'
+          GIT_CONFIG_KEY_0: core.autocrlf
+          GIT_CONFIG_VALUE_0: 'false'
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Read actual existing host inputs through the separately selected probe
+        env:
+          GRID_DISCOVERY_TARGET: ${{ matrix.target }}
+          GRID_DELIVERY_BASE64: ${{ inputs.launch_payload }}
+          GRID_DELIVERY_SHA256: ${{ inputs.launch_payload_sha256 }}
+          GRID_DELIVERY_BYTES: ${{ inputs.launch_payload_bytes }}
+        run: node platform/grid-host-discovery-v5/workflow-entry.mjs
+      - name: Preserve missing inputs raw queries and unselected candidates
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: grid-host-discovery-${{ matrix.target }}
+          path: platform/grid-host-discovery-v5/runs
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,9 @@
+{
+  "kind": "WINDOWS_TARGET_SYSTEM_MODULE_CONTRACT",
+  "selected": false,
+  "osRelease": null,
+  "entries": [],
+  "coverage": "Every normal/delay import requires an exact shipped sibling or a separately selected entry; API-set entries need pinned schema, independently reviewed captured map and actual host-file identities",
+  "optionalRuntimeLoadedModulesQualified": false,
+  "windows11Qualified": false
+}

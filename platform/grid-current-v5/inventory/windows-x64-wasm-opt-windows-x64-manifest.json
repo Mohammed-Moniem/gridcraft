@@ -1,0 +1,10 @@
+{
+  "tool": "wasm-opt",
+  "version": "version_131",
+  "platform": "windows-x64",
+  "name": "binaryen-version_131-x86_64-windows.tar.gz",
+  "url": "https://github.com/WebAssembly/binaryen/releases/download/version_131/binaryen-version_131-x86_64-windows.tar.gz",
+  "size": 108545916,
+  "sha256": "2f4edac1703a2f695254d6ff52ede03481e67db1f094915763d863158c17d9bc",
+  "source": "Trunk v0.22.1 src/tools.rs Application::WasmOpt default_version"
+}

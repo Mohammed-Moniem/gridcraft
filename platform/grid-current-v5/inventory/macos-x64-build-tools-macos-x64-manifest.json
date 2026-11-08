@@ -1,0 +1,21 @@
+{
+  "host": "macos-x64",
+  "tools": [
+    {
+      "tool": "trunk",
+      "tag": "v0.22.1",
+      "name": "trunk-x86_64-apple-darwin.tar.gz",
+      "url": "https://github.com/trunk-rs/trunk/releases/download/v0.22.1/trunk-x86_64-apple-darwin.tar.gz",
+      "sha256": "55b5cf2d6a23201f555cc561cc07157989581cc720a260505f8e98aae67abcf7",
+      "size": 9062029
+    },
+    {
+      "tool": "wasm-bindgen",
+      "tag": "0.2.129",
+      "name": "wasm-bindgen-0.2.129-x86_64-apple-darwin.tar.gz",
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-x86_64-apple-darwin.tar.gz",
+      "sha256": "7e028879a68ec53dae14048b55cc5215f6df75b17a9c1426fac8fa086d3202fd",
+      "size": 8374457
+    }
+  ]
+}

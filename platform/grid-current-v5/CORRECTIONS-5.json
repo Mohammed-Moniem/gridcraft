@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 5,
+  "scope": "PREPARATION_CODE_ONLY",
+  "rejectedCriticManifestSha256": "b03782772aa64d04866bddf7d6611d8880f2c3ef4d01f525a20d1bd4203dd0cf",
+  "finding": "GCP4-001",
+  "sharedActualFunctions": [
+    "python-acquisition.mjs:acquirePythonInputs",
+    "python-acquisition.mjs:revalidatePythonInputs"
+  ],
+  "pureContract": "python-namespace-contract.mjs",
+  "actualConsumers": [
+    "../grid-host-discovery-v5/platforms.mjs:pythonCapture",
+    "host-reader.mjs:observeCapturedHost",
+    "effect-preflight.mjs:effectPreflight"
+  ],
+  "mechanism": "Every regular body in bounded recursive runtime/search namespaces plus required loader/support/config seeds, aliases and optional absences; no loaded-module/suffix exclusion",
+  "tests": "Separate exact shared-policy owned filesystem fixtures; pending distinct root execution admission",
+  "allPriorCorrectionsPreserved": true,
+  "inheritedParserCases": 34,
+  "actualDiscovery": false,
+  "independentSelectionCreated": false,
+  "fullGoalComplete": false
+}

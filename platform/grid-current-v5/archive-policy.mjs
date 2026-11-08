@@ -1,0 +1,4 @@
+// The Node effect preflight and Python consumer both read the same frozen budget JSON.
+import assert from 'node:assert/strict';
+export const ARCHIVE_CAPS=Object.freeze({compressed:2147483648,decoded:6710886400,members:100000,records:400000,metadata:134217728,member_metadata:262144,name:8192,member:1073741824,expanded:6442450944,pax_keys:32,extension_chain:64});
+export function assertArchivePolicy(policy){assert(policy&&typeof policy==='object'&&!Array.isArray(policy));assert.deepEqual(Object.keys(policy).sort(),Object.keys(ARCHIVE_CAPS).sort());for(const [key,cap]of Object.entries(ARCHIVE_CAPS))assert(Number.isSafeInteger(policy[key])&&policy[key]>0&&policy[key]<=cap,'Archive budget '+key+' is invalid');assert(policy.member<=policy.expanded&&policy.member_metadata<=policy.metadata&&policy.expanded<=policy.decoded);return policy;}

@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 5,
+  "kind": "CURRENT_GRID_PLATFORM_PREPARATION_FREEZE",
+  "scope": "PREPARATION_CODE_ONLY_NOT_SELECTED",
+  "excludes": [
+    "FREEZE.json"
+  ],
+  "files": [
+    {
+      "path": "CODE-CLOSURE.json",
+      "bytes": 18223,
+      "sha256": "7a44a4975dcfd2b78b7db47fdcf022cf49247a70d84182115c37e77ed2465ae6",
+      "mode": 420
+    },
+    {
+      "path": "CORRECTIONS-3.json",
+      "bytes": 1798,
+      "sha256": "1dd739139917c0b28f1d4ffeb84ea11a251ceee1a8722a13f4bcba75f3b3dc7c",
+      "mode": 420
+    },
+    {
+      "path": "CORRECTIONS-4.json",
+      "bytes": 1495,
+      "sha256": "f93cfd05baaa9ab7c08f58d20afe1105af8baf55fed4fc5a592046605a7d9948",
+      "mode": 420
+    },
+    {
+      "path": "CORRECTIONS-5.json",
+      "bytes": 1021,
+      "sha256": "2b7e4ffbb9c53320fa5665a525a3742468908d6b5d27cb905f27608bc790e105",
+      "mode": 420
+    },
+    {
+      "path": "CORRECTIONS.json",
+      "bytes": 2791,
+      "sha256": "a462cad945a91a8fcd24b318cac5212a838a1bf1bdbd587e4a5215aa3c5654be",
+      "mode": 420
+    },
+    {
+      "path": "INHERITED-PARSER-PASS.json",
+      "bytes": 1653,
+      "sha256": "d7b3aa2ec2411dfdf44c8e1669c2576bcac9f41f57f24e5944412d8975c9fed6",
+      "mode": 420
+    },
+    {
+      "path": "LICENSE-SUITE-TOOLS",
+      "bytes": 1303,
+      "sha256": "ae65b978795767d611b372be6d8cf9f3fb674ba16c4b84645cc51a2ef539cfa9",
+      "mode": 420
+    },
+    {
+      "path": "ORACLE.json",
+      "bytes": 5601,
+      "sha256": "cda804a1b8e51afb1bd959a4de6903970656153cacdebce187912e4c07e4a1d3",
+      "mode": 420
+    },
+    {
+      "path": "PASSES-3.md",
+      "bytes": 1471,
+      "sha256": "1b51a87ac1f4cb48393ad22f45a30561024870b87b4bf49b6a4faedacd6de95f",
+      "mode": 420
+    },
+    {
+      "path": "PASSES-4.md",
+      "bytes": 1390,
+      "sha256": "1b855646138812de769b62207c76e4522637e4cd7311547e753219128b1b76e3",
+      "mode": 420
+    },
+    {
+      "path": "PASSES-5.md",
+      "bytes": 1363,
+      "sha256": "ebba29de2c6ab58c140deb77458d3d8771cd36ee6038b99f43f1abbafc5f9bc6",
+      "mode": 420
+    },
+    {
+      "path": "PRESERVATION.json",
+      "bytes": 1117029,
+      "sha256": "88a03a476ac12d137f3a8f344493b30a010abb916f0fe04b50003401893669da",
+      "mode": 420
+    },
+    {
+      "path": "READINESS.json",
+      "bytes": 4808,
+      "sha256": "3504e679cd4f38bce6d5e3ac97307b320976937089e4b0fa6403ec3b064704a8",
+      "mode": 420
+    },
+    {
+      "path": "README.md",
+      "bytes": 3478,
+      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "mode": 420
+    },
+    {
+      "path": "REPAIR-3.md",
+      "bytes": 4531,
+      "sha256": "3634d9e36f45d3b92951d8ddc40de2ab4426c3c6c8cb497ff465d29bca999867",
+      "mode": 420
+    },
+    {
+      "path": "REPAIR-4.md",
+      "bytes": 4433,
+      "sha256": "aae6efd69091accc3a289b797cb1d50e3f32c9e51941231b01bfcc0bb9814c6a",
+      "mode": 420
+    },
+    {
+      "path": "REPAIR-5.md",
+      "bytes": 3478,
+      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "mode": 420
+    },
+    {
+      "path": "REPAIR-PASSES.md",
+      "bytes": 2110,
+      "sha256": "16e4a08a59a2389f7790b84926ff25c9601f2317e53452ca5270da532d79af02",
+      "mode": 420
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1363,
+      "sha256": "ebba29de2c6ab58c140deb77458d3d8771cd36ee6038b99f43f1abbafc5f9bc6",
+      "mode": 420
+    },
+    {
+      "path": "SUCCESSOR.md",
+      "bytes": 3478,
+      "sha256": "7f0ad4ea94e8ff90e83da3ba598079d1164dc0a7652fc2ed979d47c00519269c",
+      "mode": 420
+    },
+    {
+      "path": "admission-template.json",
+      "bytes": 1163,
+      "sha256": "f4e7ecfe122395d2090b484633f6d77dc944f47305286cf3cc611e1169b39baf",
+      "mode": 420
+    },
+    {
+      "path": "archive-budget.json",
+      "bytes": 261,
+      "sha256": "424b05fd365607d199adf9cf126a8f58e3971857fbf37732a59e2b3c9c9809ac",
+      "mode": 420
+    },
+    {
+      "path": "archive-policy.mjs",
+      "bytes": 843,
+      "sha256": "c052f777718cd596a31a7e1140653f50c698f31b6152510585c1f0a9060e20ad",
+      "mode": 420
+    },
+    {
+      "path": "archive.py",
+      "bytes": 25529,
+      "sha256": "dec87673167221bfec2da2c23a5ab07be6b3865b1e8e8796a5771b429f76c8cc",
+      "mode": 420
+    },
+    {
+      "path": "browser-smoke.mjs",
+      "bytes": 7697,
+      "sha256": "53922a4fcc39e3c79f615466d2849289511b4bc2a49c959a36ce06f04f758a4c",
+      "mode": 420
+    },
+    {
+      "path": "ci.mjs",
+      "bytes": 3522,
+      "sha256": "6857dbd17ca02ad3c6d9903ce86cf3630aa3f71b64514a0e5c1a2c7498d6707e",
+      "mode": 420
+    },
+    {
+      "path": "control-fixtures.mjs",
+      "bytes": 11100,
+      "sha256": "b787be2d32e633bfdeb8f5dfb34e56e30f0791408cf9f54082b991900c18f0e7",
+      "mode": 420
+    },
+    {
+      "path": "core.mjs",
+      "bytes": 15187,
+      "sha256": "48cb5c273852ca5b98b81fd4d88bc7eaaa524b83779fae97a4e43753cfac4f73",
+      "mode": 420
+    },
+    {
+      "path": "correction-controls.mjs",
+      "bytes": 9321,
+      "sha256": "03da7872e3099a6d40d6e413bfd26c44fade9587e6c32d080fc5f79ac005bbca",
+      "mode": 420
+    },
+    {
+      "path": "delivery-controls.mjs",
+      "bytes": 3773,
+      "sha256": "c85c0fb884641534322100b03a8df023e35155ac73087db82499c6fe9bbb9e45",
+      "mode": 420
+    },
+    {
+      "path": "deny-external.sb",
+      "bytes": 236,
+      "sha256": "d297a0b69b2c00a275b19c9f8c043fe446b230d4335fcc721afa840f0dd6e2ac",
+      "mode": 420
+    },
+    {
+      "path": "download-runtime.mjs",
+      "bytes": 753,
+      "sha256": "d233804c8bd69efae05512681896b7c5757a28df0e02b3fb5eb318773403a39e",
+      "mode": 420
+    },
+    {
+      "path": "effect-preflight.mjs",
+      "bytes": 3710,
+      "sha256": "4f3147be25af8648897e699bc466dd321ef17484a7cb1838fbe1f00a34354373",
+      "mode": 420
+    },
+    {
+      "path": "gui-smoke.mjs",
+      "bytes": 6027,
+      "sha256": "450635b9e0b4a8cd953a2f9c0fad87a807dcc8f6b76675e8b90ad12851716635",
+      "mode": 420
+    },
+    {
+      "path": "history/FREEZE-before-root-review.json",
+      "bytes": 10067,
+      "sha256": "e1bddddc7ecde74851e294e3460701b414c980ebba44a1c9b152b414f6dae99e",
+      "mode": 420
+    },
+    {
+      "path": "history/REVIEW-CHANGES.json",
+      "bytes": 698,
+      "sha256": "be61befe4fd4525c66ac5dbd76f82a19550007fc88ba6a6ef6d2d8a735b4ea56",
+      "mode": 420
+    },
+    {
+      "path": "host-contract.mjs",
+      "bytes": 7339,
+      "sha256": "944f2966d3d84449f6a8cefcf09de11a10ec1b1238ba6c548c951afa530c6fa2",
+      "mode": 420
+    },
+    {
+      "path": "host-controls.mjs",
+      "bytes": 9518,
+      "sha256": "f17ff377bce11d48b72bf485047e729fc5a8cfc43f0f095f306c091003bbb6bf",
+      "mode": 420
+    },
+    {
+      "path": "host-reader.mjs",
+      "bytes": 3738,
+      "sha256": "407e0c0b8f5c07f8e4408d460550a27246818420e0e1d628b61ff6e21d445b35",
+      "mode": 420
+    },
+    {
+      "path": "host.html",
+      "bytes": 718,
+      "sha256": "036a45179fed2835ec09ea2e6feda26d61d17e4d22ddbb7c6a11ebc8309f1fec",
+      "mode": 420
+    },
+    {
+      "path": "host.mjs",
+      "bytes": 6695,
+      "sha256": "fb7775d50046698908916f2cec2426f03348b61f6ff92330a473259d1e4ac3de",
+      "mode": 420
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 12707,
+      "sha256": "9743d3aaaf1c498247a9afdc4bfeb139c777886f979cb65a83d49c4191139566",
+      "mode": 420
+    },
+    {
+      "path": "inventory/CURRENT-CARGO.lock",
+      "bytes": 169598,
+      "sha256": "bb9f15e76728fea6cbf9470b31fbb499a462f4d0a90080a62f549a0defdf52f1",
+      "mode": 420
+    },
+    {
+      "path": "inventory/GRID-CHINESE-FONTS.txt",
+      "bytes": 838,
+      "sha256": "5e42723fe7148934bff0ddf28191e59cc41b021cf82c21803a5477031a24b7c1",
+      "mode": 420
+    },
+    {
+      "path": "inventory/GRID-FONT-PROVENANCE.json",
+      "bytes": 8286,
+      "sha256": "64616f16ae9d3bfac98958a83263ede085944710aa71faf3a9995fd376f8f043",
+      "mode": 420
+    },
+    {
+      "path": "inventory/GRID-FONTS.txt",
+      "bytes": 4190,
+      "sha256": "e825709cd46ff7abe213c141e981c0c11e098195a134951e95dada85eaea778a",
+      "mode": 420
+    },
+    {
+      "path": "inventory/Grid-FONT-POLICY.rs",
+      "bytes": 14779,
+      "sha256": "5ea2e06856ccfd65ccf54322a59bc2403e0cdd9a4993612232d89f997d5fec9f",
+      "mode": 420
+    },
+    {
+      "path": "inventory/PUBLIC-ASSETS.json",
+      "bytes": 2167,
+      "sha256": "59870c595539295390dfb762bf9a6de153e8b7e671a7af1aeeac9b30ad0c7004",
+      "mode": 420
+    },
+    {
+      "path": "inventory/REMOTE-SOURCE.json",
+      "bytes": 854,
+      "sha256": "ac8a71bdd3a3b98293816cf315123c19a3d286a1a94a5d57fe1b5e713527c24b",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-arm64-build-tools-macos-arm64-manifest.json",
+      "bytes": 747,
+      "sha256": "47ab7cdfa21a3a2e4793e7b4e49b33a7a75c8e4ed2d6039c0a3eee1f37d9853b",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-arm64-tool-licences-manifest.json",
+      "bytes": 894,
+      "sha256": "843adae254a54338602d4c22270145fbffa214cadec0ba7b9b9c926237cb2b70",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-arm64-toolchain-macos-arm64-manifest.json",
+      "bytes": 1430,
+      "sha256": "0ddb6e85645e32d749f78dd64c14884f5dadb32230f2ef863af8d927590dd7e5",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-arm64-wasm-opt-macos-arm64-manifest.json",
+      "bytes": 435,
+      "sha256": "ee86160e7c087cca2e74d9e071ac0df0ff67ca00040a601dfd27e1cdcc93ef62",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-x64-build-tools-macos-x64-manifest.json",
+      "bytes": 741,
+      "sha256": "f7e3da4c4d8dcdd5761a1dc5a4bf04e5dc9a10cf727fae46f505d4688e627322",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-x64-tool-licences-manifest.json",
+      "bytes": 894,
+      "sha256": "843adae254a54338602d4c22270145fbffa214cadec0ba7b9b9c926237cb2b70",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-x64-toolchain-macos-x64-manifest.json",
+      "bytes": 1418,
+      "sha256": "2b84f37cf04fcb4ad9679e20c5cef738f6186cfae280d37b6239f75e7146eb5a",
+      "mode": 420
+    },
+    {
+      "path": "inventory/macos-x64-wasm-opt-macos-x64-manifest.json",
+      "bytes": 435,
+      "sha256": "eeda459fc88fc32580dbcdb2d9bb5dd3640956c70136d53a044676518a819252",
+      "mode": 420
+    },
+    {
+      "path": "inventory/source.json",
+      "bytes": 200831,
+      "sha256": "7dd86285152958da38d232350155852ce8f961c6d7d751f9573684f0605dbcfd",
+      "mode": 420
+    },
+    {
+      "path": "inventory/support-map.json",
+      "bytes": 2008,
+      "sha256": "2b213792cfc293b2a18aa9815e217cc2851900a07bfd2d11241ac1b1f1734b5d",
+      "mode": 420
+    },
+    {
+      "path": "inventory/support.json",
+      "bytes": 74231,
+      "sha256": "9a213c32fde8cfbe505364a0f5381587b79e34c2ee9648d1d22e4cd9c518e269",
+      "mode": 420
+    },
+    {
+      "path": "inventory/tools-macos-arm64.json",
+      "bytes": 3293,
+      "sha256": "b4f3e3fa81557700d1fdc76cb2889b3687444d1d20a3111c0ac60e2f3b08f814",
+      "mode": 420
+    },
+    {
+      "path": "inventory/tools-macos-x64.json",
+      "bytes": 3281,
+      "sha256": "eb0467540f70e71aaf9dc65b0b16fd9846f75548d922b5d4d207edd36832f297",
+      "mode": 420
+    },
+    {
+      "path": "inventory/tools-windows-x64.json",
+      "bytes": 3643,
+      "sha256": "abedc802dbfc1f6cf57e62f3765b8bf087edec245dbf0c3f19b9fce79ea8a0e8",
+      "mode": 420
+    },
+    {
+      "path": "inventory/vendor.json",
+      "bytes": 6830518,
+      "sha256": "daaaf4f8d46494e298d2d65e9bc987207726a786d8bcee6f799f0f19458a9d84",
+      "mode": 420
+    },
+    {
+      "path": "inventory/windows-x64-build-tools-windows-x64-manifest.json",
+      "bytes": 749,
+      "sha256": "ac3287ab3a518b6e574f2a10cb69c89a81aa6179c38b7122d2a09b9e85fab427",
+      "mode": 420
+    },
+    {
+      "path": "inventory/windows-x64-tool-licences-manifest.json",
+      "bytes": 894,
+      "sha256": "843adae254a54338602d4c22270145fbffa214cadec0ba7b9b9c926237cb2b70",
+      "mode": 420
+    },
+    {
+      "path": "inventory/windows-x64-toolchain-windows-x64-manifest.json",
+      "bytes": 1452,
+      "sha256": "0a9ad6d3c15cf8d53c6bc56208b92270bf5f0027a28bd589b41d4de30b5feb44",
+      "mode": 420
+    },
+    {
+      "path": "inventory/windows-x64-wasm-opt-windows-x64-manifest.json",
+      "bytes": 443,
+      "sha256": "a0121e965b0198b480b9967a5e2609951e2f93e713098bbc56ae4257744ff27b",
+      "mode": 420
+    },
+    {
+      "path": "io.mjs",
+      "bytes": 7431,
+      "sha256": "a708661edd5e75d962eb3f913e4821d7f5f7198b299cc64e4c474a0e71fa4692",
+      "mode": 420
+    },
+    {
+      "path": "launch.mjs",
+      "bytes": 2383,
+      "sha256": "06f8c3377a1c53b32e0ad9f4c42c3fa86c826ac77726bc268289f52fca57d65a",
+      "mode": 420
+    },
+    {
+      "path": "native-smoke.mjs",
+      "bytes": 7926,
+      "sha256": "1c9a9fe6c711b89ce69bed2e4a518089950f7d9fb5cdf9287f15f9b7af96f977",
+      "mode": 420
+    },
+    {
+      "path": "pe.mjs",
+      "bytes": 6004,
+      "sha256": "a3c2698cc0ae6cc1d50a3b8ac8326965a52b27ca8066161ed466a1818b4c37bc",
+      "mode": 420
+    },
+    {
+      "path": "pipeline.mjs",
+      "bytes": 15187,
+      "sha256": "5c2f9ac57ef91b8f8fd53d66df293306a8fa43bd8089a2280289f941d32b5d7d",
+      "mode": 420
+    },
+    {
+      "path": "prepare-metadata.mjs",
+      "bytes": 17952,
+      "sha256": "18b0f9abc6d4f78ddbff3f615ddd66d53b82ee65dc2f460339854c03a4444a9c",
+      "mode": 420
+    },
+    {
+      "path": "public-smoke.mjs",
+      "bytes": 603,
+      "sha256": "55945290afc791cfc8fa482a700f0c6415aafd574a7d431ddde39017b19dd8ca",
+      "mode": 420
+    },
+    {
+      "path": "python-acquisition.mjs",
+      "bytes": 5890,
+      "sha256": "c9b4811f753b20122296fc9c483494b1ad51a8d63ced9b85de7a85460280fff9",
+      "mode": 420
+    },
+    {
+      "path": "python-namespace-contract.mjs",
+      "bytes": 6131,
+      "sha256": "4523b9823f80c1a880a0cdde875dde1f585b814f6c109e3c28bc8d19c94a439e",
+      "mode": 420
+    },
+    {
+      "path": "python-plan.mjs",
+      "bytes": 1525,
+      "sha256": "631492924c5d60a659e7d08914517f0032babe357b7c028b32459d12de4618d6",
+      "mode": 420
+    },
+    {
+      "path": "qualification.mjs",
+      "bytes": 7375,
+      "sha256": "46657185905a8667c7f3b76213e37240f34cf79fc5bc72abd5d751b729978465",
+      "mode": 420
+    },
+    {
+      "path": "restrict-windows.ps1",
+      "bytes": 8099,
+      "sha256": "7126d2ccce1583fed4fb9a37f27fce51bb416fdafab6ed50b9a261da4a6d138d",
+      "mode": 420
+    },
+    {
+      "path": "selection-preflight.mjs",
+      "bytes": 2034,
+      "sha256": "b55e4c9529d81be3f8ae179b4684af36d033ed8324c9825aaa2f2b9a81bd7636",
+      "mode": 420
+    },
+    {
+      "path": "verify.mjs",
+      "bytes": 17582,
+      "sha256": "6c611fd21bdf779343d62ae418b13464a59f6169f5f222f7461ca7d2f674d5f3",
+      "mode": 420
+    },
+    {
+      "path": "windows-system-modules-template.json",
+      "bytes": 407,
+      "sha256": "3f014592c4aca099081e43791cf6af12033a416dad8c3d772914a9a5a00d52e4",
+      "mode": 420
+    },
+    {
+      "path": "workflow-entry.mjs",
+      "bytes": 2597,
+      "sha256": "b0409fbfa083bc387281d817114bd7a9521376c0031d111111621c8df7061486",
+      "mode": 420
+    },
+    {
+      "path": "workflow/grid-current-platform.yml",
+      "bytes": 2109,
+      "sha256": "37a80ca6e182194fbb7d94f45fbaf43555e8dc3e8cd9734a21ad864e75a54f17",
+      "mode": 420
+    }
+  ]
+}

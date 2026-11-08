@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "kind": "captured-tools-build-inputs",
+  "status": "IN_PROGRESS",
+  "qualification": "Not a complete offline rebuild kit",
+  "platform": "windows-x64",
+  "rust": "1.95.0",
+  "trunk": "0.22.1",
+  "wasmBindgen": "0.2.129",
+  "binaryen": "131",
+  "officialInputs": 10,
+  "variant": "gzip-r1",
+  "originalArchiveSha256": "1ee6c953e84ed58580d5dfa65b7c7517a845287f5e5a2c6b68aec87b58d77c9a",
+  "actualWindowsAcceptance": "PENDING",
+  "files": [
+    {
+      "path": ".toolchains/binaryen-LICENSE",
+      "bytes": 11535,
+      "mode": 420,
+      "sha256": "64c0d02491e16eced74826440ecd2bcf7722d37fa586faf457b2494293afbffe"
+    },
+    {
+      "path": ".toolchains/binaryen-version_131-x86_64-windows.tar.gz",
+      "bytes": 108545916,
+      "mode": 420,
+      "sha256": "2f4edac1703a2f695254d6ff52ede03481e67db1f094915763d863158c17d9bc"
+    },
+    {
+      "path": ".toolchains/build-tools-windows-x64-manifest.json",
+      "bytes": 749,
+      "mode": 420,
+      "sha256": "ac3287ab3a518b6e574f2a10cb69c89a81aa6179c38b7122d2a09b9e85fab427"
+    },
+    {
+      "path": ".toolchains/cargo-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "bytes": 14273892,
+      "mode": 420,
+      "sha256": "a037b306089497748996c4f5bf554d248c1f82e639ff55aa7f5367e91ae07949"
+    },
+    {
+      "path": ".toolchains/rust-std-1.95.0-wasm32-unknown-unknown.tar.gz",
+      "bytes": 32237507,
+      "mode": 420,
+      "sha256": "0c39936601f0dc2c0585bfda2729cc1ad0be708348e7c111085e85fb9d276afd"
+    },
+    {
+      "path": ".toolchains/rust-std-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "bytes": 34838216,
+      "mode": 420,
+      "sha256": "9484429dfdfcffaeabe518b6fb2d09d60816b497c867f3f29c94f21e66a17e4a"
+    },
+    {
+      "path": ".toolchains/rustc-1.95.0-x86_64-pc-windows-msvc.tar.gz",
+      "bytes": 131579296,
+      "mode": 420,
+      "sha256": "02fe492508ca01f624ee6855bd3293c26bfad2bfc1a210deaf7b788ea813c64e"
+    },
+    {
+      "path": ".toolchains/tool-licences-manifest.json",
+      "bytes": 894,
+      "mode": 420,
+      "sha256": "843adae254a54338602d4c22270145fbffa214cadec0ba7b9b9c926237cb2b70"
+    },
+    {
+      "path": ".toolchains/toolchain-windows-x64-manifest.json",
+      "bytes": 1452,
+      "mode": 420,
+      "sha256": "0a9ad6d3c15cf8d53c6bc56208b92270bf5f0027a28bd589b41d4de30b5feb44"
+    },
+    {
+      "path": ".toolchains/trunk-LICENSE-APACHE",
+      "bytes": 10847,
+      "mode": 420,
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": ".toolchains/trunk-LICENSE-MIT",
+      "bytes": 1023,
+      "mode": 420,
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": ".toolchains/trunk-x86_64-pc-windows-msvc.zip",
+      "bytes": 8724925,
+      "mode": 420,
+      "sha256": "1cc65012a9df60b02db948f5a3f0601e594ce952efb1cfd23147c9021c9f7d75"
+    },
+    {
+      "path": ".toolchains/wasm-bindgen-0.2.129-x86_64-pc-windows-msvc.tar.gz",
+      "bytes": 7845552,
+      "mode": 420,
+      "sha256": "79e348c169d0c10c0b287647f1e753d0985353ca96800bc29be8f4261baf13e6"
+    },
+    {
+      "path": ".toolchains/wasm-opt-windows-x64-manifest.json",
+      "bytes": 443,
+      "mode": 420,
+      "sha256": "a0121e965b0198b480b9967a5e2609951e2f93e713098bbc56ae4257744ff27b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 502,
+      "mode": 420,
+      "sha256": "b34d6e8bfc71cfc8bf8d59450032ab182d1a25da1ab0820da17fce6fc341f9c8"
+    },
+    {
+      "path": "REPACK-PROVENANCE.json",
+      "bytes": 92229,
+      "mode": 420,
+      "sha256": "d374feb2cfe21d067e53d33c4a6f9313c516572dd171071bd7aa7a66fc9fbdad"
+    }
+  ]
+}

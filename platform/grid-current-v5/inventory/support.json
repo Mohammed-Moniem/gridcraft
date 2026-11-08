@@ -1,0 +1,1826 @@
+{
+  "schemaVersion": 1,
+  "kind": "captured-support-build-inputs",
+  "status": "IN_PROGRESS",
+  "qualification": "Not a complete offline rebuild kit",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 492,
+      "mode": 420,
+      "sha256": "512df896fc7db2ea48b4b1d6e7fda945615f09fe838d5f282a807155f47c0856"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/biz-ud-mincho/BIZUDMincho-Regular.ttf",
+      "bytes": 6153932,
+      "mode": 420,
+      "sha256": "468ee6d9b149ca144809e03841bf18740ecf014e055a00da6ecaf1aaf4165af2"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/biz-ud-mincho/OFL.txt",
+      "bytes": 4408,
+      "mode": 420,
+      "sha256": "ef0ed524b3bd012f37015e986809eed6f67905456ebfc1ebd7fcc2765282ee01"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/biz-ud-pgothic/BIZUDPGothic-Bold.ttf",
+      "bytes": 4640596,
+      "mode": 420,
+      "sha256": "30eba52fc837e8b62c97d4b82e6706583149fb7294e3712dd71a655eaea80a90"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/biz-ud-pgothic/BIZUDPGothic-Regular.ttf",
+      "bytes": 4669688,
+      "mode": 420,
+      "sha256": "258d7156c165f2ff774b6efee637c22c3b950de0d8a10e501137061bc8085d01"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/biz-ud-pgothic/OFL.txt",
+      "bytes": 4408,
+      "mode": 420,
+      "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/caladea/Caladea-Bold.ttf",
+      "bytes": 84492,
+      "mode": 420,
+      "sha256": "ae3cb2dcbc925809dd29d2a44e9802211cab66be541bacbfc9c08c74b27c3742"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/caladea/Caladea-BoldItalic.ttf",
+      "bytes": 83356,
+      "mode": 420,
+      "sha256": "ccabaa7b7e2fdf253d2b1a5fa699dd8a3df8d835a9eb285ad82631a677eb76c0"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/caladea/Caladea-Italic.ttf",
+      "bytes": 83780,
+      "mode": 420,
+      "sha256": "4359a8e24f748b6447b1ff6d7a174febe70961d29f8bb8634b56dacd740a3deb"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/caladea/Caladea-Regular.ttf",
+      "bytes": 81600,
+      "mode": 420,
+      "sha256": "f1e899278b7b4491aba5b6a8253c4b04c050cc59b21865be5c37559a775153cd"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/caladea/OFL.txt",
+      "bytes": 4393,
+      "mode": 420,
+      "sha256": "ccdab61d371d8c8683a128a92cd7d498dbdb1d37689f7cb21f1bf6b16658d213"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/carlito/Carlito-Bold.ttf",
+      "bytes": 682468,
+      "mode": 420,
+      "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/carlito/Carlito-BoldItalic.ttf",
+      "bytes": 808508,
+      "mode": 420,
+      "sha256": "b32928186c119599e03ca6a1ffc680fdcb7fac95772f4b95d989cf6cd3861517"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/carlito/Carlito-Italic.ttf",
+      "bytes": 615236,
+      "mode": 420,
+      "sha256": "0b019225e58d702bfedcbd35c21696769f8ee115cb6343f84c2f240312450d1c"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/carlito/Carlito-Regular.ttf",
+      "bytes": 628032,
+      "mode": 420,
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/carlito/OFL.txt",
+      "bytes": 4424,
+      "mode": 420,
+      "sha256": "58402f82a7c332a700294988fe7554fbb0a63a8d27ccc1ee3bbc640311990a00"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/inter/Inter-Bold.ttf",
+      "bytes": 420428,
+      "mode": 420,
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/inter/Inter-Italic.ttf",
+      "bytes": 417388,
+      "mode": 420,
+      "sha256": "bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/inter/Inter-Regular.ttf",
+      "bytes": 411640,
+      "mode": 420,
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/inter/Inter-SemiBold.ttf",
+      "bytes": 419744,
+      "mode": 420,
+      "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/inter/OFL.txt",
+      "bytes": 4380,
+      "mode": 420,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/latin-manifest.txt",
+      "bytes": 15463,
+      "mode": 420,
+      "sha256": "ed0271fc566c46642ad4280bafd2fd4125b3df5ebe582ca9f85e14372a503542"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lato/Lato-Bold.ttf",
+      "bytes": 656544,
+      "mode": 420,
+      "sha256": "8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lato/Lato-Italic.ttf",
+      "bytes": 722900,
+      "mode": 420,
+      "sha256": "e399c44efe1387100531d26c7e4800c5d12251b890d6654a3098c7c679cb1786"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lato/Lato-Regular.ttf",
+      "bytes": 656568,
+      "mode": 420,
+      "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lato/OFL.txt",
+      "bytes": 4407,
+      "mode": 420,
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-mono/LiberationMono-Bold.ttf",
+      "bytes": 307996,
+      "mode": 420,
+      "sha256": "bd62a0672d0b9b6710b01df434c80ad54fa5f0835207eb7b17b7a761463067bb"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-mono/LiberationMono-BoldItalic.ttf",
+      "bytes": 284068,
+      "mode": 420,
+      "sha256": "79451f3c09fe25116098853b7a2ca6e2436220ccc11af022979adbcf195be130"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-mono/LiberationMono-Italic.ttf",
+      "bytes": 281536,
+      "mode": 420,
+      "sha256": "605c01c711b44480a7508d349dfbf3264e81fa43d69e61cfa7d10b86e764c4d1"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-mono/LiberationMono-Regular.ttf",
+      "bytes": 319508,
+      "mode": 420,
+      "sha256": "f2b83c763e8afd21709333370bed4774337fae82267937e2b5aea7e2fbd922c1"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-mono/OFL.txt",
+      "bytes": 4414,
+      "mode": 420,
+      "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-sans/LiberationSans-Bold.ttf",
+      "bytes": 414456,
+      "mode": 420,
+      "sha256": "788abee4c806d660e8aee46689dd8540cd4bb98da03dcc9d171ce3efd99a9173"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-sans/LiberationSans-BoldItalic.ttf",
+      "bytes": 408996,
+      "mode": 420,
+      "sha256": "698da70fc191cc5f33ad4d6d3fe830fe4624b898ea2e3169955928b7c491f1ee"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-sans/LiberationSans-Italic.ttf",
+      "bytes": 415816,
+      "mode": 420,
+      "sha256": "e5bae5c4cde31f22142753855f4f8fb86da6ff39955ed3c0a11248b0d16948b0"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-sans/LiberationSans-Regular.ttf",
+      "bytes": 410712,
+      "mode": 420,
+      "sha256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-sans/OFL.txt",
+      "bytes": 4414,
+      "mode": 420,
+      "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-serif/LiberationSerif-Bold.ttf",
+      "bytes": 370096,
+      "mode": 420,
+      "sha256": "d754ba427cfe0bca54ae052384baa8f842da5bd6550ad4da024ac441e7a7d5ce"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-serif/LiberationSerif-BoldItalic.ttf",
+      "bytes": 376772,
+      "mode": 420,
+      "sha256": "f17db8af71e24d2066b587546021d4f0b296be389512b658dec3c09affeb11a7"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-serif/LiberationSerif-Italic.ttf",
+      "bytes": 375632,
+      "mode": 420,
+      "sha256": "0e3dea9f8d613e006ccfa62201f33e265d19167bd0907725c3e145368b04fc2e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-serif/LiberationSerif-Regular.ttf",
+      "bytes": 393576,
+      "mode": 420,
+      "sha256": "058ea80864aef09a23f45cbec2bb5400bc3dfbdea01c3f10538a21fcb497fb74"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/liberation-serif/OFL.txt",
+      "bytes": 4414,
+      "mode": 420,
+      "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lxgw-wenkai-lite/LXGWWenKaiLite-Regular.ttf",
+      "bytes": 13949472,
+      "mode": 420,
+      "sha256": "f799a538a3355877e597a0ae04050e897932c9ae7689eb9227c2953c5dd549ea"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/lxgw-wenkai-lite/OFL.txt",
+      "bytes": 5176,
+      "mode": 420,
+      "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/manifest.txt",
+      "bytes": 4190,
+      "mode": 420,
+      "sha256": "e825709cd46ff7abe213c141e981c0c11e098195a134951e95dada85eaea778a"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/merriweather/Merriweather-Bold.ttf",
+      "bytes": 282608,
+      "mode": 420,
+      "sha256": "a2fa4f57946c62036f79d9e8b4b642515001d65af1e6a98afc0b94bf669e3f11"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/merriweather/Merriweather-Italic.ttf",
+      "bytes": 272256,
+      "mode": 420,
+      "sha256": "1f73096441117e56bd867a437188e98bcf8ae7dcc7f676980da2ed2b6b51554d"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/merriweather/Merriweather-Regular.ttf",
+      "bytes": 282844,
+      "mode": 420,
+      "sha256": "10ec10d1f7a9b5f0eb1a964e06348ce20587d478c661ea36728cce7b57f3de1c"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/merriweather/OFL.txt",
+      "bytes": 4437,
+      "mode": 420,
+      "sha256": "a7ba785ad99b6eae0444ab89910e512d4af9865937fddbcb5c72c4f59f55d6ad"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/montserrat/Montserrat-Italic.ttf",
+      "bytes": 762376,
+      "mode": 420,
+      "sha256": "51607f316bc020e59f03cbf51543eecffbea501c0b31d73e5b82927c5cca442c"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/montserrat/Montserrat.ttf",
+      "bytes": 744936,
+      "mode": 420,
+      "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/montserrat/OFL.txt",
+      "bytes": 4400,
+      "mode": 420,
+      "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/nanum-gothic/NanumGothic-Regular.ttf",
+      "bytes": 2054744,
+      "mode": 420,
+      "sha256": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/nanum-gothic/OFL.txt",
+      "bytes": 4534,
+      "mode": 420,
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-arabic/NotoSansArabic.ttf",
+      "bytes": 844676,
+      "mode": 420,
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-arabic/OFL.txt",
+      "bytes": 4382,
+      "mode": 420,
+      "sha256": "07fc70bfeb985cc1a87a8587d0a0c80bab11c86c9dc3fd95b6f0cb332f983e96"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-cjk-sc/OFL.txt",
+      "bytes": 4301,
+      "mode": 420,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-devanagari/NotoSansDevanagari-Regular.ttf",
+      "bytes": 277680,
+      "mode": 420,
+      "sha256": "573e525d9f4923d34645fe752475419f45f8dec5a8e43f3e83c5c5f43d1f2ff9"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-devanagari/OFL.txt",
+      "bytes": 4386,
+      "mode": 420,
+      "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-georgian/NotoSansGeorgian.ttf",
+      "bytes": 231988,
+      "mode": 420,
+      "sha256": "dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-georgian/OFL.txt",
+      "bytes": 4384,
+      "mode": 420,
+      "sha256": "8c02263c5d73d40544f9ed91e30c4e947407057a3cc430d7b786189aeceff6df"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-hebrew/NotoSansHebrew-Regular.ttf",
+      "bytes": 66156,
+      "mode": 420,
+      "sha256": "671951828bd5c95db818e5bb12dcea2d0c0dda00311888522be061ee6835125e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-hebrew/OFL.txt",
+      "bytes": 4382,
+      "mode": 420,
+      "sha256": "9b9fe028b5ba74d231659a1bbaf0ed09b11e759d1ca6a070999e16d151616b47"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-symbols/NotoSansSymbols.ttf",
+      "bytes": 372684,
+      "mode": 420,
+      "sha256": "f7e7e04b4a24b6c78893d50cbfd2b2f6cae49617ab047bfef668d252adb128f7"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-symbols/OFL.txt",
+      "bytes": 4383,
+      "mode": 420,
+      "sha256": "b118dd41337806a5d4797052c77caf3bd096aed783e5eb21b4d11154351e1ac0"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-symbols-2/NotoSansSymbols2-Regular.ttf",
+      "bytes": 1233128,
+      "mode": 420,
+      "sha256": "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-symbols-2/OFL.txt",
+      "bytes": 4383,
+      "mode": 420,
+      "sha256": "b118dd41337806a5d4797052c77caf3bd096aed783e5eb21b4d11154351e1ac0"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-thai/NotoSansThai.ttf",
+      "bytes": 218652,
+      "mode": 420,
+      "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/noto-sans-thai/OFL.txt",
+      "bytes": 4380,
+      "mode": 420,
+      "sha256": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/nunito-sans/NunitoSans-Italic.ttf",
+      "bytes": 558412,
+      "mode": 420,
+      "sha256": "d9d5db18f3c11221a4fbb553cbc709391c1179964c7eaa4466ef43c78aa4492f"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/nunito-sans/NunitoSans.ttf",
+      "bytes": 571240,
+      "mode": 420,
+      "sha256": "f934d7142fb4784bf828da485b7dcbd90c0c80d514e9d49a5da0ed3a1ae2491d"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/nunito-sans/OFL.txt",
+      "bytes": 4393,
+      "mode": 420,
+      "sha256": "efbb0c9e864cef973982d9a17567e6be5c3d1759695574586f3f18c7ecca064b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/open-sans/OFL.txt",
+      "bytes": 4389,
+      "mode": 420,
+      "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/open-sans/OpenSans-Italic.ttf",
+      "bytes": 583992,
+      "mode": 420,
+      "sha256": "fe269381e992f32e135801740998544d6235061e37c93ec067ad2be3edd5b17b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/open-sans/OpenSans.ttf",
+      "bytes": 532636,
+      "mode": 420,
+      "sha256": "36643644f318a812aab2d2ed3bb98f8cf0872527f835fe9398d95fe6b9adb878"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/playfair-display/OFL.txt",
+      "bytes": 4449,
+      "mode": 420,
+      "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/playfair-display/PlayfairDisplay-Italic.ttf",
+      "bytes": 278688,
+      "mode": 420,
+      "sha256": "a5e26dc5e2e77fb2803a0bf02fd4f81ee136ec8dea863ccdb0c59a263b21378b"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/playfair-display/PlayfairDisplay.ttf",
+      "bytes": 300724,
+      "mode": 420,
+      "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/poppins/OFL.txt",
+      "bytes": 4385,
+      "mode": 420,
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/poppins/Poppins-Bold.ttf",
+      "bytes": 155996,
+      "mode": 420,
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/poppins/Poppins-Italic.ttf",
+      "bytes": 184544,
+      "mode": 420,
+      "sha256": "4fa76ae75b40f926420514044722cb97f32186cafd3b38263cc34dad7174d46d"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/poppins/Poppins-Regular.ttf",
+      "bytes": 160316,
+      "mode": 420,
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/roboto/OFL.txt",
+      "bytes": 4394,
+      "mode": 420,
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/roboto/Roboto-Italic.ttf",
+      "bytes": 530944,
+      "mode": 420,
+      "sha256": "9725a847af6b460ffca162ae66d20dad48b01876137947180b42d7dcd7887182"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/roboto/Roboto.ttf",
+      "bytes": 488584,
+      "mode": 420,
+      "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/shippori-mincho/OFL.txt",
+      "bytes": 4399,
+      "mode": 420,
+      "sha256": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/shippori-mincho/ShipporiMincho-Regular.ttf",
+      "bytes": 8677284,
+      "mode": 420,
+      "sha256": "769b5269f0f9bc6534b352c0e6bd856a566e03ff788f107191c2d835863570b2"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/fonts/simplified-chinese-manifest.txt",
+      "bytes": 838,
+      "mode": 420,
+      "sha256": "5e42723fe7148934bff0ddf28191e59cc41b021cf82c21803a5477031a24b7c1"
+    },
+    {
+      "path": "support/craft-fonts-37827adc41fd165f9a9234ac40f94dbad353aa69/office-input-provenance.json",
+      "bytes": 32355,
+      "mode": 420,
+      "sha256": "68c995a3275ea4fe975818371fee111c99ea5e964c487960a712ef9dbf2786ce"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/biz-ud-mincho/BIZUDMincho-Regular.ttf",
+      "bytes": 6153932,
+      "mode": 420,
+      "sha256": "468ee6d9b149ca144809e03841bf18740ecf014e055a00da6ecaf1aaf4165af2"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/biz-ud-mincho/OFL.txt",
+      "bytes": 4408,
+      "mode": 420,
+      "sha256": "ef0ed524b3bd012f37015e986809eed6f67905456ebfc1ebd7fcc2765282ee01"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/biz-ud-pgothic/BIZUDPGothic-Bold.ttf",
+      "bytes": 4640596,
+      "mode": 420,
+      "sha256": "30eba52fc837e8b62c97d4b82e6706583149fb7294e3712dd71a655eaea80a90"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/biz-ud-pgothic/BIZUDPGothic-Regular.ttf",
+      "bytes": 4669688,
+      "mode": 420,
+      "sha256": "258d7156c165f2ff774b6efee637c22c3b950de0d8a10e501137061bc8085d01"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/biz-ud-pgothic/OFL.txt",
+      "bytes": 4408,
+      "mode": 420,
+      "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/lxgw-wenkai-lite/LXGWWenKaiLite-Regular.ttf",
+      "bytes": 13949472,
+      "mode": 420,
+      "sha256": "f799a538a3355877e597a0ae04050e897932c9ae7689eb9227c2953c5dd549ea"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/lxgw-wenkai-lite/OFL.txt",
+      "bytes": 5176,
+      "mode": 420,
+      "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/manifest.txt",
+      "bytes": 4190,
+      "mode": 420,
+      "sha256": "e825709cd46ff7abe213c141e981c0c11e098195a134951e95dada85eaea778a"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/nanum-gothic/NanumGothic-Regular.ttf",
+      "bytes": 2054744,
+      "mode": 420,
+      "sha256": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/nanum-gothic/OFL.txt",
+      "bytes": 4534,
+      "mode": 420,
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-arabic/NotoSansArabic.ttf",
+      "bytes": 844676,
+      "mode": 420,
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-arabic/OFL.txt",
+      "bytes": 4382,
+      "mode": 420,
+      "sha256": "07fc70bfeb985cc1a87a8587d0a0c80bab11c86c9dc3fd95b6f0cb332f983e96"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437364,
+      "mode": 420,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-cjk-sc/OFL.txt",
+      "bytes": 4301,
+      "mode": 420,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-devanagari/NotoSansDevanagari-Regular.ttf",
+      "bytes": 277680,
+      "mode": 420,
+      "sha256": "573e525d9f4923d34645fe752475419f45f8dec5a8e43f3e83c5c5f43d1f2ff9"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-devanagari/OFL.txt",
+      "bytes": 4386,
+      "mode": 420,
+      "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-georgian/NotoSansGeorgian.ttf",
+      "bytes": 231988,
+      "mode": 420,
+      "sha256": "dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-georgian/OFL.txt",
+      "bytes": 4384,
+      "mode": 420,
+      "sha256": "8c02263c5d73d40544f9ed91e30c4e947407057a3cc430d7b786189aeceff6df"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-hebrew/NotoSansHebrew-Regular.ttf",
+      "bytes": 66156,
+      "mode": 420,
+      "sha256": "671951828bd5c95db818e5bb12dcea2d0c0dda00311888522be061ee6835125e"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-hebrew/OFL.txt",
+      "bytes": 4382,
+      "mode": 420,
+      "sha256": "9b9fe028b5ba74d231659a1bbaf0ed09b11e759d1ca6a070999e16d151616b47"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-symbols/NotoSansSymbols.ttf",
+      "bytes": 372684,
+      "mode": 420,
+      "sha256": "f7e7e04b4a24b6c78893d50cbfd2b2f6cae49617ab047bfef668d252adb128f7"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-symbols/OFL.txt",
+      "bytes": 4383,
+      "mode": 420,
+      "sha256": "b118dd41337806a5d4797052c77caf3bd096aed783e5eb21b4d11154351e1ac0"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-symbols-2/NotoSansSymbols2-Regular.ttf",
+      "bytes": 1233128,
+      "mode": 420,
+      "sha256": "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-symbols-2/OFL.txt",
+      "bytes": 4383,
+      "mode": 420,
+      "sha256": "b118dd41337806a5d4797052c77caf3bd096aed783e5eb21b4d11154351e1ac0"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-thai/NotoSansThai.ttf",
+      "bytes": 218652,
+      "mode": 420,
+      "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/noto-sans-thai/OFL.txt",
+      "bytes": 4380,
+      "mode": 420,
+      "sha256": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/shippori-mincho/OFL.txt",
+      "bytes": 4399,
+      "mode": 420,
+      "sha256": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/shippori-mincho/ShipporiMincho-Regular.ttf",
+      "bytes": 8677284,
+      "mode": 420,
+      "sha256": "769b5269f0f9bc6534b352c0e6bd856a566e03ff788f107191c2d835863570b2"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/fonts/simplified-chinese-manifest.txt",
+      "bytes": 838,
+      "mode": 420,
+      "sha256": "5e42723fe7148934bff0ddf28191e59cc41b021cf82c21803a5477031a24b7c1"
+    },
+    {
+      "path": "support/craft-fonts-b076417b5880bd4154bd22f00695b1d28c6bea83/office-input-provenance.json",
+      "bytes": 8286,
+      "mode": 420,
+      "sha256": "64616f16ae9d3bfac98958a83263ede085944710aa71faf3a9995fd376f8f043"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/ATTRIBUTION.md",
+      "bytes": 113684,
+      "mode": 420,
+      "sha256": "89f933083b8f9ac06efa12c7ff374f3c4751f9f5739d4d76064ce180f4d63c4c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/af.toml",
+      "bytes": 188,
+      "mode": 420,
+      "sha256": "3f0cbf5ea51465be183869897475ee900ed8d0c9512fcd0de0aad881f0fcb255"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ar.toml",
+      "bytes": 219,
+      "mode": 420,
+      "sha256": "06450de6c0e8a6357135a53f349fefe5796d6f07aed3eea98f0a443e94f5bcc6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/be.toml",
+      "bytes": 223,
+      "mode": 420,
+      "sha256": "f71f89e42ad6b66e31d4f641a16d4a085acbcd2a06e4b77900e0ca392155ef4e"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/bg.toml",
+      "bytes": 239,
+      "mode": 420,
+      "sha256": "f3b496af748ac594157d5e9f81e12756b4ee05658abb75a3d8bc6429f6670492"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/bs.toml",
+      "bytes": 184,
+      "mode": 420,
+      "sha256": "0338978cd1ca553575237349a71817218ce4ec1cbe22d49ca98abf01a326165f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ca-valencia.toml",
+      "bytes": 196,
+      "mode": 420,
+      "sha256": "807707844fbd0d5106beb9f5687b5ac799015f13311d2f9b393419477e446222"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ca.toml",
+      "bytes": 200,
+      "mode": 420,
+      "sha256": "6d0a71ce666d299cbb13aea7418b6d503b02a0e0c07105dac49315fc91e3308f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/cs.toml",
+      "bytes": 196,
+      "mode": 420,
+      "sha256": "3b6837ce4cc5a670e74c6a8b81063a713c7774bc1cc65f43ad2a82881fa1d786"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/cy.toml",
+      "bytes": 179,
+      "mode": 420,
+      "sha256": "7fe35527085c20d06ed929be8d42c6ae9ec4805f38ca0d14d68797ec7a24afe3"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/da.toml",
+      "bytes": 185,
+      "mode": 420,
+      "sha256": "d893c593b7849c1bfbb003323c2f4300368ba7b77b2df460266a721f1ad31367"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/de-at.toml",
+      "bytes": 199,
+      "mode": 420,
+      "sha256": "07457d0ddfaab3238b8ac98b211fc6935f964ed6adbf45573cccbc235f22c5a0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/de-ch.toml",
+      "bytes": 188,
+      "mode": 420,
+      "sha256": "b9a62f5c57c76fdcdadea00c5faac62b80fbc77dfd6bb46b63a3065a07082080"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/de.toml",
+      "bytes": 197,
+      "mode": 420,
+      "sha256": "279a96ff907a54ab266ff485d0a0016342cb462d718d3dbb40fb163b3b619ac4"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/el.toml",
+      "bytes": 231,
+      "mode": 420,
+      "sha256": "dd7609d0b3a586d082594380bc040dd14b92cc9417c10666ee65dc908481df8a"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/eo.toml",
+      "bytes": 182,
+      "mode": 420,
+      "sha256": "95b6ea51da02c1c33c941e314b298eeb61e3f548fbd9ae10f02ed9e73f0e1861"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/es.toml",
+      "bytes": 233,
+      "mode": 420,
+      "sha256": "6420027e4fb6038e8820035d0dff383e6bfbdd7294d96433fea57293f3b218ba"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/et.toml",
+      "bytes": 178,
+      "mode": 420,
+      "sha256": "494637207d4e412999a78c1c5e38b3bb1d052351e0bb473b8372e12c2349684f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/fa.toml",
+      "bytes": 219,
+      "mode": 420,
+      "sha256": "2ca01561c50e592b275acb9a940e54f296f0ae951d0619c40caf6707c9b699d3"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/fr.toml",
+      "bytes": 202,
+      "mode": 420,
+      "sha256": "bc385ede90fb99d53fee394144d8d12332f3ac1883115499521932ab33a00773"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ga.toml",
+      "bytes": 197,
+      "mode": 420,
+      "sha256": "02c3b7aaaa6a5c5874d94984f8ec519e9e0bfa9f62cc901dc3f433beeceabf31"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/gl.toml",
+      "bytes": 184,
+      "mode": 420,
+      "sha256": "38d21cd684a17ad49e12836a442d6843107eeccc0fcc2e6f9998b02272823dac"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/he.toml",
+      "bytes": 205,
+      "mode": 420,
+      "sha256": "5b65c52d7b5b2b89a3e0befabee213ad27dce17ef0713afe43f6b2a5688f7d43"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/hi.toml",
+      "bytes": 263,
+      "mode": 420,
+      "sha256": "422295d72cf54e366bed5a90b869bc27d33b4089a4790f64ee40c82969a3d113"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/hr.toml",
+      "bytes": 184,
+      "mode": 420,
+      "sha256": "54089846c108460bca2d3a804331e8d4ac2eb91957615466c6520edbdcfe6017"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/hu.toml",
+      "bytes": 186,
+      "mode": 420,
+      "sha256": "8b95c7dc6a1fd81cd40f1ae417778c9eda4b64daacc62756007dabb3628287df"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/hy.toml",
+      "bytes": 217,
+      "mode": 420,
+      "sha256": "aa9d4369fd4ceb2d0bb3c41ec765e6b3038cddb5dcfe798b82998e1c12ed3dd8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/id.toml",
+      "bytes": 195,
+      "mode": 420,
+      "sha256": "058d4e1e279b9ba1b6d712c2370df37408ed2c9ee83e28f5e0fe3b1159aac76c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/is.toml",
+      "bytes": 178,
+      "mode": 420,
+      "sha256": "0332934a567df9f8bde574e100172f463ea66913e26cf5a17a881bc8d48c05bb"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/it.toml",
+      "bytes": 199,
+      "mode": 420,
+      "sha256": "c5ac8bc06e127b01bf810b31bffc791a4108be78d63a8e3fbba914a27fd1c2a6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ka.toml",
+      "bytes": 280,
+      "mode": 420,
+      "sha256": "348df7454d394272d30677378149b0a6ac24dbc170eb8e377b0799c0d4a7fc7d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ko.toml",
+      "bytes": 199,
+      "mode": 420,
+      "sha256": "b948af001737a60d14bf096a03cdb044c14bb6f2f6bc028122d82484e4bc4331"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/lt.toml",
+      "bytes": 201,
+      "mode": 420,
+      "sha256": "a52423cc4e1a92de14f176ab862cba833f70b6007c4538144f6c413900c37967"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/lv.toml",
+      "bytes": 195,
+      "mode": 420,
+      "sha256": "d6930d26aba1ccf151e4a3444d98467e27143194869f970ba5462d3bacd39762"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/mk.toml",
+      "bytes": 229,
+      "mode": 420,
+      "sha256": "066bb23d0ec05ae6e1fb2b5d2f26c8ee29d0bd021429079765fb30fab8336eef"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/mn.toml",
+      "bytes": 318,
+      "mode": 420,
+      "sha256": "7e0edd3e9ea91f8eb409f28373aa338ec9c0d3c3238328b5a0a7ae9a3d44ca9f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/nb.toml",
+      "bytes": 172,
+      "mode": 420,
+      "sha256": "13dafd52d0d2b2c4f2007f39dcb85a56beb9c2583b1ed04044d51f7716b61e8b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/nl.toml",
+      "bytes": 191,
+      "mode": 420,
+      "sha256": "abc8e1f283dcd77e4cb1be0c3c0ef7bdf6362b490dc3eca0d3db47596a679dd9"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/nn.toml",
+      "bytes": 172,
+      "mode": 420,
+      "sha256": "8038ae1fa028a691372318d551ecac0f1568df525e9af2fd0e679a779cfff7ee"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/pl.toml",
+      "bytes": 222,
+      "mode": 420,
+      "sha256": "6924d297f9435c87ba932785d137e3e060bdaa57a47f2cf02da845e51c7994cd"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/pt-br.toml",
+      "bytes": 211,
+      "mode": 420,
+      "sha256": "d597c1e71607cab2b8327d8c4ecd0bd5fda85ef72f58abe12f172a38bb517603"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/pt-pt.toml",
+      "bytes": 210,
+      "mode": 420,
+      "sha256": "f844e884ebcc5dbc704c4f4ea47d82ad80f462d2c0753805ea84aae2ea180102"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ro.toml",
+      "bytes": 196,
+      "mode": 420,
+      "sha256": "6ceebcec26c63dab2a8cf4e0d88ad764c53bb2c2c09371b67b5cf75255bc69b2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ru.toml",
+      "bytes": 255,
+      "mode": 420,
+      "sha256": "459936016735fa521c795ebf162eaab158b523d8f1e4c0a358fceb6fb556d007"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sk.toml",
+      "bytes": 194,
+      "mode": 420,
+      "sha256": "7d35962d94f503f8e89ca8d87a1a50f016ad26ae57511df65789d35776e78993"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sl.toml",
+      "bytes": 193,
+      "mode": 420,
+      "sha256": "5402e6fe34995263c80b66ddd65b6b4c9360f56ef348b1f5820de6ee1c08e06c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sq.toml",
+      "bytes": 191,
+      "mode": 420,
+      "sha256": "620983fa141fe000f1a17987caad33617c59313494b73f7f9a2c87fe4f321069"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sr-latn.toml",
+      "bytes": 190,
+      "mode": 420,
+      "sha256": "1e03e7ce744eea40ca444e20f9f09877efc26fe037c16adf88c5718f7e47a9b2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sr.toml",
+      "bytes": 221,
+      "mode": 420,
+      "sha256": "a9bf93cf054b63bf7db7400bf938a351f93b4dbc3ca5e24bd7fef4099b36e532"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sv-fi.toml",
+      "bytes": 180,
+      "mode": 420,
+      "sha256": "1a9d1f8d3d1a31cab6f8b47689972ceef794a6c8abb3ff8b851c816505543695"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sv.toml",
+      "bytes": 187,
+      "mode": 420,
+      "sha256": "2bced38dd45302a5f5f92d11450dfc911a4d30de2c4303de8869ebaaf0c64fb0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/sw.toml",
+      "bytes": 191,
+      "mode": 420,
+      "sha256": "0753c20ee7df743a90adc54123e053aeefda41d8364df3bb06fbb994eca1d6d5"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/ta.toml",
+      "bytes": 307,
+      "mode": 420,
+      "sha256": "ed3a939be9005a7030191befc323c343813b027351013fa5a198118fa960d55e"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/th.toml",
+      "bytes": 427,
+      "mode": 420,
+      "sha256": "a6df717317e0fd5ad026f932478c0fc48df7ea2c87218adda49e629fd6dd496e"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/tr.toml",
+      "bytes": 191,
+      "mode": 420,
+      "sha256": "f6c4960cba714ac17ec3086465efd3473dad0ec3b70f8b8fca9c6e3b3c41f02d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/uk.toml",
+      "bytes": 251,
+      "mode": 420,
+      "sha256": "dfc11492668e58c13c126802e4fddf3b3e12f6537cf78c9b3b92f8c995b47b79"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/checks/vi.toml",
+      "bytes": 194,
+      "mode": 420,
+      "sha256": "b34fd402e986b498638225fffb4da0e8f3acb5f1c814d6b712cd0141eb2d007c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/de/hyphenation.pat",
+      "bytes": 274609,
+      "mode": 420,
+      "sha256": "374ad1ce3263f8a2791ec070ef9b516c532dae64456f3fb656e617e8ae53a9d3"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-au/LICENCE-SCOWL.txt",
+      "bytes": 6976,
+      "mode": 420,
+      "sha256": "1c1dfb5a2331ec9492b9692917760aff5aaadbb6a4c71dc1fd6eb70a82f185ca"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-au/spelling.aff",
+      "bytes": 3240,
+      "mode": 420,
+      "sha256": "ac336f168b018b45aa15ce510184632980dbc80841b599713f46be456e70dc6f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-au/spelling.dic",
+      "bytes": 510897,
+      "mode": 420,
+      "sha256": "2252ef7866813727361b62017fede34da7888e7ab278163055cb931bcb368189"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-ca/LICENCE-SCOWL.txt",
+      "bytes": 6976,
+      "mode": 420,
+      "sha256": "e9c5ac6a3bbd051172c85b558e0471b96f9a13f941cfe468d41893bdeb745933"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-ca/spelling.aff",
+      "bytes": 3240,
+      "mode": 420,
+      "sha256": "aea72d514c3cddf174c4a5370472ea71ad996ff85e275e98bc70b6e173e2f8ec"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-ca/spelling.dic",
+      "bytes": 508393,
+      "mode": 420,
+      "sha256": "0f0c1251da839f68a894fc26e5cb20e689932e19c27ae7067f35d21362c910a6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-gb/LICENCE-SCOWL.txt",
+      "bytes": 6984,
+      "mode": 420,
+      "sha256": "72827bd23b623a253f7928657d68a7b020eea3c7ab8bdfbb1e61323bc8b010c4"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-gb/spelling.aff",
+      "bytes": 3244,
+      "mode": 420,
+      "sha256": "e5478627cc7413a2874134b518c9a3dc667a8886414c72ed47eea65185bd3a88"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-gb/spelling.dic",
+      "bytes": 508689,
+      "mode": 420,
+      "sha256": "4fdb00d235ac2f0634f455f757ba15036261f1557e1b693ac264ee42dbd7c7eb"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/en-extra.txt",
+      "bytes": 2562,
+      "mode": 420,
+      "sha256": "33805dd7fce89e5f07f53b9ad969165251ead0058a339910e9009bfbc86ddd57"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/en-us.dic",
+      "bytes": 432909,
+      "mode": 420,
+      "sha256": "66c44b8946486f2288e2de59d28b07d6e48272ec416a197acddc9e941fb5064d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/en-variants.txt",
+      "bytes": 7886,
+      "mode": 420,
+      "sha256": "a46f345893d19b35268e51f9d17bb1b67417aaa5767cae4517771af3b50374b2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/hyphenation.pat",
+      "bytes": 129481,
+      "mode": 420,
+      "sha256": "0ad447633731c6c9faaf02ac1b327934eaac8aab23f658624d6c67ffe44b88b8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/LICENCE-SCOWL.txt",
+      "bytes": 6976,
+      "mode": 420,
+      "sha256": "d63c711523fc9504fb71e1278489c6d7bb8cafcba75158c107cd17844955470f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/spelling.aff",
+      "bytes": 3240,
+      "mode": 420,
+      "sha256": "526e1dc32d1c0e8806dd72809c017b5546f2104b08b9424a4c47311aca526cca"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/en-us/spelling.dic",
+      "bytes": 508614,
+      "mode": 420,
+      "sha256": "ab012ae86ce4b46b60db5b150869288de9c4a87bc747911764e582125b1b961e"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/it/hyphenation.pat",
+      "bytes": 5011,
+      "mode": 420,
+      "sha256": "6ce56ed6ed2ca7c0688838e366e6595e0429f984f4fc6e96ec045cebb1e76a47"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/AGPL-3.0-or-later.txt",
+      "bytes": 34020,
+      "mode": 420,
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/Apache-2.0.txt",
+      "bytes": 10280,
+      "mode": 420,
+      "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/BSD-3-Clause.txt",
+      "bytes": 1460,
+      "mode": 420,
+      "sha256": "5a93d5831e1297ab10fe643e1a631e83be392896da14ee2951285a79012df69d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "mode": 420,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/CC-BY-SA-3.0.txt",
+      "bytes": 22240,
+      "mode": 420,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/CC-BY-SA-4.0.txt",
+      "bytes": 18375,
+      "mode": 420,
+      "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/FSFAP.txt",
+      "bytes": 225,
+      "mode": 420,
+      "sha256": "99cb91dacd5714a701749ec47239015726beec5fc86a5c94a4873778824b16d7"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/GPL-1.0-or-later.txt",
+      "bytes": 12235,
+      "mode": 420,
+      "sha256": "da37ffd5fcdf0a7d76af862a4330ea1076e1443b51782b2f912148357b7acabe"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/GPL-2.0-only.txt",
+      "bytes": 17337,
+      "mode": 420,
+      "sha256": "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/GPL-2.0-or-later.txt",
+      "bytes": 17337,
+      "mode": 420,
+      "sha256": "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/GPL-3.0-only.txt",
+      "bytes": 34674,
+      "mode": 420,
+      "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/GPL-3.0-or-later.txt",
+      "bytes": 34674,
+      "mode": 420,
+      "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LGPL-2.0-or-later.txt",
+      "bytes": 24877,
+      "mode": 420,
+      "sha256": "86dc99d7e5060915ab1dfc1378b7dd351c62088bfa74067e8aa1868c6fdba7d8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LGPL-2.1-only.txt",
+      "bytes": 26001,
+      "mode": 420,
+      "sha256": "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LGPL-2.1-or-later.txt",
+      "bytes": 26001,
+      "mode": 420,
+      "sha256": "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LGPL-3.0-only.txt",
+      "bytes": 42098,
+      "mode": 420,
+      "sha256": "996af0513df21f7496288951c41428a03c174e9e4a9d63665c57d670f845ccb1"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LGPL-3.0-or-later.txt",
+      "bytes": 42098,
+      "mode": 420,
+      "sha256": "996af0513df21f7496288951c41428a03c174e9e4a9d63665c57d670f845ccb1"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/LPPL-1.3c.txt",
+      "bytes": 18575,
+      "mode": 420,
+      "sha256": "f0f307427080e67974f58f6b7f732039a966b3a7ae480dedee3275907104ac1f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/MIT.txt",
+      "bytes": 1078,
+      "mode": 420,
+      "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/MPL-1.1.txt",
+      "bytes": 23669,
+      "mode": 420,
+      "sha256": "6214f8b1300bb9f37b16ebc146f8f61af0187e0025042ff95c8b3030744a8795"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/MPL-2.0.txt",
+      "bytes": 16727,
+      "mode": 420,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/licences/Unlicense.txt",
+      "bytes": 1211,
+      "mode": 420,
+      "sha256": "0bdebfeda07d45dada625ae1317c6f833186e798b171d0db640bcf32e92a8240"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/manifest.toml",
+      "bytes": 139543,
+      "mode": 420,
+      "sha256": "2f4e88908dc85a030e789465b2631d70409e5e4474f7044ab87cf182f8c055b9"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/pl/hyphenation.pat",
+      "bytes": 34118,
+      "mode": 420,
+      "sha256": "83ddbbd21bc06a44bc4f4a4c49c38782e809cff5f026b764c044daa29e818843"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/pt/hyphenation.pat",
+      "bytes": 5487,
+      "mode": 420,
+      "sha256": "c110a39e501db372d1d755e1c64464321a2efa7d8e9617f66001000389b941f2"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/README.md",
+      "bytes": 4835,
+      "mode": 420,
+      "sha256": "73b4ab6e7847454c4e115765dbce1377f200550fe820741ce71c14cca48d378b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/language-data/ru/ru-extra.txt",
+      "bytes": 7498,
+      "mode": 420,
+      "sha256": "12ca009a9b4d4b62a0f6d561f0a17d9b5aab2d6794c77d42cdf139a9831e9505"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/LICENSE-APACHE",
+      "bytes": 10174,
+      "mode": 420,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/LICENSE-MIT",
+      "bytes": 1102,
+      "mode": 420,
+      "sha256": "55c6959261d5cc6c6234c7e636383c2d1ea65b21abcddc181fad1c8a2d2bea5b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ar/common.tsv",
+      "bytes": 13703,
+      "mode": 420,
+      "sha256": "0faa3ace9da4b6bc170adc1f304691b59304062e0c344c2859b8d8df4030916a"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ar/wordcraft.tsv",
+      "bytes": 158711,
+      "mode": 420,
+      "sha256": "04a7a77511a966689aeed12d94f9ebbb0a776ba0bd6d7c1eed98f1a34c39ccb6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bg/common.tsv",
+      "bytes": 39311,
+      "mode": 420,
+      "sha256": "8b702398d49da2a739b261c809a31a74012dfd20f7c596a16d9080bdf9d540c4"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bg/wordcraft.tsv",
+      "bytes": 174099,
+      "mode": 420,
+      "sha256": "245edd9efd3969e51532a7e8369196132c6c8d9412e81d91f443188ac47bdc6c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bn/common.tsv",
+      "bytes": 47555,
+      "mode": 420,
+      "sha256": "50114ffb6d6ca4ba5c2801323ccf47f3f35a880b42c5545217dc5b0dfb181843"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bn/wordcraft.tsv",
+      "bytes": 76481,
+      "mode": 420,
+      "sha256": "783a91f14ccf366772c39ebdc3825aa8420a4b48063eb44630178c934073c2ba"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bs/common.tsv",
+      "bytes": 30137,
+      "mode": 420,
+      "sha256": "5ff4e7d315da5132f52cdd5cf6ca371b5e66b03ff0625c20576586adb533ad06"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/bs/wordcraft.tsv",
+      "bytes": 123280,
+      "mode": 420,
+      "sha256": "94002d44bb6eda3a27ea219552b3ce40c6408c6b4940f9c996ee16f40e45d635"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/cs/common.tsv",
+      "bytes": 30570,
+      "mode": 420,
+      "sha256": "a2a4c5f93898d0f2e344856bad5d2c56bab7733a41ac382f9c5c7c90e0658277"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/cs/wordcraft.tsv",
+      "bytes": 125546,
+      "mode": 420,
+      "sha256": "89ca325412ca06d583af55b8c5ec7c5676e219cf32a7df7c0c8ea014f264afe8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/da/common.tsv",
+      "bytes": 20545,
+      "mode": 420,
+      "sha256": "bca7e0dae073bc1b79ca1805016b11892dee43b7bf7ad574fa7a3a8c76e68a21"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/da/wordcraft.tsv",
+      "bytes": 115595,
+      "mode": 420,
+      "sha256": "9dc27c8cb02c278e125b79d5b27f5e269d16249be64444e780799ce07dfbe404"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/de/common.tsv",
+      "bytes": 29362,
+      "mode": 420,
+      "sha256": "17fdedf8be2cc765c09f38274ddc6ea23e4508f43299978d3b55a49d3a578c1f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/de/wordcraft.tsv",
+      "bytes": 109993,
+      "mode": 420,
+      "sha256": "1c2c155f54b7988718ef5b8bf91724637fbf06012777bcaeb784b9a31fc0712f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/es/common.tsv",
+      "bytes": 31037,
+      "mode": 420,
+      "sha256": "fc58c0edd260fa421aceaa5418fd6952038fe20c0cea9f5854603076e7ffa962"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/es/wordcraft.tsv",
+      "bytes": 121688,
+      "mode": 420,
+      "sha256": "0926a4e3a947b0c491a884f638b78b015ecc772970f3b5e891093f41b13ba747"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/et/common.tsv",
+      "bytes": 9557,
+      "mode": 420,
+      "sha256": "ed05dac22aff059613960655d7ae761e02f18f006b12c95d51e71365cf4f3154"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/et/wordcraft.tsv",
+      "bytes": 99847,
+      "mode": 420,
+      "sha256": "f24ba87837532fe6118d64d265029151cbd0a1f9ef2fe1939c808898eb59b436"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/fa/common.tsv",
+      "bytes": 36892,
+      "mode": 420,
+      "sha256": "5e7613d852fd319f136be9e2d42a81fdd25c5bddedd377cec33cc372e733ba65"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/fa/wordcraft.tsv",
+      "bytes": 143073,
+      "mode": 420,
+      "sha256": "47a470e82526a3d9f93fed0f78abeee2f8b061e9d2d56a4b9132a308459259e1"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/fr/common.tsv",
+      "bytes": 31731,
+      "mode": 420,
+      "sha256": "b80a9a2d2d40418772238d24d92879b9e91ad995d813fe204ee0f3a7973807b4"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/fr/wordcraft.tsv",
+      "bytes": 136985,
+      "mode": 420,
+      "sha256": "9895185d0b72c3791eeaea295efddfc319b2ae17fcb6d20f26c7a84354d3f89c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/he/common.tsv",
+      "bytes": 23155,
+      "mode": 420,
+      "sha256": "6abe21a5e3aca35462d74530ce6eadd1ec1ae2be779582afdb12009992c48135"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/he/wordcraft.tsv",
+      "bytes": 140380,
+      "mode": 420,
+      "sha256": "e565c9f09254406d4a1417f182a9e1d08e77c345c1f8f607d079fca701649f7c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/hr/common.tsv",
+      "bytes": 10011,
+      "mode": 420,
+      "sha256": "19f02677e51fb68416b526bfdea22760beda7c49f9fae927513fca3ba10bdf3d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/hr/wordcraft.tsv",
+      "bytes": 118862,
+      "mode": 420,
+      "sha256": "14be70cc8f967cc02c86a4899faeb7b880ee4d43bbc6dc08a29c485f7ced6d0d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/hu/common.tsv",
+      "bytes": 31752,
+      "mode": 420,
+      "sha256": "acbb20c606e8274e9e95e3fa75886735d4574d0c8007e19a936fe1df270adfcf"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/hu/wordcraft.tsv",
+      "bytes": 126527,
+      "mode": 420,
+      "sha256": "4dd7719d734eaa2f9646a8644cd326ff39dc4c7959242048497f5cf2e997c4d0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/id/common.tsv",
+      "bytes": 26195,
+      "mode": 420,
+      "sha256": "12591c9fc60bb2c6b806f38dafcefe3fa9b4c1f3ce981c696a2956838dcd1be8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/id/wordcraft.tsv",
+      "bytes": 106101,
+      "mode": 420,
+      "sha256": "7b11661b80fc7291748473ecf80e1a2dba5076243173e630bd886f92b8aceb2b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/it/common.tsv",
+      "bytes": 30422,
+      "mode": 420,
+      "sha256": "bd8c57b9c74c186a9ed15d38575821e287c0ef9ed6c7898c82faf539aa74fa16"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/it/wordcraft.tsv",
+      "bytes": 129067,
+      "mode": 420,
+      "sha256": "c7bf99895e15445c1d00c92fd54653cc19527e2a3a91a8127dbb3d9eba06df9d"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ja/common.tsv",
+      "bytes": 33194,
+      "mode": 420,
+      "sha256": "2b264589b0791daab1681235185b14d719cf40d49b9bbc0f0ad23a1e0a19cbe7"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ja/wordcraft.tsv",
+      "bytes": 118715,
+      "mode": 420,
+      "sha256": "1657d7a9e887b79e3e9776966d6e905de112c655bdfdd453d5dd948940193721"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ka/common.tsv",
+      "bytes": 968,
+      "mode": 420,
+      "sha256": "cc72ce8c3fb7643f0cb2b71fa3cbccb79dbb43a0adf5c2e84a254d2cef52fa61"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ka/wordcraft.tsv",
+      "bytes": 246553,
+      "mode": 420,
+      "sha256": "0652ca1abdc10e0eede1753a266b1fc8704ad7c919f3cfc54773bc7be4edf04b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ko/common.tsv",
+      "bytes": 29312,
+      "mode": 420,
+      "sha256": "453ed41627b9b327079cdc844d3b3a70667f0070f51ab05370c6baac3f4a539a"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ko/wordcraft.tsv",
+      "bytes": 123564,
+      "mode": 420,
+      "sha256": "d2fb60018e22664d427fed98e2f3bf687b3d64bab2642c5727b709fe7ed4c658"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/lv/common.tsv",
+      "bytes": 31715,
+      "mode": 420,
+      "sha256": "acd79073ae12848fba16e9229aaf1374e260554bd649a2d85d1963436df694d5"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/lv/wordcraft.tsv",
+      "bytes": 130951,
+      "mode": 420,
+      "sha256": "e950e0891c03beb66c88b172c1999448b727f6202e51583d53d45d12eca350f6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/nb/common.tsv",
+      "bytes": 29345,
+      "mode": 420,
+      "sha256": "6d0bf6ce1edf4c47dfb612b08656de1f3d1b19b70e4c3ddf99b8933412e7db6c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/nb/wordcraft.tsv",
+      "bytes": 118090,
+      "mode": 420,
+      "sha256": "67da085fc434145536228f978dd78ac1462d150bdaf83dbe4b7a553fb190bb60"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/nl/common.tsv",
+      "bytes": 26697,
+      "mode": 420,
+      "sha256": "54c22916345f8b3936335c68e426fa98a100f586a482465c62949163cad69b8c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/nl/wordcraft.tsv",
+      "bytes": 119525,
+      "mode": 420,
+      "sha256": "117a0ec1949b31e5070ac35c7ae82f574b614218e4a313092a9218d20a662e4b"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/pl/common.tsv",
+      "bytes": 30519,
+      "mode": 420,
+      "sha256": "1b03d88486ef8afc653a0cff14451ea844a73da8cb93555ad64afc095769c26f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/pl/wordcraft.tsv",
+      "bytes": 127420,
+      "mode": 420,
+      "sha256": "54891b2c5008ae7ab2e72ff66af3be20325761eb09122db9c87b163db108e610"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/pt-br/common.tsv",
+      "bytes": 30864,
+      "mode": 420,
+      "sha256": "4d805f426282767dbab6961bcde16c85d51e14312c335c4eaf8f8a305c7ab8da"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/pt-br/wordcraft.tsv",
+      "bytes": 108025,
+      "mode": 420,
+      "sha256": "8407bba3c3f62fa21a3678dd04e13fe0d609ccdaec941a90b59bc9e50d570fcf"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ro/common.tsv",
+      "bytes": 1006,
+      "mode": 420,
+      "sha256": "288b673646b52c00e77093b964caa4f042795be220eb552a432bdd237745e26f"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ro/wordcraft.tsv",
+      "bytes": 133218,
+      "mode": 420,
+      "sha256": "35252de2cad12a8498a8c52262d1c805683f5ccdfdc29a89209287e0c6c14faf"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ru/common.tsv",
+      "bytes": 43746,
+      "mode": 420,
+      "sha256": "405bed05a75e5cd10412bdbbee08a48bb186c7a6d397d85f8659c7636fd63518"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/ru/wordcraft.tsv",
+      "bytes": 169963,
+      "mode": 420,
+      "sha256": "00b719dade283afa1bdf330435fd207af7db1766e73c0c55c3e3fa7ef94603c4"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sk/wordcraft.tsv",
+      "bytes": 130707,
+      "mode": 420,
+      "sha256": "87ab6d3752a6be04743b4debd2eebf8f92e8da513793064739e6a30e75825be8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sl/common.tsv",
+      "bytes": 8570,
+      "mode": 420,
+      "sha256": "86aa1d87d5877346351568b90b0ca8946d9f5a0eda2d3e42e69886266b7de1ec"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sl/wordcraft.tsv",
+      "bytes": 123539,
+      "mode": 420,
+      "sha256": "74d08c9057994f94370f83b3657c9b0bce139e432f1be1cabcd6a586e93ba112"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sr/common.tsv",
+      "bytes": 12783,
+      "mode": 420,
+      "sha256": "a70316f79e74ad37c435c66e4a5dccbfc37966dea34e6289cd4d24e178c471cb"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sr/wordcraft.tsv",
+      "bytes": 137461,
+      "mode": 420,
+      "sha256": "e1eacc183e72d8af4e4498663beed7dd8c551ba68cb2e7426ac98dbeb4a790e8"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sr-latn/common.tsv",
+      "bytes": 26718,
+      "mode": 420,
+      "sha256": "9318a857d76dc441c903ca93880dbcebe95e48735640878f48d54bbee2a6f78a"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sr-latn/wordcraft.tsv",
+      "bytes": 100963,
+      "mode": 420,
+      "sha256": "ff171242cb759f2a4e34359aec7df2baf997386e6251b925e7d6acc66739d7ca"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sv/common.tsv",
+      "bytes": 24821,
+      "mode": 420,
+      "sha256": "de45d706b87db52fbca6ba748ed3191d6d5f9591c49c37f66e9bc400e574cbbe"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/sv/wordcraft.tsv",
+      "bytes": 124230,
+      "mode": 420,
+      "sha256": "9b7cf2b9b1d3e90e1f35ec10b9fa73e141708a51ba3bebc588abca8353eeda1c"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/tr/common.tsv",
+      "bytes": 28766,
+      "mode": 420,
+      "sha256": "e8a2214c6dac1aa94b7f2f1a7cfc155ee86115e43b23c5058b870b69ad077634"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/tr/wordcraft.tsv",
+      "bytes": 119176,
+      "mode": 420,
+      "sha256": "58f4c060d89395f439c21b41dd49b0cfbf5bcdbcf8bc5c5de65d769bb6acdccd"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/uk/common.tsv",
+      "bytes": 42839,
+      "mode": 420,
+      "sha256": "5afaae6cc90fbb6bf760151f64119823f0707922d7f382b908e335ebd23282e0"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/uk/wordcraft.tsv",
+      "bytes": 147037,
+      "mode": 420,
+      "sha256": "a85c078862e74ca22e0d08dbdc522d16b0d87e144e4df1621fb0ee21f4085bc6"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/vi/common.tsv",
+      "bytes": 31980,
+      "mode": 420,
+      "sha256": "6a0cba7ccda50a9d65f492f252c95c5aeead3b383d850d0363e04a827d6167de"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/vi/wordcraft.tsv",
+      "bytes": 133222,
+      "mode": 420,
+      "sha256": "47d45b355e1ea602e1e9710f5fc5030674ef4b8c03355f7688df17711ca88fcf"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/zh-hans/common.tsv",
+      "bytes": 27514,
+      "mode": 420,
+      "sha256": "7d64ba52dd3c68b9fe9c854a5930d132d1a8557dd54ba67ef7c2480df82218bc"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/zh-hans/wordcraft.tsv",
+      "bytes": 95618,
+      "mode": 420,
+      "sha256": "8424f0c4ad6e818d4c57554f0627569db6ef5512ca15f07ce532e02ceeb15379"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/zh-hant/common.tsv",
+      "bytes": 26358,
+      "mode": 420,
+      "sha256": "ad131b539a8de1e766e75253f17787d2b67c40074a70fb54036778ef3caaab79"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/locales/zh-hant/wordcraft.tsv",
+      "bytes": 96992,
+      "mode": 420,
+      "sha256": "5be792d330a489cd2234ce13e83080856dfc4af4d00ba44c1013587e09248730"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/office-input-provenance.json",
+      "bytes": 830,
+      "mode": 420,
+      "sha256": "57da013694eb05764c80871c8293124c74f095470a01c79766bc3eecb58251bb"
+    },
+    {
+      "path": "support/craft-i18n-1e515422afdda2f317af430c1f9d68a5f83935b4/office-required-locales.json",
+      "bytes": 21230,
+      "mode": 420,
+      "sha256": "ecce2db8428478a6f1c62f2f0ad3b08416ecb5bdec95a066ce0db431bf044a7f"
+    },
+    {
+      "path": "support/pdfcraft-models/ATTRIBUTION.txt",
+      "bytes": 1134,
+      "mode": 420,
+      "sha256": "0586352bd8163e4bdcaf1c3016844149df6f1f3b01b1ba963220ce8ecdf54ae1"
+    },
+    {
+      "path": "support/pdfcraft-models/office-input-provenance.json",
+      "bytes": 1161,
+      "mode": 420,
+      "sha256": "95473acf11106914119acb2fc96e1be2d6ed9629c88644f4f47d64b71874cd9e"
+    },
+    {
+      "path": "support/pdfcraft-models/text-detection.onnx",
+      "bytes": 2499479,
+      "mode": 420,
+      "sha256": "a917b23dbd9524b465df7e922641b3ff2981623df4ded5a0234004ef2fee7cfe"
+    },
+    {
+      "path": "support/pdfcraft-models/text-detection.onnx.LICENCE.txt",
+      "bytes": 20138,
+      "mode": 420,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "path": "support/pdfcraft-models/text-recognition.onnx",
+      "bytes": 9713177,
+      "mode": 420,
+      "sha256": "86c145c2edb96c8caed5b1ebb8f44d706408922211451c309c625157dd6061c5"
+    },
+    {
+      "path": "support/pdfcraft-models/text-recognition.onnx.LICENCE.txt",
+      "bytes": 20138,
+      "mode": 420,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "path": "SUPPORT-DATA.json",
+      "bytes": 2008,
+      "mode": 420,
+      "sha256": "2b213792cfc293b2a18aa9815e217cc2851900a07bfd2d11241ac1b1f1734b5d"
+    },
+    {
+      "path": "SUPPORT-PROVENANCE.json",
+      "bytes": 45033,
+      "mode": 420,
+      "sha256": "3a79ce6608275e7123804862bab0d82331271f6c3a762b0755be0d31a3d1f814"
+    }
+  ]
+}

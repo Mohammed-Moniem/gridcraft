@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 5,
+  "kind": "BUILTIN_ONLY_PURE_READ_ONLY_V5_PREPARATION_ORACLE",
+  "commands": [
+    "node artcraft-upstream-review/platform/grid-host-discovery-v5/verify.mjs preparation"
+  ],
+  "localModules": [
+    "verify.mjs",
+    "model.mjs",
+    "pe.mjs",
+    "output-contract.mjs",
+    "query-plan.mjs",
+    "delivery-contract.mjs"
+  ],
+  "preparationModules": [
+    "verify.mjs",
+    "model.mjs",
+    "pe.mjs",
+    "output-contract.mjs",
+    "query-plan.mjs",
+    "delivery-contract.mjs"
+  ],
+  "imports": {
+    "verify.mjs": [
+      "node:assert/strict",
+      "node:fs/promises",
+      "node:path",
+      "node:url",
+      "./model.mjs",
+      "./pe.mjs",
+      "./output-contract.mjs",
+      "../grid-current-v5/control-fixtures.mjs",
+      "./query-plan.mjs",
+      "./delivery-contract.mjs",
+      "../grid-current-v5/delivery-controls.mjs"
+    ],
+    "model.mjs": [
+      "node:assert/strict",
+      "node:crypto",
+      "../grid-current-v5/python-plan.mjs",
+      "./query-plan.mjs",
+      "../grid-current-v5/host-contract.mjs"
+    ],
+    "pe.mjs": [
+      "node:crypto",
+      "node:assert/strict"
+    ],
+    "output-contract.mjs": [
+      "node:assert/strict",
+      "node:crypto",
+      "node:path",
+      "./query-plan.mjs",
+      "../grid-current-v5/python-plan.mjs",
+      "../grid-current-v5/host-contract.mjs"
+    ],
+    "query-plan.mjs": [
+      "node:assert/strict",
+      "node:path",
+      "../grid-current-v5/python-plan.mjs"
+    ],
+    "delivery-contract.mjs": [
+      "node:assert/strict",
+      "node:crypto"
+    ]
+  },
+  "localModuleRecords": [
+    {
+      "path": "verify.mjs",
+      "bytes": 12760,
+      "sha256": "ecf8b09b93b01d41200da72938d428be50aa30fec7df6a14092638099c92d143",
+      "mode": 420
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 8158,
+      "sha256": "0ecbeaa6bcb2473fbba944a97dd83cb263353be4f40b55bf119b0eb5e068c57e",
+      "mode": 420
+    },
+    {
+      "path": "pe.mjs",
+      "bytes": 6735,
+      "sha256": "fd44f5f607d32f242b26b4759989538a7b7ea524eb4274eaefccce06b62c5893",
+      "mode": 420
+    },
+    {
+      "path": "output-contract.mjs",
+      "bytes": 14574,
+      "sha256": "412c67a8340934daa7cf51195d5f9559139c949eb177bff5e704457cf875d0fb",
+      "mode": 420
+    },
+    {
+      "path": "query-plan.mjs",
+      "bytes": 4558,
+      "sha256": "05381a50e3cc13faaf0f95f591259525c75fa3987565f0aeab158bdeef559718",
+      "mode": 420
+    },
+    {
+      "path": "delivery-contract.mjs",
+      "bytes": 3827,
+      "sha256": "b2df6666882fbc4782fd74ea8671f8f7352840ed4483fb175fa69c2cf2896388",
+      "mode": 420
+    }
+  ],
+  "externalPureModules": [
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/core.mjs",
+      "bytes": 15187,
+      "sha256": "48cb5c273852ca5b98b81fd4d88bc7eaaa524b83779fae97a4e43753cfac4f73",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/python-plan.mjs",
+      "bytes": 1525,
+      "sha256": "631492924c5d60a659e7d08914517f0032babe357b7c028b32459d12de4618d6",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/control-fixtures.mjs",
+      "bytes": 11100,
+      "sha256": "b787be2d32e633bfdeb8f5dfb34e56e30f0791408cf9f54082b991900c18f0e7",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/host-contract.mjs",
+      "bytes": 7339,
+      "sha256": "944f2966d3d84449f6a8cefcf09de11a10ec1b1238ba6c548c951afa530c6fa2",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/archive-policy.mjs",
+      "bytes": 843,
+      "sha256": "c052f777718cd596a31a7e1140653f50c698f31b6152510585c1f0a9060e20ad",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/delivery-controls.mjs",
+      "bytes": 3773,
+      "sha256": "c85c0fb884641534322100b03a8df023e35155ac73087db82499c6fe9bbb9e45",
+      "mode": 420
+    },
+    {
+      "path": "artcraft-upstream-review/platform/grid-current-v5/python-namespace-contract.mjs",
+      "bytes": 6131,
+      "sha256": "4523b9823f80c1a880a0cdde875dde1f585b814f6c109e3c28bc8d19c94a439e",
+      "mode": 420
+    }
+  ],
+  "writes": false,
+  "subprocess": false,
+  "network": false,
+  "probeImported": false,
+  "producerImported": false,
+  "testControllerImported": false,
+  "filesystemPolicyImported": false,
+  "oldModuleImports": false,
+  "acquiredCodeExecution": false,
+  "evidenceBoundary": "Pure data sensitivity/preservation only; actual shared filesystem policy tests have their own separately admitted controller. Parser evidence is inherited only through exact code/budget/result hashes."
+}
