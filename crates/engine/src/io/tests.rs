@@ -33,6 +33,9 @@ fn save_fails_upfront_when_the_temp_name_is_taken() {
     std::os::unix::fs::symlink(&victim, dir.join("book.xlsx.sctmp")).unwrap();
     let err = write_file(dest.to_str().unwrap(), b"new").unwrap_err();
     assert_eq!(std::fs::read(&victim).unwrap(), b"original");
+    let temporary = dir.join("book.xlsx.sctmp");
+    assert!(std::fs::symlink_metadata(&temporary).unwrap().file_type().is_symlink());
+    assert_eq!(std::fs::read_link(&temporary).unwrap(), victim);
     assert!(!dir.join("book.xlsx").exists(), "{err}");
     let _ = std::fs::remove_dir_all(&dir);
 }
@@ -760,4 +763,34 @@ fn sylk_survives_huge_relative_offsets_and_width_floods() {
     flood.extend_from_slice(b"C;Y1;X1;K1\nE\n");
     let (wb, _) = open_bytes("widths.slk", &flood).unwrap();
     assert_eq!(wb.sheet(0).unwrap().value(CellRef::parse("A1").unwrap()), gridcraft_core::Value::Number(1.0));
+}
+
+/// A failed create_new never owns the occupied temporary path or the old destination.
+#[cfg(not(target_arch = "wasm32"))]
+#[test]
+fn save_failed_exclusive_creation_preserves_existing_temporary_file() {
+    static NEXT_DIRECTORY: std::sync::atomic::AtomicU64 = std::sync::atomic::AtomicU64::new(0);
+    let dir = (0..1024)
+        .find_map(|_| {
+            let nonce = NEXT_DIRECTORY.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
+            let dir = std::env::temp_dir().join(format!("gridcraft-save-ownership-{}-{nonce}", std::process::id()));
+            match std::fs::create_dir(&dir) {
+                Ok(()) => Some(dir),
+                Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => None,
+                Err(error) => panic!("create owned save-ownership test directory: {error}"),
+            }
+        })
+        .expect("all save-ownership test directory candidates are already occupied");
+    let dest = dir.join("book.xlsx");
+    let temporary = dir.join("book.xlsx.sctmp");
+    std::fs::write(&dest, b"old workbook").unwrap();
+    std::fs::write(&temporary, b"another writer's pending data").unwrap();
+    assert!(write_file(dest.to_str().unwrap(), b"new workbook").is_err());
+    assert_eq!(std::fs::read(&dest).unwrap(), b"old workbook");
+    assert_eq!(std::fs::read(&temporary).expect("unowned temporary file was removed"), b"another writer's pending data");
+    std::fs::remove_file(&temporary).unwrap();
+    write_file(dest.to_str().unwrap(), b"new workbook").unwrap();
+    assert_eq!(std::fs::read(&dest).unwrap(), b"new workbook");
+    assert!(!temporary.exists());
+    std::fs::remove_dir_all(&dir).unwrap();
 }

@@ -157,7 +157,7 @@ impl SheetApp {
         let extension = if workbook.vba_project.is_some() { "xlsm" } else { "xlsx" };
         let name = format!("{stem}.{extension}");
         let bytes = gridcraft_engine::io::save_bytes(&workbook, &name).map_err(|error| error.to_string())?;
-        self.host_enqueue_write(name, bytes, save_as, uid, revision, workbook, SaveDisposition::Source)
+        self.host_enqueue_write(name, bytes, save_as, (uid, revision, workbook), SaveDisposition::Source)
     }
     /// Copy exports never become the workbook's saved baseline or change its title/path.
     pub fn host_export_copy(&mut self, format: &str, name: Option<&str>) -> Result<Value, String> {
@@ -178,18 +178,17 @@ impl SheetApp {
     }
     pub(crate) fn host_start_copy(&mut self, name: String, bytes: Vec<u8>) -> Result<Value, String> {
         let doc = self.session.active().ok_or("no workbook is open")?;
-        self.host_enqueue_write(name, bytes, false, doc.uid, doc.revision, doc.wb.clone(), SaveDisposition::Copy)
+        self.host_enqueue_write(name, bytes, false, (doc.uid, doc.revision, doc.wb.clone()), SaveDisposition::Copy)
     }
     fn host_enqueue_write(
         &mut self,
         name: String,
         bytes: Vec<u8>,
         save_as: bool,
-        uid: u64,
-        revision: u64,
-        workbook: Arc<Workbook>,
+        owner: (u64, u64, Arc<Workbook>),
         disposition: SaveDisposition,
     ) -> Result<Value, String> {
+        let (uid, revision, workbook) = owner;
         if self.pending_host_saves.len() + self.finished_host_saves.len() >= 8 {
             return Err("too many pending host writes".into());
         }
@@ -458,10 +457,10 @@ fn validate(command: &str, params: &Value) -> Result<(), String> {
             return Err("value block exceeds worksheet bounds".into());
         }
     }
-    if let Some(name) = params.get("name") {
-        if name.as_str().is_none_or(|name| name.is_empty() || name.len() > 128) {
-            return Err("invalid sheet name".into());
-        }
+    if let Some(name) = params.get("name")
+        && name.as_str().is_none_or(|name| name.is_empty() || name.len() > 128)
+    {
+        return Err("invalid sheet name".into());
     }
     if matches!(command, "edit.undo" | "edit.redo")
         && params.get("steps").is_some_and(|steps| steps.as_u64().is_none_or(|steps| steps == 0 || steps > 100))

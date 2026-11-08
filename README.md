@@ -1,11 +1,9 @@
-# Gridcraft: Mohammed-Moniem component repository
+# Gridcraft: Mohammed-Moniem progress component
 
-This independent repository contains the complete modified gridcraft engine from the preserved embedded-office-suite source4 progress baseline. Publication destination: **Mohammed-Moniem/gridcraft**. Upstream references remain for attribution and dependency provenance.
+A failed exclusive creation of a save temporary path leaves that existing regular file or symlink untouched. Successful-create cleanup and access-policy ordering remain unchanged. This cumulative update includes the exact ownership regression, bounded exclusive test fixtures and equivalent dictionary, host, dialog and CLI maintenance. See [verification and limits](verification/grid-current-quality.md).
 
-This is an in-progress integration component, not a completed Microsoft/Adobe replacement. No newly reviewed PR proposal is applied here. See [OFFLINE.md](OFFLINE.md) for your GitHub-hosted native/WASM runtimes, Rust tools, vendors, support assets and Node/WebView integration.
+Full required matching-Rust1.95 CI passed all10 stages: 3,589 passing cases, zero failures and one existing ignored timing test. The165 focused I/O, policy, host, dialog/window and CLI identities are subsets of that total. Doctests ran zero cases. WASM checks12 packages including gridcraft-web; this is compilation, not browser runtime acceptance. CI used a reused cache, offline vendors and an admitted local-server environment: wildcard and IPv6 binds are allowed; one external TCP probe is OS-denied. No global isolation/airgap proof is claimed. Earlier environmental failures remain preserved.
 
-The original engine README is [UPSTREAM-README.md](UPSTREAM-README.md). Original MIT/Apache licences, NOTICE and third-party notices remain in this tree. This is not an official upstream release.
+Fresh independent cumulative source review and exact parent replay selected five source paths. The separate current macOS ARM64 CLI compiled under original OS deny-all networking. Its prepared archive needs no Cargo for the documented CLI commands. Artifact review, owner publication and public extracted-package verification are separate gates. This source archive contains the complete owner tree; compiler/linker/SDK, vendor and support inputs are separate in [OFFLINE.md](OFFLINE.md).
 
-Source suite commit: 7e5cd4793c4f3f7c193cffbd1cf2c44ea81a9816. [SOURCE-PROVENANCE.json](SOURCE-PROVENANCE.json) records every original source file/hash/mode, including the README rename.
-
-Current evidence covers selected source4 workflows on macOS ARM64/Intel and Windows Server2022; Windows11, the private harness, full optional-feature coverage and product/file fidelity remain unverified. New repository publication does not establish a new build or runtime qualification.
+The original README is [UPSTREAM-README.md](UPSTREAM-README.md). Original MIT/Apache licences, notices, attribution, contributor data and inactive upstream CI references are preserved. This is an independent progress component; source4 baseline tags/assets stay separate. Full native app, complete browser/WASM runtime, Windows11, Intel, private-host integration, writer races, crash durability and Microsoft Office parity remain unqualified.

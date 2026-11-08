@@ -544,10 +544,10 @@ fn mcp(args: &[String]) -> Result<(), String> {
         return Err("--connect cannot be combined with automation roots: the remote app is not confined".into());
     }
     // Install roots before --in reads a workbook, and in every thread the server might create.
-    if let Some(roots) = &roots {
-        if !gridcraft_engine::file_access::confine_process(roots.clone()) {
-            return Err("automation roots were already installed in this process".into());
-        }
+    if let Some(roots) = &roots
+        && !gridcraft_engine::file_access::confine_process(roots.clone())
+    {
+        return Err("automation roots were already installed in this process".into());
     }
     let backend: Box<dyn Backend> = match a.opt("connect") {
         Some(c) => {
