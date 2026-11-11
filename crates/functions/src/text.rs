@@ -1,5 +1,6 @@
 //! Text functions.
 
+use std::borrow::Cow;
 use std::collections::HashMap;
 
 use gridcraft_core::parse::parse_number_text_in;
@@ -55,25 +56,73 @@ fn concat(a: &[Arg], _c: &mut dyn Ctx) -> R<Value> {
     check_len(out)
 }
 
+/// The top-left scalar used by text coercion, without recursively walking nested arrays.
+fn textjoin_scalar(mut value: &Value) -> Option<&Value> {
+    loop {
+        match value {
+            Value::Array(array) => value = array.data.first()?,
+            _ => return Some(value),
+        }
+    }
+}
+
+/// Find the error text coercion would return without allocating the text itself.
+fn textjoin_error(value: &Value) -> Option<CellError> {
+    match textjoin_scalar(value) {
+        Some(Value::Error(error)) => Some(*error),
+        _ => None,
+    }
+}
+
+/// Borrow file/caller-derived text, including a nested array's top-left value.
+fn textjoin_text(value: &Value) -> R<Cow<'_, str>> {
+    match textjoin_scalar(value) {
+        None => Ok(Cow::Borrowed("")),
+        Some(Value::Text(text)) => Ok(Cow::Borrowed(text.as_ref())),
+        Some(value) => value.to_text().map(Cow::Owned),
+    }
+}
+
+/// Refuse an oversized piece before copying it into the output. The existing final
+/// character-count check remains authoritative; four UTF-8 bytes per character bounds storage.
+fn textjoin_push(out: &mut String, piece: &str) -> R<()> {
+    if out.len().checked_add(piece.len()).is_none_or(|bytes| bytes > MAX_TEXT * 4) {
+        return Err(CellError::Value);
+    }
+    out.push_str(piece);
+    Ok(())
+}
+
+/// Preserve argument-order error precedence while building only the capped result.
 fn textjoin(a: &[Arg], _c: &mut dyn Ctx) -> R<Value> {
-    let delims: Vec<String> = as_array(&arg(a, 0)?.value).iter().map(|v| v.to_text()).collect::<R<_>>()?;
+    let delims = as_array(&arg(a, 0)?.value);
+    if let Some(error) = delims.iter().find_map(textjoin_error) {
+        return Err(error);
+    }
     let ignore = boolean(a, 1)?;
-    let mut items = Vec::new();
-    for x in a.iter().skip(2) {
-        for v in as_array(&x.value).iter() {
-            let s = v.to_text()?;
-            if ignore && s.is_empty() {
-                continue;
-            }
-            items.push(s);
+    // Scan errors before output limits, without holding copies of every argument or value.
+    for argument in a.iter().skip(2) {
+        if let Some(error) = as_array(&argument.value).iter().find_map(textjoin_error) {
+            return Err(error);
         }
     }
     let mut out = String::new();
-    for (i, s) in items.iter().enumerate() {
-        if i > 0 && !delims.is_empty() {
-            push_capped(&mut out, &delims[(i - 1) % delims.len()])?;
+    let mut joined = 0usize;
+    for argument in a.iter().skip(2) {
+        for value in as_array(&argument.value).iter() {
+            let text = textjoin_text(value)?;
+            if ignore && text.is_empty() {
+                continue;
+            }
+            if joined > 0
+                && !delims.data.is_empty()
+                && let Some(delimiter) = delims.data.get((joined - 1) % delims.data.len())
+            {
+                textjoin_push(&mut out, &textjoin_text(delimiter)?)?;
+            }
+            textjoin_push(&mut out, &text)?;
+            joined = joined.checked_add(1).ok_or(CellError::Value)?;
         }
-        push_capped(&mut out, s)?;
     }
     check_len(out)
 }
@@ -1169,6 +1218,104 @@ mod tests {
         is_err(ev("CONCAT", vec![t("a"), e(CellError::NA)]), CellError::NA);
         // Lifting: CONCATENATE over an array.
         assert_eq!(rows_of(&ev("CONCATENATE", vec![av(row_t(&["a", "b"])), t("x")])), vec![vec![tv("ax"), tv("bx")]]);
+    }
+
+    // Original PR3202 regression by dylanmtaylor at fc1bc1f47453dfab9d4e3454d641be078b501c1f.
+    /// Security: TEXTJOIN builds its result piece by piece and stops at the text cap, rather
+    /// than first copying every input (100,000 references to one 32,767-character text were
+    /// 3 GB of copies). Errors among the inputs still win, in argument order.
+    #[test]
+    fn textjoin_stops_at_the_text_cap() {
+        use gridcraft_core::Array;
+        let long = tv(&"x".repeat(32_767));
+        let many = || av(Array::filled(100_000, 1, long.clone()).into());
+        is_err(ev("TEXTJOIN", vec![t(","), b(true), many()]), CellError::Value);
+        is_err(ev("TEXTJOIN", vec![av(Array::filled(1, 100_000, long.clone()).into()), b(false), t("a"), t("b")]), CellError::Value);
+        is_err(ev("TEXTJOIN", vec![t(","), b(true), many(), e(CellError::Div0)]), CellError::Div0);
+        is_err(ev("TEXTJOIN", vec![av(arr(vec![vec![tv(","), Value::Error(CellError::NA)]])), b(true), t("a")]), CellError::NA);
+        // Delimiters cycle and are converted only where used.
+        is_text(ev("TEXTJOIN", vec![av(arr(vec![vec![nv(1.0), tv(";")]])), b(false), t("a"), t("b"), t("c"), t("d")]), "a1b;c1d");
+    }
+
+    /// A separate-process rusage probe: the array holds shared text, not 4,096 owned copies.
+    #[test]
+    fn textjoin_resource_probe_items() {
+        use gridcraft_core::Array;
+        const COUNT: usize = 4096;
+        let text = tv(&"x".repeat(super::MAX_TEXT));
+        let values = Array::filled(COUNT, 1, text);
+        is_err(ev("TEXTJOIN", vec![t(","), b(true), av(values.into())]), CellError::Value);
+        println!("TEXTJOIN_RESOURCE items count={COUNT} piece_bytes={} logical_bytes={}", super::MAX_TEXT, COUNT * super::MAX_TEXT);
+    }
+
+    /// An unused delimiter list must not be materialized just to return one short item.
+    #[test]
+    fn textjoin_resource_probe_unused_delimiters() {
+        use gridcraft_core::Array;
+        const COUNT: usize = 4096;
+        let text = tv(&"x".repeat(super::MAX_TEXT));
+        let delimiters = Array::filled(1, COUNT, text);
+        is_text(ev("TEXTJOIN", vec![av(delimiters.into()), b(true), t("one")]), "one");
+        println!("TEXTJOIN_RESOURCE unused_delimiters count={COUNT} piece_bytes={} logical_bytes={}", super::MAX_TEXT, COUNT * super::MAX_TEXT);
+    }
+
+    #[test]
+    fn textjoin_cap_and_delimiter_controls() {
+        let at_limit = "x".repeat(super::MAX_TEXT);
+        is_text(ev("TEXTJOIN", vec![t(""), b(false), t(&at_limit)]), &at_limit);
+        is_err(ev("TEXTJOIN", vec![t(""), b(false), t(&at_limit), t("x")]), CellError::Value);
+        let prefix = "x".repeat(super::MAX_TEXT - 2);
+        is_text(ev("TEXTJOIN", vec![t("+"), b(false), t(&prefix), t("b")]), &format!("{prefix}+b"));
+        is_err(ev("TEXTJOIN", vec![t("++"), b(false), t(&prefix), t("b")]), CellError::Value);
+        is_text(ev("TEXTJOIN", vec![av(row_t(&[",", ";"])), b(false), t("a"), t("b"), t("c"), t("d")]), "a,b;c,d");
+        is_text(ev("TEXTJOIN", vec![av(arr(vec![vec![nv(1.0), tv(";")]])), b(false), t("a"), t("b"), t("c"), t("d")]), "a1b;c1d");
+        let values = av(arr(vec![vec![tv("a"), tv(""), Value::Empty, tv("b")]]));
+        is_text(ev("TEXTJOIN", vec![t("-"), b(true), values.clone()]), "a-b");
+        is_text(ev("TEXTJOIN", vec![t("-"), b(false), values]), "a---b");
+        is_text(ev("TEXTJOIN", vec![t("|"), b(true), t("é"), empty(), t("🦀"), n(1.5), b(false)]), "é|🦀|1.5|FALSE");
+        let lifted = ev("TEXTJOIN", vec![t("-"), av(arr(vec![vec![Value::Bool(true), Value::Bool(false)]])), av(row_t(&["a", "", "b"]))]);
+        assert_eq!(rows_of(&lifted), vec![vec![tv("a-b"), tv("a--b")]]);
+    }
+
+    #[test]
+    fn textjoin_errors_are_found_before_result_limits() {
+        use gridcraft_core::Array;
+        let delimiters = av(arr(vec![vec![tv(","), Value::Error(CellError::NA)]]));
+        is_err(ev("TEXTJOIN", vec![delimiters, t("not_boolean"), e(CellError::Div0)]), CellError::NA);
+        is_err(ev("TEXTJOIN", vec![t(","), t("not_boolean"), e(CellError::Div0)]), CellError::Value);
+        let long = tv(&"x".repeat(super::MAX_TEXT));
+        let values = av(Array::row(vec![long.clone(), long, Value::Error(CellError::Div0)]).into());
+        is_err(ev("TEXTJOIN", vec![t(","), b(true), values]), CellError::Div0);
+        let nested = Value::from(Array::scalar(Value::Error(CellError::Num)));
+        is_err(ev("TEXTJOIN", vec![t(","), b(true), av(Array::row(vec![nested, Value::Error(CellError::NA)]).into())]), CellError::Num);
+        is_err(ev("TEXTJOIN", vec![av(Array::row(vec![Value::Error(CellError::Num)]).into()), b(true), t("one")]), CellError::Num);
+    }
+
+    #[test]
+    fn textjoin_nested_arrays_keep_top_left_semantics() {
+        use gridcraft_core::Array;
+        let nested = Value::from(Array::row(vec![tv("a"), Value::Error(CellError::Num)]));
+        is_text(ev("TEXTJOIN", vec![t(","), b(true), av(Array::row(vec![nested, tv("b")]).into())]), "a,b");
+        let empty_nested = Value::from(Array { rows: 0, cols: 0, data: Vec::new() });
+        let values = av(Array::row(vec![empty_nested, tv("b")]).into());
+        is_text(ev("TEXTJOIN", vec![t(","), b(true), values.clone()]), "b");
+        is_text(ev("TEXTJOIN", vec![t(","), b(false), values]), ",b");
+        let mut nested = tv("deep");
+        for _ in 0..1024 {
+            nested = Array::scalar(nested).into();
+        }
+        is_text(ev("TEXTJOIN", vec![t(","), b(true), av(Array::scalar(nested).into()), t("end")]), "deep,end");
+    }
+
+    #[test]
+    fn textjoin_oversized_values_and_delimiters_are_refused() {
+        use gridcraft_core::Array;
+        let large = tv(&"x".repeat(super::MAX_TEXT * 8));
+        is_err(ev("TEXTJOIN", vec![t(""), b(false), av(large.clone())]), CellError::Value);
+        let nested = Array::scalar(Value::from(Array::scalar(large.clone())));
+        is_err(ev("TEXTJOIN", vec![t(""), b(false), av(Array::scalar(nested.into()).into())]), CellError::Value);
+        is_err(ev("TEXTJOIN", vec![av(Array::row(vec![large.clone()]).into()), b(false), t("a"), t("b")]), CellError::Value);
+        is_text(ev("TEXTJOIN", vec![av(Array::row(vec![large]).into()), b(false), t("one")]), "one");
     }
 
     fn row_t(xs: &[&str]) -> Value {
