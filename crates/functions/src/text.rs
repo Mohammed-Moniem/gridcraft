@@ -1237,7 +1237,7 @@ mod tests {
         is_text(ev("TEXTJOIN", vec![av(arr(vec![vec![nv(1.0), tv(";")]])), b(false), t("a"), t("b"), t("c"), t("d")]), "a1b;c1d");
     }
 
-    /// A separate-process rusage probe: the array holds shared text, not4096owned copies.
+    /// A separate-process rusage probe: the array holds shared text, not 4,096 owned copies.
     #[test]
     fn textjoin_resource_probe_items() {
         use gridcraft_core::Array;
