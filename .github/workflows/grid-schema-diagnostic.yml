@@ -5,23 +5,4 @@ permissions:
   contents: read
 jobs:
   inspect:
-    if: github.repository == 'Mohammed-Moniem/gridcraft'
-    runs-on: windows-2022
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          ref: ${{ github.sha }}
-          persist-credentials: false
-          clean: true
-      - name: Inspect one exact existing schema as inert bytes
-        shell: pwsh -NoLogo -NoProfile -NonInteractive -Command ". '{0}'"
-        run: node platform/grid-schema-diagnostic/inspect-host.mjs
-      - name: Preserve bounded diagnostic JSON only
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: grid-exact-apiset-diagnostic
-          path: diagnostics/grid-apiset/DIAGNOSTIC.json
-          if-no-files-found: warn
-          retention-days: 14
+    uses: Mohammed-Moniem/embedded-office-suite/.github/workflows/grid-schema-diagnostic.yml@0a66cada142742f69a2834183fab5296450a036a
