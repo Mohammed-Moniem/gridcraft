@@ -1,0 +1,8 @@
+name: Grid exact API-set diagnostic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    uses: Mohammed-Moniem/embedded-office-suite/.github/workflows/grid-schema-diagnostic.yml@0a66cada142742f69a2834183fab5296450a036a

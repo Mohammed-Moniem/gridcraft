@@ -1,3 +1,9 @@
+# Personal distribution instructions
+
+This repository is maintained in Mohammed-Moniem's GitHub account for the portable Office suite. Keep source changes, pull requests and automation in this account; Storytold repositories are read-only references.
+
+For this distribution, shared CI workflows live in `Mohammed-Moniem/embedded-office-suite`. Component workflows call that repository at an immutable commit SHA. This account-specific instruction supersedes the upstream CI destination and contribution-routing instructions below. Preserve the remaining coding, security, attribution and licensing rules.
+
 <!-- craft-house-rules:start core source=dde09ea31e2e457f5b4653a6e76f7cdf55944bdf sha256=540e6cea75d12d0710c3dca89658328e81e508ecef102446ca5bb95b7c0b92bb -->
 ## House rules
 
