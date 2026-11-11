@@ -3,6 +3,23 @@
   "scope": "Complete paired authored executable/import inventory; external hash chain excludes future discovery model from platform freeze",
   "files": [
     {
+      "path": "apiset-schema.test.mjs",
+      "bytes": 8978,
+      "sha256": "1f4d99f2da804eeaa73f4e55e7acba5e239624198a28fb9163f6111b224c5968",
+      "mode": 420,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./apiset-observed-hosts.json",
+        "./pe.mjs"
+      ],
+      "dynamicImports": [],
+      "pythonImports": [],
+      "executedAtMetadataSealing": false,
+      "archivedProducerOnly": false,
+      "testOnly": true
+    },
+    {
       "path": "delivery-contract.mjs",
       "bytes": 3827,
       "sha256": "b2df6666882fbc4782fd74ea8671f8f7352840ed4483fb175fa69c2cf2896388",
@@ -71,8 +88,8 @@
     },
     {
       "path": "pe.mjs",
-      "bytes": 6735,
-      "sha256": "fd44f5f607d32f242b26b4759989538a7b7ea524eb4274eaefccce06b62c5893",
+      "bytes": 6898,
+      "sha256": "f448edf3045a32ca12b49a5dcef23b95c3160e1ee26eabe9d366dc1f82450f37",
       "mode": 420,
       "imports": [
         "node:crypto",

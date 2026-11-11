@@ -1,0 +1,207 @@
+{
+  "kind": "RETAINED_APISET_HOST_VALUES_FOR_SYNTHETIC_REGRESSION",
+  "source": {
+    "runId": 42984039287,
+    "schemaBytes": 144800,
+    "schemaSha256": "fd45c0d71100c8d2bff924fc7650b1c2c869fbeea6f8d1f521315e6781de4aaa",
+    "diagnosticSha256": "c13f8d5374b9ed74c8f3cdd8cbf1546b4db099bed4790c5b7f56c56e7a2b4419",
+    "totalRejections": 42,
+    "retainedRejections": 32,
+    "omittedRejections": 10
+  },
+  "limitations": "Only retained contract and host strings are replayed. Aliases, PE layout and table offsets in tests are synthetic. The original PE was not retained; unknown omitted values are not reconstructed.",
+  "cases": [
+    {
+      "entryIndex": 488,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-base-export-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 489,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-baseinit-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 490,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-common-export-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 491,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-common-input-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 492,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-common-inputrim-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 493,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-common-user-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 494,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-dcomp-l1-1-1",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 495,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-ddccigdi-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 496,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-dxgdi-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 497,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-dxgk-l1-1-0",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "entryIndex": 498,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-flipmgr-l1-1-0",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "entryIndex": 499,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-full-export-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 500,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-full-float-export-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 501,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fulldcompbase-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 502,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fulldwm-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 503,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fullgdi-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 504,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fulluser-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 505,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fulluser64-l1-1-0",
+      "host": "win32kfull.sys"
+    },
+    {
+      "entryIndex": 506,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-fulluserbase-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 507,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-gdi-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 508,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-input-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 509,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-inputmit-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 510,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-inputrim-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 514,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-mininputmitbase-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 516,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-opmgdi-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 517,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-surfmgr-l1-1-0",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "entryIndex": 518,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-tokenmgr-l1-1-0",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "entryIndex": 519,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-user-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 520,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-userdisplay-l1-1-0",
+      "host": "win32kbase.sys"
+    },
+    {
+      "entryIndex": 521,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-core-win32k-userinit-l1-1-0",
+      "host": "win32k.sys"
+    },
+    {
+      "entryIndex": 561,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-fs-clfs-l1-1-0",
+      "host": "clfs.sys"
+    },
+    {
+      "entryIndex": 642,
+      "valueIndex": 0,
+      "contract": "ext-ms-win-moderncore-win32k-base-ntgdi-l1-1-0",
+      "host": "win32kfull.sys"
+    }
+  ]
+}
