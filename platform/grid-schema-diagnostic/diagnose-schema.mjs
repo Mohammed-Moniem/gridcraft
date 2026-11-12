@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
-export const LIMITS=Object.freeze({fileBytes:4*1024**2,sections:96,entries:16384,valuesPerEntry:64,totalValues:65536,textBytes:2048,totalTextBytes:32*1024**2,retainedRejections:32});
+export const LIMITS=Object.freeze({fileBytes:4*1024**2,sections:96,entries:16384,valuesPerEntry:64,totalValues:65536,textBytes:2048,totalTextBytes:32*1024**2,retainedRejections:64});
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 
 // Data inspection only. No file access, loader, subprocess, network, or production imports.
